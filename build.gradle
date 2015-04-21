@@ -1,0 +1,18 @@
+apply plugin: 'war'
+dependencies {
+
+	compile libraries.commons_lang3
+	compile project(':tops-hotel:tops-hotel-icecreme-service')
+	compile libraries.framework_core
+	compile libraries.framework_logger   	 
+	compile libraries.framework_config
+	compile libraries.framework_quality
+	testCompile libraries.spring_test
+
+}
+
+
+
+
+
+
