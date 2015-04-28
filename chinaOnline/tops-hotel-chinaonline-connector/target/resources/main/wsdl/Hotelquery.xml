@@ -1,0 +1,46 @@
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<ns7:OGHeader
+			xmlns:ns8="http://webservices.micros.com/ows/5.1/AreaAvailability.wsdl"
+			xmlns:ns7="http://webservices.micros.com/og/4.3/Core/" xmlns:ns6="http://www.opentravel.org/OTA/2003/05"
+			xmlns:ns5="http://webservices.micros.com/og/4.3/Membership/"
+			xmlns:ns4="http://webservices.micros.com/og/4.3/Availability/"
+			xmlns:ns3="http://webservices.micros.com/og/4.3/Common/" xmlns:ns2="http://webservices.micros.com/og/4.3/HotelCommon/"
+			xmlns="http://webservices.micros.com/ows/5.1/Availability.wsdl">
+			<ns7:Origin systemType="WEB" entityID="TRAVELZEN" />
+			<ns7:Destination systemType="ORS" entityID="ORS" />
+		</ns7:OGHeader>
+	</soap:Header>
+	<soap:Body>
+		<AvailabilityRequest
+			xmlns="http://webservices.micros.com/ows/5.1/Availability.wsdl"
+			xmlns:ns2="http://webservices.micros.com/og/4.3/HotelCommon/"
+			xmlns:ns3="http://webservices.micros.com/og/4.3/Common/" xmlns:ns4="http://webservices.micros.com/og/4.3/Availability/"
+			xmlns:ns5="http://webservices.micros.com/og/4.3/Membership/"
+			xmlns:ns6="http://www.opentravel.org/OTA/2003/05" xmlns:ns7="http://webservices.micros.com/og/4.3/Core/"
+			xmlns:ns8="http://webservices.micros.com/ows/5.1/AreaAvailability.wsdl"
+			summaryOnly="false">
+			<ns4:AvailRequestSegment availReqType="Room"
+				numberOfRooms="1" totalNumberOfGuests="1" membershipIdSpecified="false">
+				<ns4:StayDateRange>
+					<ns2:StartDate>2015-01-22T00:00:00.000+08:00</ns2:StartDate>
+					<ns2:EndDate>2015-01-23T00:00:00.000+08:00</ns2:EndDate>
+				</ns4:StayDateRange>
+				<ns4:RatePlanCandidates>
+					<ns4:RatePlanCandidate ratePlanCode="WHL01"
+						qualifyingIdType="TRAVEL" qualifyingIdValue="TRAVELZEN" />
+				</ns4:RatePlanCandidates>
+				<ns4:RoomStayCandidates>
+					<ns4:RoomStayCandidate roomTypeCode="1KBSS" />
+				</ns4:RoomStayCandidates>
+				<ns4:HotelSearchCriteria>
+					<ns4:Criterion>
+						<ns4:HotelRef chainCode="COL" hotelCode="CETSH" />
+					</ns4:Criterion>
+				</ns4:HotelSearchCriteria>
+			</ns4:AvailRequestSegment>
+			<loadRateOnly>true</loadRateOnly>
+		</AvailabilityRequest>
+	</soap:Body>
+</soap:Envelope>

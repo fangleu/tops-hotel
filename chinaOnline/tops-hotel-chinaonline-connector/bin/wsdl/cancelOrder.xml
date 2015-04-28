@@ -1,0 +1,32 @@
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<ns5:OGHeader
+			xmlns:ns8="http://webservices.chinaonline.net.cn/switch/1.5.1/Reservation.wsdl"
+			xmlns:ns7="http://webservices.micros.com/og/4.3/Name/" xmlns:ns6="http://webservices.micros.com/og/4.3/Reservation/"
+			xmlns:ns5="http://webservices.micros.com/og/4.3/Core/" xmlns:ns4="http://webservices.micros.com/og/4.3/Membership/"
+			xmlns:ns3="http://webservices.micros.com/og/4.3/Common/" xmlns:ns2="http://webservices.micros.com/ows/5.1/Reservation.wsdl"
+			xmlns="http://webservices.micros.com/og/4.3/HotelCommon/">
+			<ns5:Origin systemType="WEB" entityID="TRAVELZEN" />
+			<ns5:Destination systemType="ORS" entityID="ORS" />
+		</ns5:OGHeader>
+	</soap:Header>
+	<soap:Body>
+		<ns2:CancelBookingRequest
+			xmlns="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:ns2="http://webservices.micros.com/ows/5.1/Reservation.wsdl"
+			xmlns:ns3="http://webservices.micros.com/og/4.3/Common/" xmlns:ns4="http://webservices.micros.com/og/4.3/Membership/"
+			xmlns:ns5="http://webservices.micros.com/og/4.3/Core/" xmlns:ns6="http://webservices.micros.com/og/4.3/Reservation/"
+			xmlns:ns7="http://webservices.micros.com/og/4.3/Name/"
+			xmlns:ns8="http://webservices.chinaonline.net.cn/switch/1.5.1/Reservation.wsdl">
+			<ns2:CancelTerm cancelType="Cancel" cancelReasonCode="Cancel">
+				<CancelReason>
+					<Text>测试</Text>
+				</CancelReason>
+			</ns2:CancelTerm>
+			<ns2:ConfirmationNumber type="INTERNAL">(COL)710916
+			</ns2:ConfirmationNumber>
+			<ns2:HotelReference chainCode="COL" hotelCode="CETSH" />
+			<ns2:LastName>LI SI</ns2:LastName>
+		</ns2:CancelBookingRequest>
+	</soap:Body>
+</soap:Envelope>

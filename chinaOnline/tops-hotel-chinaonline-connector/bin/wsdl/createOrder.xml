@@ -1,0 +1,92 @@
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<ns5:OGHeader
+			xmlns:ns8="http://webservices.chinaonline.net.cn/switch/1.5.1/Reservation.wsdl"
+			xmlns:ns7="http://webservices.micros.com/og/4.3/Name/" xmlns:ns6="http://webservices.micros.com/og/4.3/Reservation/"
+			xmlns:ns5="http://webservices.micros.com/og/4.3/Core/" xmlns:ns4="http://webservices.micros.com/og/4.3/Membership/"
+			xmlns:ns3="http://webservices.micros.com/og/4.3/Common/" xmlns:ns2="http://webservices.micros.com/ows/5.1/Reservation.wsdl"
+			xmlns="http://webservices.micros.com/og/4.3/HotelCommon/">
+			<ns5:Origin systemType="WEB" entityID="TRAVELZEN" />
+			<ns5:Destination systemType="ORS" entityID="ORS" />
+		</ns5:OGHeader>
+	</soap:Header>
+	<soap:Body>
+		<ns2:CreateBookingRequest
+			xmlns="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:ns2="http://webservices.micros.com/ows/5.1/Reservation.wsdl"
+			xmlns:ns3="http://webservices.micros.com/og/4.3/Common/" xmlns:ns4="http://webservices.micros.com/og/4.3/Membership/"
+			xmlns:ns5="http://webservices.micros.com/og/4.3/Core/" xmlns:ns6="http://webservices.micros.com/og/4.3/Reservation/"
+			xmlns:ns7="http://webservices.micros.com/og/4.3/Name/"
+			xmlns:ns8="http://webservices.chinaonline.net.cn/switch/1.5.1/Reservation.wsdl">
+			<ns2:HotelReservation>
+				<ns6:RoomStays>
+					<RoomStay>
+						<RatePlans>
+							<RatePlan ratePlanCode="WHL05" qualifyingIdType="TRAVEL"
+								qualifyingIdValue="TRAVELZEN" />
+						</RatePlans>
+						<RoomTypes>
+							<RoomType roomTypeCode="1BSTS" numberOfUnits="1" />
+						</RoomTypes>
+						<RoomRates>
+							<RoomRate roomTypeCode="1BSTS" ratePlanCode="WHL05">
+								<Rates>
+									<Rate effectiveDate="2015-01-29+08:00">
+										<Base>180.0</Base>
+									</Rate>
+								</Rates>
+							</RoomRate>
+						</RoomRates>
+						<GuestCounts>
+							<GuestCount ageQualifyingCode="ADULT" count="1" />
+						</GuestCounts>
+						<TimeSpan>
+							<StartDate>2015-01-29T00:00:00.000+08:00</StartDate>
+							<EndDate>2015-01-30T00:00:00.000+08:00</EndDate>
+						</TimeSpan>
+						<Guarantee guaranteeType="6PM">
+							<GuaranteesAccepted>
+								<GuaranteeAccepted>
+									<GuaranteeCreditCard />
+								</GuaranteeAccepted>
+							</GuaranteesAccepted>
+						</Guarantee>
+						<HotelReference chainCode="COL" hotelCode="ADHZJ" />
+						<Comments>
+							<Comment commentOriginatorCode="CRO" guestViewable="false">
+								<Text xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+									xsi:nil="true" />
+							</Comment>
+						</Comments>
+					</RoomStay>
+				</ns6:RoomStays>
+				<ns6:ResGuests>
+					<ns6:ResGuest resGuestRPH="0">
+						<ns6:Profiles>
+							<ns7:Profile>
+								<ns7:Customer gender="FEMALE">
+									<ns7:PersonName>
+										<ns3:nameTitle>Mr.</ns3:nameTitle>
+										<ns3:firstName>三十四</ns3:firstName>
+										<ns3:lastName>SAN SHISI</ns3:lastName>
+									</ns7:PersonName>
+								</ns7:Customer>
+								<ns7:Addresses>
+									<ns7:NameAddress />
+								</ns7:Addresses>
+								<ns7:Phones>
+									<ns7:NamePhone />
+								</ns7:Phones>
+							</ns7:Profile>
+						</ns6:Profiles>
+					</ns6:ResGuest>
+				</ns6:ResGuests>
+			</ns2:HotelReservation>
+			<ns8:CheckInPolicy>
+				<ns8:EarliestTime>14:00</ns8:EarliestTime>
+				<ns8:LatestTime>12:00</ns8:LatestTime>
+			</ns8:CheckInPolicy>
+			<ns8:ChannelUniqueResID>150128123622278</ns8:ChannelUniqueResID>
+		</ns2:CreateBookingRequest>
+	</soap:Body>
+</soap:Envelope>

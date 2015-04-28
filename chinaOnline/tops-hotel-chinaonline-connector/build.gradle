@@ -1,0 +1,41 @@
+sourceSets {
+    main {
+        java { srcDir 'src/java' }
+        resources { srcDir 'src/resources' }
+    }
+}
+
+eclipse {
+    classpath {
+        downloadSources=true
+    }
+}
+
+dependencies {
+ 
+   	compile libraries.commons_lang3
+	compile libraries.cxf
+
+//    compile project(':tz-common:framework-config')
+	
+	compile libraries.framework_core         		 
+	compile libraries.framework_logger   	 
+	compile libraries.framework_config
+	compile libraries.framework_search
+
+    testCompile libraries.spring_test
+}
+
+project.ext {
+    wsdlDir = file("src/main/resources/wsdl")
+    generatedWsdlDir = file("src/main/java")
+}
+
+task chinaonline_wsdl2Java(type: JavaExec) {
+    inputs.files wsdlDir.listFiles()
+    outputs.files generatedWsdlDir
+    main = 'org.apache.cxf.tools.wsdlto.WSDLToJava'
+    classpath = configurations.runtime
+    print classpath
+    args '-d', generatedWsdlDir, '-client', '-xjc', "$wsdlDir/Reservation.wsdl"
+}
