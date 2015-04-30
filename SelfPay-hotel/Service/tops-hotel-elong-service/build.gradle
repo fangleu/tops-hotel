@@ -1,0 +1,8 @@
+dependencies {
+    compile libraries.spring_webmvc
+    compile libraries.logback
+    compile libraries.json_lib
+    compile libraries.jackson_mapper_asl
+    compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-entity')
+    compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-mongo')
+}

@@ -1,0 +1,6 @@
+dependencies {
+       	compile libraries.logback
+        compile libraries.spring_data_redis
+	compile libraries.framework_config
+        testCompile libraries.spring_test
+}

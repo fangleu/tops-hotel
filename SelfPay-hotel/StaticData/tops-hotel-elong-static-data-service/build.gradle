@@ -1,0 +1,11 @@
+dependencies {
+	compile libraries.commons_lang3
+	compile libraries.jackson_core_asl
+    compile libraries.jackson_mapper_asl
+    compile libraries.hibernate_validator
+    compile libraries.poi
+	compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-mongo')
+	compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-common')
+	compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-redis')
+    testCompile libraries.spring_test
+}

@@ -1,0 +1,25 @@
+apply plugin: 'war'
+dependencies {
+    compile libraries.joda_time
+	compile libraries.morphia_validation
+    compile libraries.spring_context
+    compile libraries.spring_webmvc
+    compile libraries.spring_test
+    compile libraries.servlet_api
+    compile libraries.junit
+    compile libraries.logback_ext
+    compile libraries.jcl_over_slf4j
+	compile libraries.logback
+	compile libraries.commons_lang3
+	compile libraries.spring_unitils
+	compile libraries.framework_quality
+	
+	compile libraries.jackson_core
+	compile libraries.jackson_databind
+	compile libraries.jackson_annotations
+	
+	compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-static-data-service')
+	compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-mongo')
+	
+	testCompile libraries.spring_test
+}

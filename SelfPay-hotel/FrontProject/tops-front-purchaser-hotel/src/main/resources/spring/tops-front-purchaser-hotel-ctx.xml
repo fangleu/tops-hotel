@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<import resource="classpath*:spring/front-hotel-common.xml" />
+	<import resource="classpath*:spring/member-authorization.xml"/>
+	<import resource="classpath*:spring/tops-hotel-creme-service-min-ctx.xml"/>
+	<import resource="classpath*:spring/hotel-order-service-min-ctx.xml"/>
+	<import resource="classpath*:spring/framework-quality-jmx-min-ctx.xml"/>
+	
+	<bean class="com.travelzen.framework.config.tops.TzPropertyPlaceholderConfigurer">
+		<property name="tzProperties">
+			<list>
+				<value>R:properties/mongo-options-default.properties</value>
+				<value>R:properties/mongo-database.properties</value>
+				<value>G:properties/member-auth.properties</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

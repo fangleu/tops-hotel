@@ -1,0 +1,11 @@
+{
+  "Local": "zh_CN",
+  "Request": {
+    "ArrivalDate": "2014-11-12",
+    "CityId": "0101",
+    "DepartureDate": "2014-11-14",
+    "PageIndex":1,
+    "PageSize":7
+  },
+  "Version": 1.1
+}

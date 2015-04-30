@@ -1,0 +1,131 @@
+apply plugin: 'java-library-distribution'
+import org.apache.tools.ant.filters.*
+
+dependencies {
+	compile project(':tops-common:tops-common-dict')
+    compile project(':tops-hotel:tops-hotel-order-service')
+    compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-static-data-service')	
+    compile libraries.commons_lang3
+    compile libraries.logback
+    compile libraries.framework_quality
+    testCompile libraries.spring_test
+}
+
+
+distributions {
+    main {
+        contents {
+            from('src/main/') {
+                include 'bin/*'
+            }
+        }
+    }
+}
+
+task cleanExtraBin(type: Delete) {
+    delete 'src/main/bin/'
+}
+
+
+
+task renameBin(type: Copy, dependsOn: 'cleanExtraBin') {
+	//移动配置文件到sh文件到bin文件夹
+    from('src/main/template') {
+        include '**/*.sh'
+        def myProps = new Properties()
+    	def filePath = "${projectDir}/src/main/filter/tops-hotel-order-schedule.properties"
+    	def file = new File(filePath)
+    	if(!file.exists()) {
+        	return
+        }
+        new File(filePath).withInputStream{
+        	myProps.load(it);
+        }
+        filter(ReplaceTokens, tokens: myProps)
+    }
+    into 'src/main/bin'
+}
+
+
+ext.manifestVersion = '1.0.0'
+
+jar {
+	manifest {
+		attributes (
+			"Manifest-Version"       : manifestVersion,
+			"Created-By"             : "Gradle 1.10",
+        	"Implementation-Title"   : "tops-hotel-order-schedule",
+        	"Implementation-Version" : manifestVersion,
+			"Main-Class": "com.travelzen.tops.hotel.order.schedule.main.HotelOrderScheduleMain",
+		)
+		def jarFilelist = configurations.runtime.collect { 
+			def jarFileName = it.getName()
+			//去掉源码包
+			if(jarFileName.contains('sources')){
+				return
+			}
+			//去掉doc包
+			if(jarFileName.contains('javadoc')){
+				return
+			}
+			return 'lib/' + jarFileName;
+			
+		}
+		//去除重复
+		jarFilelist.unique()
+		//生成manifest路径
+		ext.manifestClasspath = jarFilelist.join(' ')
+		attributes 'Class-Path': manifestClasspath
+		attributes 'Build-At': new Date()
+	}
+}
+
+distZip.dependsOn 'renameBin'
+
+distZip.doLast(){
+    def binDir = new File("${projectDir}/src/main/bin/");
+	binDir.deleteDir()
+}
+
+task deployOpEnv(dependsOn: [clean, distZip]) << {
+	def targetServers = ['192.168.164.222']
+	def projectPath = "$projectDir"
+	def distArchiverPath = projectPath + '/target/distributions/tops-hotel-order-schedule.zip'
+	for (targetServer in targetServers) {
+		def targetServerClone = targetServer
+		//停止服务
+		println '====================[停止服务][' + targetServerClone + ']============================='
+		exec {
+			executable = 'ssh'
+			args = ['tops@' + targetServerClone ,'cd /data/app/tops-hotel-order-schedule/ ;sh bin/hotelOrderSchedule.sh stop']
+		}
+		//备份服务器上的应用程序
+		println '====================[备份][' + targetServerClone + ']==============================='
+		exec {
+			executable = 'ssh'
+			args = ['tops@' + targetServerClone ,'cd /data/app/; mv tops-hotel-order-schedule tops-hotel-order-schedule.backup']
+		}
+		//复制发布包到服务器
+		println '====================[复制发布包到服务器][' + targetServerClone + ']============================='
+		targetServer = 'tops@' + targetServer + ':/data/app'
+		exec {
+			executable = 'scp'
+			args = [distArchiverPath ,targetServer]
+	   	}
+	   	//解压
+	   	println '====================[解压][' + targetServerClone + ']============================='
+	   	exec {
+			executable = 'ssh'
+			args = ['tops@' + targetServerClone ,'cd /data/app ;unzip -o tops-hotel-order-schedule.zip']
+		}
+		//启动服务
+		println '====================[启动服务][' + targetServerClone + ']============================='
+		exec {
+			executable = 'ssh'
+			args = ['tops@' + targetServerClone ,'cd /data/app/tops-hotel-order-schedule/;sh bin/hotelOrderSchedule.sh start']
+		}
+	   	println '====================[完成，登陆服务器看日志][' + targetServerClone + ']============================='
+	}
+}
+
+

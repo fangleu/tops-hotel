@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+.successful {
+	color: #636363;
+	background: url('../../static/images/store/succeed.png') no-repeat 20px
+		50% #FAFADB;
+	line-height: 64px;
+	height: 64px;
+	padding-left: 65px;
+	font-size: 16px;
+	font-weight: bold
+}
+
+.tabPanel {
+	padding: 12px
+}
+
+td {
+	height: 30px;
+	color: #636363
+}
+
+.td_head {
+	text-align: right
+}
+
+input.editable.disabled {
+	border: none
+}
+
+.btn_modifyPassword {
+	color: #CF6B00;
+	padding-left: 10px;
+	text-decoration: none
+}
+
+.roleManagerTable{
+	table-layout: fixed;	
+}
+
+.roleManagerTable td:nth-child(2){
+	max-width: 450px;
+	width: 450px;
+	word-wrap: break-word;
+	padding-right: 8px;
+}

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/decd76e2c461157804473468bbdc6b8eb6d6121b/logback-classic-1.1.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/b316e9737eea25e9ddd6d88eaeee76878045c6b2/logback-classic-1.1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.0.4.RELEASE/cab60ce34b0e63aad7d5160046c70caf67f9f200/spring-data-redis-1.0.4.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.0.4.RELEASE/709255ea3f3b134ff3baa05d6ac73ae478b91569/spring-data-redis-1.0.4.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-config/1.2.12.0.SNAPSHOT/3fef940ae91fd5cefbf1f7047f03f983cd3d0a0b/framework-config-1.2.12.0.SNAPSHOT-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-config/1.2.12.0.SNAPSHOT/88403ca267d119bbdf0fd4a531858e5dc4ecc713/framework-config-1.2.12.0.SNAPSHOT.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.9.RELEASE/a7393bc299c4f6ea9d6324eb293920ac936c421a/spring-test-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/3.2.9.RELEASE/52719fdd2e959b5b89ea361334d6c022a6d1d04d/spring-test-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/502e1c764542fe747896c1dc04f023acfe0e5cbc/logback-core-1.1.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/2d23694879c2c12f125dac5076bdfd5d771cc4cb/logback-core-1.1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/acd62e31cc314266e73eebed0b6dd7ea974a0ed/slf4j-api-1.7.7-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.9.RELEASE/9c7e72bfa1ab9d0fcf742064094ef51b2d4b4e2a/spring-core-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.9.RELEASE/23566c793f7db5859dbceb98cd1a5789b489e0b5/spring-core-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.9.RELEASE/e44a3cdcc20be53daad2a055cb40474d3e830bf2/spring-beans-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.9.RELEASE/31dcffd88a80b610ccd57ee9618301a1d883b53d/spring-beans-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.9.RELEASE/33a064badc1fce6f3feb530c1957ac5887c82bc5/spring-expression-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.9.RELEASE/3dc5a9e674d969c377d3d737a5ca59a401b097f3/spring-expression-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.9.RELEASE/1930e91a57602851902742629e7471a9a06f0ea0/spring-aop-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.9.RELEASE/5410c5cd31fdf591ddebe23e0f727b5ba1a626b9/spring-aop-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.9.RELEASE/11aec1d2d54350958e9098f5ed335680a40333b4/spring-context-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.9.RELEASE/9de55b66bd227549b60b4b602f6d1a567a67dbba/spring-context-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/3.1.4.RELEASE/6dbe85fc2fdeb5c0ae472852860aaeddacf35fa9/spring-tx-3.1.4.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/3.1.4.RELEASE/e7cd40e53940e26f24f5500a084b45f57fabaa01/spring-tx-3.1.4.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.5/22dae31a0b73022e69d66baaaf36ab4355f91f4f/commons-pool-1.5.5-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.5/7d8ffbdc47aa0c5a8afe5dc2aaf512f369f1d19b/commons-pool-1.5.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/2.1.0/242228a7c5a1669036820eafd1c00c55d7fe496e/jedis-2.1.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/2.1.0/681c1fe046712c86ab53b7e89c5e3f27c8ad1578/jedis-2.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.1.4.RELEASE/7432f3231606ce54b0247e3ec0f4ca93893ea992/spring-context-support-3.1.4.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.1.4.RELEASE/42824202b65f30da00e86d2980d700059ee900fc/spring-context-support-3.1.4.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.7/b5a646b81b899e930f8600c5f45766dd82743d93/jcl-over-slf4j-1.7.7-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.7/56003dcd0a31deea6391b9e2ef2f2dc90b205a92/jcl-over-slf4j-1.7.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/jline/jline/0.9.94/7ac7b49164e4f9d250309c70caee645151b87e46/jline-0.9.94-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/jline/jline/0.9.94/99a18e9a44834afdebc467294e1138364c207402/jline-0.9.94.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.7.0.Final/92d6795b502e5194f84c5d1fd05c39800413fe53/netty-3.7.0.Final-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.7.0.Final/7a8c35599c68c0bf383df74469aa3e03d9aca87/netty-3.7.0.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.6/10cb14f3893f8bdcaf4e2619a9a1f6b9cedec6b7/zookeeper-3.4.6-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.6/1b2502e29da1ebaade2357cd1de35a855fa3755/zookeeper-3.4.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.github.adyliu/zkclient/2.1.1/2c14fd8d5921f411e31cf4009d113c73beb56eef/zkclient-2.1.1-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.github.adyliu/zkclient/2.1.1/4d01c94aed2c1ec1b1f0b42fc9809efa4f55719c/zkclient-2.1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/6ed53c5ce78344e14296aa47769d67b10e1c7b2c/jackson-core-asl-1.9.13-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/83113901bc2a377d698ccea35ad842786f37c6ad/jackson-mapper-asl-1.9.13-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7/jackson-mapper-asl-1.9.13.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/fa095ef874374e5b2a11f8b06c26a5d68c7cb3a4/commons-collections-3.2.1-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.7.2/dfb378a12848d9a0b53c7da747ee880e307726ea/aspectjrt-1.7.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.7.2/2704a4284193598dd42f1dd4ff1ea3e757c875e9/aspectjrt-1.7.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.8/3940d1ca998744cca98da76c3d01974c1c54149f/plexus-utils-3.0.8-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.8/faba5d28a07fcde50c8c26d3f002774acf11843e/plexus-utils-3.0.8.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/2.2.2/b5e33106279bbc09be9078890478112ebe3623ef/plexus-classworlds-2.2.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/2.2.2/3a2bad2b58c1ca765d3f471cea8c1655d70fdfd9/plexus-classworlds-2.2.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging-api/1.1/7d4cf5231d46c8524f9b9ed75bb2d1c69ab93322/commons-logging-api-1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.xbean/xbean-reflect/3.4/77c8a006107cb5520096d629aedd0ff733e11fe1/xbean-reflect-3.4-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.xbean/xbean-reflect/3.4/26fd55dceb037f4789b399b22874d74f4d2db66f/xbean-reflect-3.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-container-default/1.5.5/5a8d85ede02b1a32f79f8b17f0fe2077d952de2d/plexus-container-default-1.5.5-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-container-default/1.5.5/265fa2851d31c2e2177859a518987595efe146b/plexus-container-default-1.5.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/ad97fe8faaf01a3d3faacecd58e8fa6e78a973ca/guava-18.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.unidal.framework/foundation-service/2.1.0/e049fcde48ef9f5805c5c55eb324b12d53613777/foundation-service-2.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.jboss.netty/netty/3.2.7.Final/ec99533fbd07fa246b2c8bb74e6ae39ce4ef9d18/netty-3.2.7.Final-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.jboss.netty/netty/3.2.7.Final/1a1c5dde827576f3730bf6f3d7b389e770b90aaa/netty-3.2.7.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.dianping.cat/cat-client/1.2.5/d15fb6fd76e5e56501b5f8da0e24589b4bfb7187/cat-client-1.2.5-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.dianping.cat/cat-client/1.2.5/e51667d172b1abde88369ff64a30941fc3a91cbf/cat-client-1.2.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.29/88e6a7eef5af3befcbf7b24453169bee9479d3aa/fastjson-1.1.29-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.29/6396d676899937291ccc6419b1852267e21faba2/fastjson-1.1.29.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.4/61d71500037f0ac004d56c446ef9277f16bcf62d/joda-time-2.4-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.4/89e9725439adffbbd41c5f5c215c136082b34a7f/joda-time-2.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.javatuples/javatuples/1.2/a7495f5370bdfcf46c6f3c6ed0badf52877aa467/javatuples-1.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.javatuples/javatuples/1.2/507312ac4b601204a72a83380badbca82683dd36/javatuples-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/2b8c4b3035e45520ef42033e823c7d33e4b4402c/commons-lang-2.4-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/16313e02a793435009f1e458fa4af5d879f6fb11/commons-lang-2.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.javaruntype/javaruntype/1.2/269ea327288c46afdc4f771c9b4ad071b11ddf59/javaruntype-1.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.javaruntype/javaruntype/1.2/d7595d6aa87b56ad207961157d15b2c59f0afb53/javaruntype-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.op4j/op4j/1.2/5d9b3df6f4cee00e5463d6c040ec0a619bf355e7/op4j-1.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.op4j/op4j/1.2/408aa6e58a64cfd184273144b702cc24118a5c80/op4j-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/21e31b9298ed677b17fcac6dd0eb0a82ec35adc2/gson-2.3-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-core/1.2.12.0.SNAPSHOT/7196ee239a0143778a6f5fabe1e66cbfadaf18be/framework-core-1.2.12.0.SNAPSHOT-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-core/1.2.12.0.SNAPSHOT/6c3e0638f4f3c4e5694b276a984a668d6a297b2a/framework-core-1.2.12.0.SNAPSHOT.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.7.2/56ab34b488e1c1f67b95c1980839ed643963b34b/aspectjweaver-1.7.2-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.7.2/d3b191a99d2c34dfd5311ef3110f096f5bc0a10e/aspectjweaver-1.7.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.perf4j/perf4j/0.9.16/14b029a24faabf012c17ffc8e573f6a2f5065f51/perf4j-0.9.16-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.perf4j/perf4j/0.9.16/a387572ec3d8399aa894662cfd63babb8e161f43/perf4j-0.9.16.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/commons-compiler/2.7.6/9b4872aac6baca858a8ca0466d5fb38aa686d7b6/commons-compiler-2.7.6-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/commons-compiler/2.7.6/b71e76d942b33dfa26e4e3047ff2a774d1f917b4/commons-compiler-2.7.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/janino/2.7.6/ab3bfafee7e167018f807d0a1e39b147e72700c5/janino-2.7.6-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/janino/2.7.6/37fde5de7edd5d7ebe075f03f4c083df2ac73dd8/janino-2.7.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-logger-core/1.2.12.0.SNAPSHOT/9c98cf6a02fa675d402e1f4f78470d4705d998ba/framework-logger-core-1.2.12.0.SNAPSHOT-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-logger-core/1.2.12.0.SNAPSHOT/e34ac679803a925612b3127c55a80c1deb3b089b/framework-logger-core-1.2.12.0.SNAPSHOT.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.7.0/7a65e9e0150d74096c67a46c42ed71ac8a9a98cc/curator-client-2.7.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.7.0/c3232ff89e991501b98e21dc29303cbb227ad57b/curator-client-2.7.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.7.0/834822a18b489dcc47afac97f2e8c05b168ad689/curator-framework-2.7.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.7.0/c586c41d21278779d7c14ac3c95cba7cf553c7d2/curator-framework-2.7.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.7.0/91e9d9d35417fd4b8024d4db3e98aca30c27c901/curator-recipes-2.7.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.7.0/b8f8980c40ebe86f1eb693f282faa27a65a95379/curator-recipes-2.7.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-x-discovery/2.7.0/d0b9f449beca8d7e5c025968d1b93ee5e9c82cac/curator-x-discovery-2.7.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-x-discovery/2.7.0/b73905510f3bbaaded82bee06e39c060d3e7d9ba/curator-x-discovery-2.7.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.14/4c6bcedc3efa772a5ae1c2fd01efee8e4d15edac/snakeyaml-1.14-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.14/c2df91929ed06a25001939929bff5120e0ea3fd4/snakeyaml-1.14.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/bdacf4f82ce9b29cd474bfde2e91eeb0ca623d28/config-1.2.1-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache-core/2.6.5/f7ecf73a614d51775f5feb33e56f3588ded1e5ca/ehcache-core-2.6.5-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache-core/2.6.5/3dfb4152fb976c8eeae6dd0dca402c0a8e4528be/ehcache-core-2.6.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-infrastructure/2.1.9.RELEASE/1a56ad9035237ea06fc37355e0623066513a6f36/spring-batch-infrastructure-2.1.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-infrastructure/2.1.9.RELEASE/a3571fc64df4270bd75fd4f6255c338b5d9e3366/spring-batch-infrastructure-2.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.1/6e5ebf802c909bcef2d7e3275c64b474467353b5/jettison-1.1-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.1/1a01a2a1218fcf9faa2cc2a6ced025bdea687262/jettison-1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-core/2.1.9.RELEASE/f591aeaf6129369b18683ebfffc6e059968d50eb/spring-batch-core-2.1.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-core/2.1.9.RELEASE/55ab028691982e599514bcee511f17be88a73438/spring-batch-core-2.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.9.RELEASE/a333983db63673aa9fa7072a7936518a49e21308/spring-web-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.9.RELEASE/2737a6a7b09543541df87dd750b995ce82a37ac7/spring-web-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.2.9.RELEASE/e7c52a1461cc535b4d1bcd4c2b4ca4d8ebedf3b9/spring-webmvc-3.2.9.RELEASE-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.2.9.RELEASE/16864e48fdac6e13297d817167e55d8df9e4f74a/spring-webmvc-3.2.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/bb76e5678cdb3e7488bb5578a8461e82fba5fe36/mail-1.4.7-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/9add058589d5d85adeb625859bf2c5eeaaedf12d/mail-1.4.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.20/ed2c6f2a00062d3ddf8d86870a047e50a5355e65/freemarker-2.3.20-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.20/5ad6bea46b5af666d88c260c8acc6a03408723c8/freemarker-2.3.20.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-spring/1.2.12.0.SNAPSHOT/1b977cafb56aa5782601cfb39c65d57acac32938/framework-spring-1.2.12.0.SNAPSHOT-sources.jar" kind="lib" path="/home/loufanglei/.gradle/caches/modules-2/files-2.1/com.travelzen/framework-spring/1.2.12.0.SNAPSHOT/ddbfdbf075dfef585b8996d214cee7dc0182f516/framework-spring-1.2.12.0.SNAPSHOT.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+</classpath>

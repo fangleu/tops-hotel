@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: tops-hotel-elong-mongo
+Implementation-Version: unspecified
+Built-By: loufanglei
+Built-JDK: 1.7.0_45
+Implementation-Timestamp: 2015-04-20T11:06:30+0800
+

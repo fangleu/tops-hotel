@@ -1,0 +1,13 @@
+{
+   "Local": "zh_CN",
+   "Version": 1.1,
+   "Request": {
+      "arrivalDate": "2014-05-31",
+      "departureDate": "2014-06-01",
+      "cityId": "0101",
+      "queryText": "北京酒店",
+      "queryType": "HotelName", //艺龙测试接口如果加这个字段，无法查询
+      "paymentType": "SelfPay",
+      "customerType": "All"
+   }
+}

@@ -1,0 +1,9 @@
+{
+  "Local": "zh_CN",
+  "Request": {
+    "ArrivalDate": "2014-09-30",
+    "HotelIds": "50101002",
+    "DepartureDate": "2014-10-02"
+  },
+  "Version": 1.1
+}

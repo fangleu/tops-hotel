@@ -1,0 +1,21 @@
+.citytip-containers{border:1px solid #c5c5c5;position:absolute;display:none;background:#FFFFFF;z-Index:999;font-size:12px;}
+.citytip-containers ul{list-style:none;margin:0;padding:0;}
+.citytip-title{background:#F3F3F3;color:#454545;height:26;line-height:26px;padding-left:8px;position:relative;border-bottom:1px solid #c5c5c5}
+.citytip-close{margin-right:10px;color:rgb(0,85,170);width:30px;position:absolute;top:0;right:0;cursor:pointer;}
+#city-select{border-bottom:1px solid #F46D17;height:20px;margin:5px;line-height:20px}
+.citytip-head{cursor:pointer;height:20px;padding:0 6px;float:left;list-style:none;text-align:center;background:#FFFFFF;position:relative}
+.citytip-selected{font-weight:bold;border:1px solid #F46D17;border-bottom:none}
+#city-details{margin:10px}
+.city-detail{width:20%;padding:3px;float:left;border:1px solid #FFFFFF;cursor:pointer;color:#606060;}
+.city-detail.hover{background:#F46D17;color:#ffffff;}
+.city-type{display:block;clear:both;color:red}
+.district_list{height:200px; width:; overflow-y:scroll;}
+.brand_list{height:300px; width:; overflow-y:scroll;}
+.tools_list{height:300px; width:; overflow-y:scroll;}
+.tail {border-top: 1px solid #E0E0E0;clear: both;margin-top: 10px;padding-top: 10px;}
+.adaptiveButton.medium span {background:orangered;float: left;height: 31px;line-height: 31px;}
+.more_district{background-color: #FFFFFF;border: 1px solid #C5C5C5;padding: 0px;}
+.more_brand{background-color: #FFFFFF;border: 1px solid #C5C5C5;padding: 0px;}
+.more_tools{background-color: #FFFFFF;border: 1px solid #C5C5C5;padding: 0px;}
+.headline ul li {cursor:pointer;}
+.adaptiveButton.small span {display: inline-block;float: left;background:orangered;height: 25px;line-height: 25px;}

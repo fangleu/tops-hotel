@@ -1,0 +1,15 @@
+dependencies {
+    compile libraries.joda_time
+	compile (libraries.morphia_validation){
+		exclude group: 'org.mongodb', module:'mongo-java-driver'
+	}
+	compile libraries.mongo_java_driver
+    compile libraries.spring_context
+    compile libraries.spring_test
+    compile libraries.junit
+    compile libraries.jcl_over_slf4j
+	compile libraries.logback
+	compile libraries.commons_lang3
+	compile libraries.fastjson
+	compile project(':tops-hotel:tops-hotel-selfpay:elong:tops-hotel-elong-common')
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:sc="http://www.springframework.org/schema/security" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/aop					http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/tx						http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/context				http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/security				http://www.springframework.org/schema/security/spring-security-3.1.xsd
+		http://www.springframework.org/schema/mvc					http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/task					http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+	
+	<bean class="com.travelzen.framework.config.tops.TzPropertyPlaceholderConfigurer">
+		<property name="tzProperties">
+			<list>
+				<value>R:properties/mongo-database.properties</value>
+				<value>R:properties/mongo-options-default.properties</value>
+				<value>R:properties/gta-mongo-options.properties</value>
+				<value>G:properties/tops-hotel-order-schedule-G.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<task:executor id="executor" pool-size="5" />
+	<task:scheduler id="scheduler" pool-size="5" />
+	<task:annotation-driven executor="executor" scheduler="scheduler" />
+
+	<context:component-scan base-package="com.travelzen.tops.hotel.order.schedule.prepay.autoCancel" />
+	<context:component-scan base-package="com.travelzen.tops.hotel.order.schedule.selfpay.staticfile.updater" />
+	<context:component-scan base-package="com.travelzen.tops.hotel.order.schedule.selfpay.status.updater" />
+	<context:component-scan base-package="com.travelzen.tops.hotel.order.schedule.jmx" />
+
+	<import resource="classpath*:spring/applicationContext-hotel-elong-mongo.xml"/>
+	<import resource="classpath*:spring/applicationContext-hotel-elong-static-data-service.xml"/>
+	<import resource="classpath*:spring/applicationContext-hotel-elong-common.xml"/>
+	<import resource="classpath*:spring/hotel-order-service-min-ctx.xml"/>
+	<import resource="classpath*:spring/framework-quality-jmx-min-ctx.xml"/>
+	
+</beans>

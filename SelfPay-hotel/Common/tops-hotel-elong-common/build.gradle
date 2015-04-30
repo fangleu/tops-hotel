@@ -1,0 +1,9 @@
+dependencies {
+	compile libraries.framework_config
+	compile libraries.framework
+	compile libraries.commons_httpclient
+	compile libraries.logback
+	compile libraries.commons_lang3
+	compile libraries.json_lib
+	compile libraries.jaxen
+}

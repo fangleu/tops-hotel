@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/aop					http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/context				http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/mvc					http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	<aop:aspectj-autoproxy/>
+	<!-- <bean id="purchaserMDCInsertingAspect" class="com.travelzen.tops.front.purchaser.aop.PurchaserMDCInsertingAspect" /> -->
+	<!-- annotation beans -->
+	<context:component-scan base-package="com.travelzen.tops.front.purchaser"/>
+	<context:component-scan base-package="com.travelzen.tops.front.common.controller" />
+
+    <!-- max caching age: 24 h -->
+	<mvc:resources mapping="/resources/**" location="/resources/" cache-period="86400"/>
+
+	<!-- 拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.travelzen.tops.front.common.interceptor.TZI18nInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.travelzen.tops.front.common.freemarker.CookieInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+<!--    	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+			</props>
+		</property>
+		设置日志输出级别，不定义则默认不输出警告等错误日志信息
+		<property name="warnLogCategory" value="WARN"></property>
+		默认错误页面，当找不到上面mappings中指定的异常对应视图时，使用本默认配置
+		<property name="defaultErrorView" value="common/error"></property>
+		默认HTTP状态码
+		<property name="defaultStatusCode" value="500"></property>
+	</bean>  -->
+
+		<!-- 异常处理器 -->
+	<!-- 勿去，否则会有bug。可在页面源码查看异常堆栈 -->
+	<bean id="exceptionResolver" class="com.travelzen.tops.front.common.CustomizedHandlerExceptionResolver" />
+
+	<!-- upload文件设置 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="10485760" />
+	</bean>
+
+	<!-- freemarker配置 -->
+	<bean id="freemarkerResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="suffix" value=".ftl" />
+		<property name="exposeSpringMacroHelpers" value="true" />
+		<property name="exposeRequestAttributes" value="true" />
+		<property name="exposeSessionAttributes" value="true" />
+		<property name="contentType" value="text/html;charset=utf-8" />
+		<property name="requestContextAttribute" value="req" />
+		<property name="allowSessionOverride" value="true" />
+	</bean>
+
+	<bean id="freemarkerConfig" class="com.travelzen.tops.front.common.freemarker.xss.HtmlFreeMarkerConfigurer">
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="templateLoaderPath" value="/WEB-INF/" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="default_encoding">utf-8</prop>
+				<prop key="url_escaping_charset">utf-8</prop>
+				<prop key="date_format">yyyy-MM-dd</prop>
+				<prop key="time_format">HH:mm:ss</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm</prop>
+				<prop key="number_format">#.##</prop>
+				<prop key="auto_import">/common/env.ftl as tops_pch_env</prop>
+			</props>
+		</property>
+		<!-- 全局变量部分 -->
+		<property name="freemarkerVariables">
+			<map>
+				<entry key="currentUser">
+					<bean class="com.travelzen.tops.front.common.freemarker.CurrentUserGetter"></bean>
+				</entry>
+				<entry key="getEnv">
+					<bean class="com.travelzen.tops.front.common.freemarker.PropertyGetter"></bean>
+				</entry>
+				<entry key="getEnumMessage">
+					<bean class="com.travelzen.tops.front.common.freemarker.EnumMessageGetter"></bean>
+				</entry>
+				<entry key="authorizeName">
+					<bean class="com.travelzen.tops.front.common.freemarker.NameAuthorizer"></bean>
+				</entry>
+				<entry key="authorizeUrl">
+					<bean class="com.travelzen.tops.front.common.freemarker.UrlAuthorizer"></bean>
+				</entry>
+				<entry key="getMapJson">
+					<bean class="com.travelzen.tops.front.common.freemarker.MapJsonGetter"></bean>
+				</entry>
+				<entry key="getLastAuthException">
+					<bean class="com.travelzen.tops.front.common.freemarker.LastAuthErrorGetter"></bean>
+				</entry>
+				<entry key="getAddress">
+					<bean class="com.travelzen.tops.front.common.freemarker.AddressGetter"></bean>
+				</entry>
+				<entry key="formatDateTime">
+					<bean class="com.travelzen.tops.front.common.freemarker.DateTimeConverter"/>
+				</entry>
+				<entry key="getStaticResourceVersion">
+					<bean class="com.travelzen.tops.front.purchaser.freemarker.StaticResourceVersionGetter"/>
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<!-- 国际化设置 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>i18n/messages</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+		<property name="defaultLocale" value="zh_CN" />
+		<property name="cookieName" value="CookieLocaleResolver" />
+		<property name="cookieMaxAge" value="2147483647" />
+	</bean>
+
+	<!-- 集合参数解析器 -->
+	<!-- <bean name="jodaSupportedObjectMapper" class="com.travelzen.tops.finance.account.util.JodaSupportedObjectMapper"/> -->
+	<mvc:annotation-driven conversion-service="conversionService">
+		<mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8" />
+            </bean>
+           <!--  <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="objectMapper" ref="jodaSupportedObjectMapper"/>
+			</bean>
+			
+			<bean class="com.travelzen.tops.front.common.jsonpSupport.MappingJackson2HttpMessageConverterJsonpSupport">
+			    <property name="objectMapper" ref="jodaSupportedObjectMapper"/>
+			</bean> -->
+		</mvc:message-converters>
+		<mvc:argument-resolvers>
+			<bean class="com.travelzen.framework.web.method.annotation.RequestArrayResolver" />
+			<bean class="com.travelzen.framework.web.method.annotation.RequestMapResolver" />
+		</mvc:argument-resolvers>
+	</mvc:annotation-driven>
+	<!-- 配置自定义转换服务器 -->
+	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		<property name="formatters">
+			<bean class="com.travelzen.framework.web.format.annotation.DateFormatAnnotationFormatterFactory" />
+		</property>
+	</bean>
+
+	<bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+
+	<!--<context:property-placeholder location="classpath:finance.paygate.properties" ignore-unresolvable="true"/>-->
+
+</beans>

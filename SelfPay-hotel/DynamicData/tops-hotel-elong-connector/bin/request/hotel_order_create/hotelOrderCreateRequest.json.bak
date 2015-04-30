@@ -1,0 +1,76 @@
+{
+    "Local": "zh_CN",
+    "Request": {
+        "AffiliateConfirmationId": "10987777123123",
+        "ArrivalDate": 1415635200000,
+        "ConfirmationType": "NotAllowedConfirm",
+        "Contact": {
+            "Mobile": "18612566611",
+            "Name": "李大海"
+        },
+        "CurrencyCode": "RMB",
+        "CustomerIPAddress": "211.151.230.212",
+        "CustomerType": "Chinese",
+        "DepartureDate": 1416153600000,
+        "EarliestArrivalTime": 1415685600000,
+        "HotelId": "40101627",
+        "IsGuaranteeOrCharged": false,
+        "IsNeedInvoice": false,
+        "LatestArrivalTime": 1415721540000,
+        "NumberOfCustomers": 1,
+        "NumberOfRooms": 1,
+        "OrderRooms": [],
+        "PaymentType": "SelfPay",
+        "RatePlanId": 24957,
+        "RoomTypeId": "1018",
+        "TotalPrice": 3228
+    },
+    "Version": 1.1
+}
+
+{
+    "@type": "com.travelzen.tops.hotel.elong.entity.selfpay.jsonxml.BaseRequst",
+    "Version": 1.1,
+    "Local": "zh_CN",
+    "Request": {
+        "@type": "com.travelzen.tops.hotel.elong.entity.selfpay.jsonxml.CreateOrderCondition",
+        "IsForceGuarantee": false,
+        "Contact": {
+            "Phone": "",
+            "Email": "",
+            "Mobile": "18133659865",
+            "Gender": "Unknown",
+            "Name": "许孟"
+        },
+        "AffiliateConfirmationId": "141105234151041",
+        "CustomerIPAddress": "192.168.163.188",
+        "IsGuaranteeOrCharged": false,
+        "IsNeedInvoice": false,
+        "OrderRooms": [
+            {
+                "Customers": [
+                    {
+                        "Gender": "Unknown",
+                        "Nationality": "中国",
+                        "Name": "许孟"
+                    }
+                ]
+            }
+        ],
+        "CurrencyCode": "RMB",
+        "HotelId": "40101627",
+        "RoomTypeId": "1037",
+        "CustomerType": "All",
+        "RatePlanId": 166256,
+        "PaymentType": "SelfPay",
+        "ConfirmationType": "NotAllowedConfirm",
+        "EarliestArrivalTime": "2014-11-06 14:00",
+        "LatestArrivalTime": "2014-11-06 23:59",
+        "ArrivalDate": "2014-11-06",
+        "DepartureDate": "2014-11-07",
+        "TotalPrice": 698,
+        "NumberOfRooms": 1,
+        "NumberOfCustomers": 1
+    }
+}
+

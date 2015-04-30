@@ -1,0 +1,7 @@
+.toshow_rule {background: none repeat scroll 0 0 #FAFADB;border: 1px solid #DCC791;color:#636363;height:auto;padding:10px;position:relative; width:260px;}
+.toshow_other {background: none repeat scroll 0 0 #FAFADB;border: 1px solid #DCC791;color:#636363;height:auto;padding:10px;position:relative; width:auto; text-align:center;}
+.join_left {color:#0065CB;}
+.equipmentAndService {border-top:none; line-height:35px;}
+.note {border-top:none; line-height:35px;}
+.equipmentAndService tr td {vertical-align:top;}
+.note tr td {vertical-align:top;}
