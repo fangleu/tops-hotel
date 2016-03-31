@@ -1,0 +1,177 @@
+package com.dianping.cat.configuration.web.js.transform;
+
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_CREATION_DATE;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_DISPLAY_NAME;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_DOMAIN;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_MAILS;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_PATTERN;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_SAMPLE;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_TYPE;
+import static com.dianping.cat.configuration.web.js.Constants.ATTR_WARN;
+import static com.dianping.cat.configuration.web.js.Constants.ENTITY_AGGREGATION;
+import static com.dianping.cat.configuration.web.js.Constants.ENTITY_AGGREGATION_RULE;
+
+import com.dianping.cat.configuration.web.js.IEntity;
+import com.dianping.cat.configuration.web.js.IVisitor;
+import com.dianping.cat.configuration.web.js.entity.Aggregation;
+import com.dianping.cat.configuration.web.js.entity.AggregationRule;
+
+public class DefaultXmlBuilder implements IVisitor {
+
+   private IVisitor m_visitor = this;
+
+   private int m_level;
+
+   private StringBuilder m_sb;
+
+   private boolean m_compact;
+
+   public DefaultXmlBuilder() {
+      this(false);
+   }
+
+   public DefaultXmlBuilder(boolean compact) {
+      this(compact, new StringBuilder(4096));
+   }
+
+   public DefaultXmlBuilder(boolean compact, StringBuilder sb) {
+      m_compact = compact;
+      m_sb = sb;
+      m_sb.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n");
+   }
+
+   public String buildXml(IEntity<?> entity) {
+      entity.accept(m_visitor);
+      return m_sb.toString();
+   }
+
+   protected void endTag(String name) {
+      m_level--;
+
+      indent();
+      m_sb.append("</").append(name).append(">\r\n");
+   }
+
+   protected String escape(Object value) {
+      return escape(value, false);
+   }
+   
+   protected String escape(Object value, boolean text) {
+      if (value == null) {
+         return null;
+      }
+
+      String str = value.toString();
+      int len = str.length();
+      StringBuilder sb = new StringBuilder(len + 16);
+
+      for (int i = 0; i < len; i++) {
+         final char ch = str.charAt(i);
+
+         switch (ch) {
+         case '<':
+            sb.append("&lt;");
+            break;
+         case '>':
+            sb.append("&gt;");
+            break;
+         case '&':
+            sb.append("&amp;");
+            break;
+         case '"':
+            if (!text) {
+               sb.append("&quot;");
+               break;
+            }
+         default:
+            sb.append(ch);
+            break;
+         }
+      }
+
+      return sb.toString();
+   }
+   
+   protected void indent() {
+      if (!m_compact) {
+         for (int i = m_level - 1; i >= 0; i--) {
+            m_sb.append("   ");
+         }
+      }
+   }
+
+   protected void startTag(String name) {
+      startTag(name, false, null);
+   }
+   
+   protected void startTag(String name, boolean closed, java.util.Map<String, String> dynamicAttributes, Object... nameValues) {
+      startTag(name, null, closed, dynamicAttributes, nameValues);
+   }
+
+   protected void startTag(String name, java.util.Map<String, String> dynamicAttributes, Object... nameValues) {
+      startTag(name, null, false, dynamicAttributes, nameValues);
+   }
+
+   protected void startTag(String name, Object text, boolean closed, java.util.Map<String, String> dynamicAttributes, Object... nameValues) {
+      indent();
+
+      m_sb.append('<').append(name);
+
+      int len = nameValues.length;
+
+      for (int i = 0; i + 1 < len; i += 2) {
+         Object attrName = nameValues[i];
+         Object attrValue = nameValues[i + 1];
+
+         if (attrValue != null) {
+            m_sb.append(' ').append(attrName).append("=\"").append(escape(attrValue)).append('"');
+         }
+      }
+
+      if (dynamicAttributes != null) {
+         for (java.util.Map.Entry<String, String> e : dynamicAttributes.entrySet()) {
+            m_sb.append(' ').append(e.getKey()).append("=\"").append(escape(e.getValue())).append('"');
+         }
+      }
+
+      if (text != null && closed) {
+         m_sb.append('>');
+         m_sb.append(escape(text, true));
+         m_sb.append("</").append(name).append(">\r\n");
+      } else {
+         if (closed) {
+            m_sb.append('/');
+         } else {
+            m_level++;
+         }
+   
+         m_sb.append(">\r\n");
+      }
+   }
+
+   protected String toString(java.util.Date date, String format) {
+      if (date != null) {
+         return new java.text.SimpleDateFormat(format).format(date);
+      } else {
+         return null;
+      }
+   }
+
+   @Override
+   public void visitAggregation(Aggregation aggregation) {
+      startTag(ENTITY_AGGREGATION, null);
+
+      if (!aggregation.getAggregationRules().isEmpty()) {
+         for (AggregationRule aggregationRule : aggregation.getAggregationRules().values().toArray(new AggregationRule[0])) {
+            aggregationRule.accept(m_visitor);
+         }
+      }
+
+      endTag(ENTITY_AGGREGATION);
+   }
+
+   @Override
+   public void visitAggregationRule(AggregationRule aggregationRule) {
+      startTag(ENTITY_AGGREGATION_RULE, true, null, ATTR_TYPE, aggregationRule.getType(), ATTR_DOMAIN, aggregationRule.getDomain(), ATTR_PATTERN, aggregationRule.getPattern(), ATTR_SAMPLE, aggregationRule.getSample(), ATTR_DISPLAY_NAME, aggregationRule.getDisplayName(), ATTR_CREATION_DATE, toString(aggregationRule.getCreationDate(), "yyyy-MM-dd HH:mm:ss"), ATTR_WARN, aggregationRule.getWarn(), ATTR_MAILS, aggregationRule.getMails());
+   }
+}

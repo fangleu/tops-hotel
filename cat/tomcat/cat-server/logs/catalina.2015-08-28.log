@@ -1,0 +1,644 @@
+八月 28, 2015 9:21:01 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+八月 28, 2015 9:21:01 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-2281"]
+八月 28, 2015 9:21:01 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8109"]
+八月 28, 2015 9:21:01 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [/cat] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-2-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-2] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-3] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-4] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-5] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-6] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [epollEventLoopGroup-3-7] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-StatusUpdateTask] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-RealtimeConsumer-PeriodManager] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Config-Reload] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Task-Consumer] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Network] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Database] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-System] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Business] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Exception] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-FrontEnd] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Heartbeat] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-ThirdParty] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-thirdParty-alert-task] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-App] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Web] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Transaction] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-SQL] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [cat-Cache] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#3] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#4] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#5] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-DependencyAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-DependencyAnalyzer-9-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-DumpAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-DumpAnalyzer-9-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-TransactionAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-TransactionAnalyzer-9-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-MetricAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-HeartbeatAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-EventAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-EventAnalyzer-9-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-MatrixAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-StateAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-ProblemAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-ProblemAnalyzer-9-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-StorageAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-CrossAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-CrossAnalyzer-9-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-RealtimeConsumer-TopAnalyzer-9-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-0] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-1] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-2] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-3] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-4] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-5] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-6] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-7] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-8] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-9] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-10] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-11] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-12] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-13] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-14] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-15] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-16] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-20] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-19] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-18] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-21] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-22] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-23] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-25] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-26] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-27] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-28] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-31] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-32] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-33] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-35] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-36] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-38] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-37] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-42] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-44] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-46] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-45] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-50] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-54] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-53] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-52] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-57] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-55] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-56] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-61] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-59] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-64] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-60] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-65] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-71] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-69] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-68] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-67] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-72] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-75] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-78] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-81] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-82] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-84] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-85] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-86] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-88] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-90] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-87] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-91] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-92] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-94] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-93] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-97] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-98] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [/cat] appears to have started a thread named [Cat-ModelService-99] but has failed to stop it. This is very likely to create a memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79656a58]) and a value of type [io.netty.util.internal.InternalThreadLocalMap] (value [io.netty.util.internal.InternalThreadLocalMap@7128f5ab]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@6c6eb442]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@380fc3d6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@1302335b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@7579a51c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@7bc89977]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@445fae96]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@6603bc7c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@7f4ba536]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@3f4bbd84]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@5874593]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@73e8b8ba]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@33b7f6c9]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@72ab20a5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@40ec6b73]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@61826c51]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@39956bda]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$1@2009f00c]) and a value of type [com.dianping.cat.message.spi.codec.PlainTextMessageCodec.Context] (value [com.dianping.cat.message.spi.codec.PlainTextMessageCodec$Context@dbd2bf]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@5fe8fa09]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@38779610]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@331d1166]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext$1@5470d85]) and a value of type [org.unidal.webres.resource.runtime.ResourceRuntimeContext] (value [org.unidal.webres.resource.runtime.ResourceRuntimeContext@396159c1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79656a58]) and a value of type [io.netty.util.internal.InternalThreadLocalMap] (value [io.netty.util.internal.InternalThreadLocalMap@264bab55]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@31dd6d17]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@40251a94]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@43f40b72]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@4b1b8c38]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@7d92d70d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@3364d6e3]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@2157eb71]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@132258d1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@33f50b27]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1] (value [org.codehaus.plexus.component.builder.XBeanComponentBuilder$1@2ed3931e]) and a value of type [java.util.LinkedHashSet] (value [[]]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@1caf4817]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.ThreadLocalTransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$ThreadLocalTransactionInfo@65bf1ceb]) and a value of type [org.unidal.dal.jdbc.transaction.DefaultTransactionManager.TransactionInfo] (value [org.unidal.dal.jdbc.transaction.DefaultTransactionManager$TransactionInfo@37a5ecb7]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@53212ee5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@278de706]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@553a4f33]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6725c8fb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@61ae0ba4]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@697e6e15]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6b6d5ace]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5864c17b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3eda9f93]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3228c22]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@511e0dc9]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@c1b30ba]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4d1c098b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6bb6ac39]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@25e5096e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5fce2831]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@57b0da1a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@1bbf0df0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@1c2c15cb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@124ad0e0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6dd72b81]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@49695a7d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@23b3ea32]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@78d48aed]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@49ed0b94]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@69934776]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4438ca20]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6c5e1ddd]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@16facfc0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@2c5d5209]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@22b4e3a0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@11cc2f2d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@742d3c7b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@45ddead3]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6c63e67a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@12b08b2e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4818298]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@52a4cb77]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@412a1c04]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@33956c08]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@16e79bad]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3f9d869a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@7ef00916]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@40e4c475]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6b1dfe9b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@7e36a90d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3694d537]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@653a29df]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4d932364]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@76f8a205]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3d553348]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@2499db6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@7114e3e0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@127cc120]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3c6b255b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@1e61985a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@19594c4b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@359fdced]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@1261671c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@38b868b1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@52e1598e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@48bea424]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5c0a5ccb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@2c5242a2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4c94b069]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@35c9e4c6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@59ca9ec0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@57c7d4e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@30068eb2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@7e8260bf]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@219ddc7c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@2f66222]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@7da4a7b2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@44fdd78f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@755310ab]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@206b86ba]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@735a2df6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@257faca4]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@611f5637]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@505566b1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@16c917ab]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@6c30e73c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@7e9d4ba1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@8d077f8]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@2e743f4d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@51e7f00e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@52415124]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3e363cac]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5ac9601c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5ac4fcd4]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@3ab2f0da]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@39e29651]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4afabd87]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@13b11086]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@4db3d783]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5a0a014f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@46dc17b7]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@1b9913b9]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@5edde4d6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+严重: The web application [/cat] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6e57feeb]) and a value of type [com.dianping.cat.message.internal.DefaultMessageManager.Context] (value [com.dianping.cat.message.internal.DefaultMessageManager$Context@39dace42]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+八月 28, 2015 9:21:01 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-2281"]
+八月 28, 2015 9:21:01 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8109"]
+八月 28, 2015 9:21:01 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-2281"]
+八月 28, 2015 9:21:01 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8109"]
+八月 28, 2015 9:21:02 上午 org.apache.catalina.loader.WebappClassLoader findResourceInternal
+信息: Illegal access: this web application instance has been stopped already.  Could not load META-INF/services/javax.xml.parsers.SAXParserFactory.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+八月 28, 2015 9:21:53 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.62
+八月 28, 2015 9:21:53 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2015 17:14:55 UTC
+八月 28, 2015 9:21:53 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-504.el6.x86_64
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /data/jdk1.7.0_55/jre
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_55-b13
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /opt/cat-server
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /opt/cat-server
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/opt/cat-server/conf/logging.properties
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xms512m
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xmx1024m
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:PermSize=128M
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxNewSize=256m
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxPermSize=512m
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/opt/cat-server/endorsed
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/opt/cat-server
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/opt/cat-server
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/opt/cat-server/temp
+八月 28, 2015 9:21:54 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+八月 28, 2015 9:21:54 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-2281"]
+八月 28, 2015 9:21:54 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8109"]
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 369 ms
+八月 28, 2015 9:21:54 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+八月 28, 2015 9:21:54 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.62
+八月 28, 2015 9:21:54 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /opt/cat-server/webapps/cat.war
+八月 28, 2015 9:21:55 上午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://www.unidal.org/webres is already defined
+八月 28, 2015 9:21:55 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+八月 28, 2015 9:21:57 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 3,746 ms
+八月 28, 2015 9:21:57 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+八月 28, 2015 9:21:57 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+八月 28, 2015 9:21:57 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 3783 ms
+八月 28, 2015 9:32:17 上午 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.

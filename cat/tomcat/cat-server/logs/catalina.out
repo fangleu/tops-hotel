@@ -1,0 +1,4710 @@
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.62
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2015 17:14:55 UTC
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-504.el6.x86_64
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /data/jdk1.7.0_55/jre
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_55-b13
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /opt/cat-server
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /opt/cat-server
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/opt/cat-server/conf/logging.properties
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xms512m
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xmx2048m
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:PermSize=128M
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxNewSize=256m
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxPermSize=512m
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.port=12506
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/opt/cat-server/endorsed
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/opt/cat-server
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/opt/cat-server
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/opt/cat-server/temp
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+十二月 25, 2015 1:03:30 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-2281"]
+十二月 25, 2015 1:03:30 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8109"]
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 352 ms
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.62
+十二月 25, 2015 1:03:30 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /opt/cat-server/webapps/cat.war
+十二月 25, 2015 1:03:32 上午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://www.unidal.org/webres is already defined
+十二月 25, 2015 1:03:32 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Logger file /data/applogs/cat/cat_20151225.log
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+[12-25 01:03:40.040] [WARN] [cat] Cat is lazy initialized!
+java.lang.RuntimeException: Error when initializing modules! Exception: java.lang.RuntimeException: Unable to get component: class com.dianping.cat.report.task.DefaultTaskConsumer.
+十二月 25, 2015 1:05:29 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 119,191 ms
+十二月 25, 2015 1:05:29 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+十二月 25, 2015 1:05:29 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+十二月 25, 2015 1:05:29 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 119232 ms
+Logger file /data/applogs/cat/cat_20151226.log
+Logger file /data/applogs/cat/cat_20151227.log
+[12-27 09:35:52.901] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:36:01.043] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:38:57.510] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:39:01.640] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:39:05.771] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:39:09.954] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:39:21.149] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:39:33.178] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:09.909] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:14.082] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:18.227] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:22.361] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:26.470] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:30.542] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:34.632] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:40:38.730] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:41:14.040] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:41:30.546] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 09:41:38.640] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空[12-27 09:41:38.640] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[12-27 23:55:21.511] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:55:25.520] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:55:29.528] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:55:48.988] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:56:25.584] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:56:29.657] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:56:32.264] [ERROR] [MVC] java.io.IOException: 设备上没有空间
+[12-27 23:56:33.729] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:56:37.859] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:56:57.838] [ERROR] [StandardWrapper] java.io.IOException: 设备上没有空间
+[12-27 23:56:57.972] [ERROR] [JdbcDataSource] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.722] [ERROR] [TopAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.723] [ERROR] [CrossAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.723] [ERROR] [CrossAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.724] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.725] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.725] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.726] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.727] [ERROR] [HeartbeatAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.727] [ERROR] [MatrixAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.728] [ERROR] [AbstractMessageAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.728] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.729] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.730] [ERROR] [StorageAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.730] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.731] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.731] [ERROR] [Period] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.732] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.732] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.732] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.732] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.732] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[12-27 23:57:00.733] [ERROR] [Default[12-27 23:57:00.733] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO] Working directory is /opt/cat-server
+[INFO] War root is /opt/cat-server/webapps/cat
+Logger file /data/applogs/cat/cat_20151229.log
+Logger file /data/applogs/cat/cat_20151230.log
+Logger file /data/applogs/cat/cat_20151231.log
+Logger file /data/applogs/cat/cat_20160101.log
+Logger file /data/applogs/cat/cat_20160102.log
+Logger file /data/applogs/cat/cat_20160103.log
+Logger file /data/applogs/cat/cat_20160104.log
+Logger file /data/applogs/cat/cat_20160105.log
+Logger file /data/applogs/cat/cat_20160106.log
+Logger file /data/applogs/cat/cat_20160107.log
+Logger file /data/applogs/cat/cat_20160108.log
+Logger file /data/applogs/cat/cat_20160109.log
+Logger file /data/applogs/cat/cat_20160110.log
+Logger file /data/applogs/cat/cat_20160111.log
+Logger file /data/applogs/cat/cat_20160112.log
+Logger file /data/applogs/cat/cat_20160113.log
+Logger file /data/applogs/cat/cat_20160114.log
+Logger file /data/applogs/cat/cat_20160115.log
+Logger file /data/applogs/cat/cat_20160116.log
+Logger file /data/applogs/cat/cat_20160117.log
+Logger file /data/applogs/cat/cat_20160118.log
+Logger file /data/applogs/cat/cat_20160119.log
+Logger file /data/applogs/cat/cat_20160120.log
+Logger file /data/applogs/cat/cat_20160121.log
+Logger file /data/applogs/cat/cat_20160122.log
+Logger file /data/applogs/cat/cat_20160123.log
+Logger file /data/applogs/cat/cat_20160124.log
+Logger file /data/applogs/cat/cat_20160125.log
+Logger file /data/applogs/cat/cat_20160126.log
+Logger file /data/applogs/cat/cat_20160127.log
+Logger file /data/applogs/cat/cat_20160128.log
+Logger file /data/applogs/cat/cat_20160129.log
+[01-29 08:57:00.236] [ERROR] [CrossAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.239] [ERROR] [CrossAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.240] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.241] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.242] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.242] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.243] [ERROR] [HeartbeatAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.244] [ERROR] [MatrixAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.244] [ERROR] [AbstractMessageAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.245] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.246] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.247] [ERROR] [StorageAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.247] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.248] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.248] [ERROR] [Period] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.249] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.250] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.250] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.250] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-29 08:57:00.250] [ERROR] [DefaultModuleContext] java.io.IOExcep[01-29 08:57:00.250] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Logger file /data/applogs/cat/cat_20160131.log
+[01-31 03:57:00.723] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.723] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.724] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.725] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.773] [ERROR] [HeartbeatAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.774] [ERROR] [MatrixAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.775] [ERROR] [AbstractMessageAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.776] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.776] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.777] [ERROR] [StorageAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.778] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.779] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.779] [ERROR] [Period] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.780] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 03:57:00.781] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.006] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.007] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.008] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.008] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.008] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.009] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.009] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.009] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.009] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.009] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[01-31 04:03:00.010] [ERROR] [DefaultModuleContext] java.io.IOException: 设备�[01-31 04:03:00.010] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Logger file /data/applogs/cat/cat_20160201.log
+[02-01 03:57:00.807] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.808] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.809] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.809] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.810] [ERROR] [HeartbeatAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.810] [ERROR] [MatrixAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.811] [ERROR] [AbstractMessageAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.812] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.812] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.813] [ERROR] [StorageAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.814] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.815] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.815] [ERROR] [Period] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.818] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.818] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.819] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.820] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 03:57:00.820] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.006] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.008] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.009] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.010] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.010] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.011] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.012] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.013] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.014] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.015] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[02-01 04:03:00.015] [ERROR] [DefaultModuleContext] java.io.IOException: 设备�三月 01, 2016 9:44:50 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+
+
+
+三月 01, 2016 9:44:58 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 8,580 ms
+三月 01, 2016 9:44:58 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+三月 01, 2016 9:44:58 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+三月 01, 2016 9:44:58 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 8637 ms
+Logger file /data/applogs/cat/cat_20160301.log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO] Working directory is /opt/cat-server
+[INFO] War root is /opt/cat-server/webapps/cat
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.62
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2015 17:14:55 UTC
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-504.el6.x86_64
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /data/jdk1.7.0_55/jre
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_55-b13
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /opt/cat-server
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /opt/cat-server
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/opt/cat-server/conf/logging.properties
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xms512m
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xmx2048m
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:PermSize=128M
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxNewSize=256m
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxPermSize=512m
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.port=12506
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/opt/cat-server/endorsed
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/opt/cat-server
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/opt/cat-server
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/opt/cat-server/temp
+三月 01, 2016 5:06:46 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+三月 01, 2016 5:06:46 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-2281"]
+三月 01, 2016 5:06:46 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8109"]
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 355 ms
+三月 01, 2016 5:06:46 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+三月 01, 2016 5:06:46 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.62
+三月 01, 2016 5:06:46 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /opt/cat-server/webapps/cat.war
+三月 01, 2016 5:06:48 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://www.unidal.org/webres is already defined
+三月 01, 2016 5:06:48 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Logger file /data/applogs/cat/cat_20160301.log
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+[03-01 17:06:49.049] [WARN] [cat] Cat is lazy initialized!
+三月 01, 2016 5:06:51 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 4,934 ms
+三月 01, 2016 5:06:51 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+三月 01, 2016 5:06:51 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+三月 01, 2016 5:06:51 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 5009 ms
+[INFO] Working directory is /opt/cat-server
+[INFO] War root is /opt/cat-server/webapps/cat
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:31 CST 2016
+Metric-Data end : Tue Mar 01 17:17:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:32 CST 2016
+Metric-Data end : Tue Mar 01 17:17:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:33 CST 2016
+Metric-Data end : Tue Mar 01 17:17:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:34 CST 2016
+Metric-Data end : Tue Mar 01 17:17:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:35 CST 2016
+Metric-Data end : Tue Mar 01 17:17:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:36 CST 2016
+Metric-Data end : Tue Mar 01 17:17:36 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:36 CST 2016
+Metric-Data end : Tue Mar 01 17:17:36 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:37 CST 2016
+Metric-Data end : Tue Mar 01 17:17:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:38 CST 2016
+Metric-Data end : Tue Mar 01 17:17:38 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:39 CST 2016
+Metric-Data end : Tue Mar 01 17:17:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:40 CST 2016
+Metric-Data end : Tue Mar 01 17:17:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:41 CST 2016
+Metric-Data end : Tue Mar 01 17:17:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:41 CST 2016
+Metric-Data end : Tue Mar 01 17:17:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:41 CST 2016
+Metric-Data end : Tue Mar 01 17:17:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:41 CST 2016
+Metric-Data end : Tue Mar 01 17:17:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:41 CST 2016
+Metric-Data end : Tue Mar 01 17:17:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:41 CST 2016
+Metric-Data end : Tue Mar 01 17:17:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:42 CST 2016
+Metric-Data end : Tue Mar 01 17:17:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:43 CST 2016
+Metric-Data end : Tue Mar 01 17:17:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:44 CST 2016
+Metric-Data end : Tue Mar 01 17:17:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:45 CST 2016
+Metric-Data end : Tue Mar 01 17:17:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:46 CST 2016
+Metric-Data end : Tue Mar 01 17:17:46 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:47 CST 2016
+Metric-Data end : Tue Mar 01 17:17:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:48 CST 2016
+Metric-Data end : Tue Mar 01 17:17:48 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:52 CST 2016
+Metric-Data end : Tue Mar 01 17:17:52 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:54 CST 2016
+Metric-Data end : Tue Mar 01 17:17:54 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:55 CST 2016
+Metric-Data end : Tue Mar 01 17:17:55 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:56 CST 2016
+Metric-Data end : Tue Mar 01 17:17:56 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:17:57 CST 2016
+Metric-Data end : Tue Mar 01 17:17:57 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:18 CST 2016
+Metric-Data end : Tue Mar 01 17:19:18 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:18 CST 2016
+Metric-Data end : Tue Mar 01 17:19:18 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:18 CST 2016
+Metric-Data end : Tue Mar 01 17:19:18 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:18 CST 2016
+Metric-Data end : Tue Mar 01 17:19:18 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:18 CST 2016
+Metric-Data end : Tue Mar 01 17:19:18 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:18 CST 2016
+Metric-Data end : Tue Mar 01 17:19:18 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:19 CST 2016
+Metric-Data end : Tue Mar 01 17:19:19 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:20 CST 2016
+Metric-Data end : Tue Mar 01 17:19:20 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:21 CST 2016
+Metric-Data end : Tue Mar 01 17:19:21 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:23 CST 2016
+Metric-Data end : Tue Mar 01 17:19:23 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:24 CST 2016
+Metric-Data end : Tue Mar 01 17:19:24 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:25 CST 2016
+Metric-Data end : Tue Mar 01 17:19:25 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:26 CST 2016
+Metric-Data end : Tue Mar 01 17:19:26 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:27 CST 2016
+Metric-Data end : Tue Mar 01 17:19:27 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:28 CST 2016
+Metric-Data end : Tue Mar 01 17:19:28 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:30 CST 2016
+Metric-Data end : Tue Mar 01 17:19:30 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:31 CST 2016
+Metric-Data end : Tue Mar 01 17:19:31 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:32 CST 2016
+Metric-Data end : Tue Mar 01 17:19:32 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:33 CST 2016
+Metric-Data end : Tue Mar 01 17:19:33 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:34 CST 2016
+Metric-Data end : Tue Mar 01 17:19:34 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:35 CST 2016
+Metric-Data end : Tue Mar 01 17:19:35 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:37 CST 2016
+Metric-Data end : Tue Mar 01 17:19:37 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:39 CST 2016
+Metric-Data end : Tue Mar 01 17:19:39 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:40 CST 2016
+Metric-Data end : Tue Mar 01 17:19:40 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:41 CST 2016
+Metric-Data end : Tue Mar 01 17:19:41 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:42 CST 2016
+Metric-Data end : Tue Mar 01 17:19:42 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:43 CST 2016
+Metric-Data end : Tue Mar 01 17:19:43 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:44 CST 2016
+Metric-Data end : Tue Mar 01 17:19:44 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:45 CST 2016
+Metric-Data end : Tue Mar 01 17:19:45 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:47 CST 2016
+Metric-Data end : Tue Mar 01 17:19:47 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:50 CST 2016
+Metric-Data end : Tue Mar 01 17:19:50 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:51 CST 2016
+Metric-Data end : Tue Mar 01 17:19:51 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:51 CST 2016
+Metric-Data end : Tue Mar 01 17:19:51 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+Metric-Data start : Tue Mar 01 17:19:51 CST 2016
+Metric-Data end : Tue Mar 01 17:19:51 CST 2016
+ values.size : 4
+d :  1440
+d :  1440
+d :  1440
+d :  1440
+[03-01 20:57:00.294] [ERROR] [CrossAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.296] [ERROR] [CrossAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.297] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.298] [ERROR] [DependencyAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.299] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.300] [ERROR] [EventAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.300] [ERROR] [HeartbeatAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.301] [ERROR] [MatrixAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.302] [ERROR] [AbstractMessageAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.303] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.304] [ERROR] [ProblemAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.305] [ERROR] [StorageAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.306] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.307] [ERROR] [TransactionAnalyzer] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.307] [ERROR] [Period] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.307] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io.IOException: 设备上没有空间
+[03-01 20:57:00.308] [ERROR] [DefaultModuleContext] java.io

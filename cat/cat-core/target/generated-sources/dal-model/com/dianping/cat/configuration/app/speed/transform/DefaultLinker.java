@@ -1,0 +1,38 @@
+package com.dianping.cat.configuration.app.speed.transform;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.dianping.cat.configuration.app.speed.entity.AppSpeedConfig;
+import com.dianping.cat.configuration.app.speed.entity.Speed;
+
+public class DefaultLinker implements ILinker {
+   private boolean m_deferrable;
+
+   private List<Runnable> m_deferedJobs = new ArrayList<Runnable>();
+
+   public DefaultLinker(boolean deferrable) {
+      m_deferrable = deferrable;
+   }
+
+   public void finish() {
+      for (Runnable job : m_deferedJobs) {
+         job.run();
+      }
+   }
+
+   @Override
+   public boolean onSpeed(final AppSpeedConfig parent, final Speed speed) {
+      if (m_deferrable) {
+         m_deferedJobs.add(new Runnable() {
+            @Override
+            public void run() {
+               parent.addSpeed(speed);
+            }
+         });
+      } else {
+         parent.addSpeed(speed);
+      }
+
+      return true;
+   }
+}

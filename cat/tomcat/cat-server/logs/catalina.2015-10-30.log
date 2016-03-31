@@ -1,0 +1,240 @@
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.62
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2015 17:14:55 UTC
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-504.el6.x86_64
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /data/jdk1.7.0_55/jre
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_55-b13
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /opt/cat-server
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /opt/cat-server
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/opt/cat-server/conf/logging.properties
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xms512m
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xmx2048m
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:PermSize=128M
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxNewSize=256m
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxPermSize=512m
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.port=12506
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/opt/cat-server/endorsed
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/opt/cat-server
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/opt/cat-server
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/opt/cat-server/temp
+十月 30, 2015 3:49:54 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+十月 30, 2015 3:49:54 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-2281"]
+十月 30, 2015 3:49:54 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8109"]
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 370 ms
+十月 30, 2015 3:49:54 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 30, 2015 3:49:54 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.62
+十月 30, 2015 3:49:54 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /opt/cat-server/webapps/cat.war
+十月 30, 2015 3:49:56 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://www.unidal.org/webres is already defined
+十月 30, 2015 3:49:56 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 30, 2015 3:49:56 下午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more Filters failed to start. Full details will be found in the appropriate container log file
+十月 30, 2015 3:49:56 下午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [/cat] startup failed due to previous errors
+十月 30, 2015 3:49:56 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 2,395 ms
+十月 30, 2015 3:49:56 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+十月 30, 2015 3:49:56 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+十月 30, 2015 3:49:56 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 2432 ms
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.62
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2015 17:14:55 UTC
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-504.el6.x86_64
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /data/jdk1.7.0_55/jre
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_55-b13
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /opt/cat-server
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /opt/cat-server
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/opt/cat-server/conf/logging.properties
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xms512m
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xmx2048m
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:PermSize=128M
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxNewSize=256m
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxPermSize=512m
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.port=12506
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/opt/cat-server/endorsed
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/opt/cat-server
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/opt/cat-server
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/opt/cat-server/temp
+十月 30, 2015 4:01:22 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+十月 30, 2015 4:01:22 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-2281"]
+十月 30, 2015 4:01:22 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8109"]
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 353 ms
+十月 30, 2015 4:01:22 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 30, 2015 4:01:22 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.62
+十月 30, 2015 4:01:22 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /opt/cat-server/webapps/cat.war
+十月 30, 2015 4:01:25 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://www.unidal.org/webres is already defined
+十月 30, 2015 4:01:25 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 30, 2015 4:01:35 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [10,472] milliseconds.
+十月 30, 2015 4:01:41 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 18,459 ms
+十月 30, 2015 4:01:41 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+十月 30, 2015 4:01:41 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+十月 30, 2015 4:01:41 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 18515 ms
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.62
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2015 17:14:55 UTC
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.62.0
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-504.el6.x86_64
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /data/jdk1.7.0_55/jre
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_55-b13
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /opt/cat-server
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /opt/cat-server
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/opt/cat-server/conf/logging.properties
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xms512m
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Xmx2048m
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:PermSize=128M
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxNewSize=256m
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -XX:MaxPermSize=512m
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.port=12506
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/opt/cat-server/endorsed
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/opt/cat-server
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/opt/cat-server
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/opt/cat-server/temp
+十月 30, 2015 4:47:37 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+十月 30, 2015 4:47:37 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-2281"]
+十月 30, 2015 4:47:37 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8109"]
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 354 ms
+十月 30, 2015 4:47:37 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+十月 30, 2015 4:47:37 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.62
+十月 30, 2015 4:47:37 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /opt/cat-server/webapps/cat.war
+十月 30, 2015 4:47:39 下午 org.apache.catalina.startup.TaglibUriRule body
+信息: TLD skipped. URI: http://www.unidal.org/webres is already defined
+十月 30, 2015 4:47:39 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+十月 30, 2015 4:47:45 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /opt/cat-server/webapps/cat.war has finished in 7,912 ms
+十月 30, 2015 4:47:45 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-2281"]
+十月 30, 2015 4:47:45 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8109"]
+十月 30, 2015 4:47:45 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 7992 ms
