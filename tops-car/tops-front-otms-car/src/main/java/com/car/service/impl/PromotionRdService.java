@@ -2,6 +2,8 @@ package com.car.service.impl;
 
 import java.io.Serializable;
 
+import org.springframework.stereotype.Service;
+
 import com.car.bean.PromotionRecord;
 import com.car.common.dao.BaseServiceImpl;
 import com.car.service.IPromotionRdService;

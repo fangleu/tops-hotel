@@ -27,8 +27,8 @@ public class PromotionController {
 	@Autowired
 	private IPromotionService promotionService;
 	
-	@Autowired
-	private IPromotionRdService promotionRdService;
+//	@Autowired
+//	private IPromotionRdService promotionRdService;
 	
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
@@ -63,7 +63,7 @@ public class PromotionController {
 		System.out.println("userID " + result.getUserid());
 		
 		PromotionRecord promotionRecord = new PromotionRecord();
-		promotionRdService.save(promotionRecord);
+//		promotionRdService.save(promotionRecord);
 		
 		System.out.println(promotion);
 		
