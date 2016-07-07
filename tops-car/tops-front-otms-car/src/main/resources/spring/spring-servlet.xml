@@ -26,6 +26,7 @@
         <property name="packagesToScan" value="com.car.bean"></property>
         <property name="hibernateProperties">
             <props>
+            <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
                 <prop key="hibernate.hbm2ddl.auto">false</prop>
                 <prop key="hibernate.show_sql">true</prop>
             </props>
@@ -39,7 +40,6 @@
         <property name="url">
             <value><![CDATA[jdbc:mysql://127.0.0.1:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
         </property>
-        
         <property name="username" value="root" />
         <property name="password" value="" />
     </bean>
