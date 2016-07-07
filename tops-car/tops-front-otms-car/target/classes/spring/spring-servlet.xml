@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/mvc  
+    	http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+    	http://www.springframework.org/schema/tx 
+    	http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+    	http://www.springframework.org/schema/aop 
+    	http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+    	http://www.springframework.org/schema/task 
+    	http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	<context:annotation-config />
+	
+	<bean id="sessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="com.car.bean"></property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">false</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="url">
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
+        </property>
+        
+        <property name="username" value="root" />
+        <property name="password" value="" />
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+	
+	<!-- 配置事务异常封装 -->
+    <bean id="persistenceExceptionTranslationPostProcessor"
+        class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+ 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+	    <tx:attributes>
+	    <tx:method name="save*" propagation="REQUIRED"/>
+	    <tx:method name="add*" propagation="REQUIRED"/>
+	    <tx:method name="delete*" propagation="REQUIRED"/>
+	    <tx:method name="update*" propagation="REQUIRED"/>
+	    <tx:method name="get*" read-only="true" propagation="NOT_SUPPORTED"/>
+	    <tx:method name="*" read-only="true"/>
+	    </tx:attributes>
+    </tx:advice>
+
+<!-- 那些类的哪些方法参与事务 -->
+    <aop:config>
+	    <aop:pointcut id="allServiceMethod" expression="execution(* com.car.service.*.*(..))"/>
+	    <aop:advisor pointcut-ref="allServiceMethod" advice-ref="txAdvice"/>
+    </aop:config> 
+	
+	
+	<task:executor id="executor" pool-size="5" />
+	<task:scheduler id="scheduler" pool-size="10" />
+	<task:annotation-driven executor="executor" scheduler="scheduler" />
+	<bean id="schedulerTask" class="com.car.util.SchedulerTask"/>
+	<bean id="refreshAccessToken" class="com.car.util.RefreshAccessToken"/>
+	
+	
+	
+	<context:property-placeholder location="classpath:config.properties"/>
+
+	<context:component-scan base-package="com.car.bean" />
+	<context:component-scan base-package="com.car.controller" />
+	<context:component-scan base-package="com.car.interceptor" />
+	<context:component-scan base-package="com.car.dao.impl" />
+	<context:component-scan base-package="com.car.service.impl" />
+    <mvc:interceptors>  
+        <mvc:interceptor>  
+            <mvc:mapping path="/**" />  
+            <bean class="com.car.interceptor.OAuth2Interceptor"/>  
+        </mvc:interceptor>  
+    </mvc:interceptors>  
+    
+	
+</beans>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 15:25:28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.bean.Navigation" table="navigation" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50">
+                <comment>&#181;&#234;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="100">
+                <comment>&#179;&#199;&#202;&#208;</comment>
+            </column>
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="100">
+                <comment>&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="preSales" type="string">
+            <column name="pre_sales" length="20">
+                <comment>&#202;&#219;&#199;&#176;&#200;&#200;&#207;&#223;</comment>
+            </column>
+        </property>
+        <property name="afterSales" type="string">
+            <column name="after_sales" length="20">
+                <comment>&#202;&#219;&#186;&#243;&#200;&#200;&#207;&#223;</comment>
+            </column>
+        </property>
+        <property name="longitude" type="java.lang.Float">
+            <column name="longitude" precision="10" scale="0">
+                <comment>&#190;&#173;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="latitude" type="java.lang.Float">
+            <column name="latitude" precision="10" scale="0">
+                <comment>&#206;&#179;&#182;&#200;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

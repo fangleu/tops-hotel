@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 15:25:28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.bean.TestDriveRecord" table="test_drive_record" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="modelsId" type="java.lang.Integer">
+            <column name="models_id" />
+        </property>
+        <property name="customId" type="java.lang.Integer">
+            <column name="custom_id" />
+        </property>
+        <property name="frequency" type="java.lang.Integer">
+            <column name="frequency">
+                <comment>&#180;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="models" type="string">
+            <column name="models" length="50">
+                <comment>&#179;&#181;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="isCommit" type="java.lang.Integer">
+            <column name="is_commit">
+                <comment>&#202;&#199;&#183;&#241;&#204;&#225;&#189;&#187;</comment>
+            </column>
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" length="500">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="salesStaff" type="string">
+            <column name="sales_staff" length="20">
+                <comment>&#207;&#250;&#202;&#219;&#200;&#203;&#212;&#177;</comment>
+            </column>
+        </property>
+        <property name="commitTime" type="timestamp">
+            <column name="commit_time" length="19">
+                <comment>&#204;&#225;&#189;&#187;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="timeToShop" type="timestamp">
+            <column name="time_to_shop" length="19">
+                <comment>&#181;&#189;&#181;&#234;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="shopName" type="string">
+            <column name="shop_name">
+                <comment>4s&#181;&#234;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

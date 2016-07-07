@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 15:25:28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.bean.Level" table="level" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="shopName" type="string">
+            <column name="shop_name" length="20">
+                <comment>4s&#181;&#234;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="level" type="java.lang.Integer">
+            <column name="level">
+                <comment>&#188;&#182;&#177;&#240;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 16:26:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.beans.Promotion" table="promotion" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="40">
+                <comment>&#177;&#234;&#204;&#226;</comment>
+            </column>
+        </property>
+        <property name="startTime" type="timestamp">
+            <column name="start_time" length="19" />
+        </property>
+        <property name="endTime" type="timestamp">
+            <column name="end_time" length="19">
+                <comment>&#180;&#217;&#207;&#250;&#189;&#225;&#202;&#248;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="detail" type="string">
+            <column name="detail" length="2000">
+                <comment>&#187;&#238;&#182;&#175;&#207;&#234;&#199;&#233;</comment>
+            </column>
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="500">
+                <comment>&#187;&#238;&#182;&#175;&#205;&#188;&#198;&#172;</comment>
+            </column>
+        </property>
+        <property name="models" type="string">
+            <column name="models" length="50">
+                <comment>&#179;&#181;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

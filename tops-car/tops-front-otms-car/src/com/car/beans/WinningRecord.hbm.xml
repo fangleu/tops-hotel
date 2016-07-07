@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 16:26:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.beans.WinningRecord" table="winning_record" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="activityId" type="java.lang.Integer">
+            <column name="activity_id">
+                <comment>&#187;&#238;&#182;&#175;ID</comment>
+            </column>
+        </property>
+        <property name="customId" type="java.lang.Integer">
+            <column name="custom_id">
+                <comment>&#191;&#205;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="awardStatus" type="java.lang.Integer">
+            <column name="award_status">
+                <comment>&#193;&#236;&#189;&#177;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="winningGrade" type="java.lang.Integer">
+            <column name="winning_grade">
+                <comment>&#187;&#241;&#189;&#177;&#181;&#200;&#188;&#182;</comment>
+            </column>
+        </property>
+        <property name="useStatus" type="java.lang.Integer">
+            <column name="use_status">
+                <comment>&#202;&#185;&#211;&#195;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19">
+                <comment>&#187;&#241;&#189;&#177;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

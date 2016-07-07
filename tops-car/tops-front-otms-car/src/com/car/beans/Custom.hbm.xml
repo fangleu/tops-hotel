@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 16:26:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.beans.Custom" table="custom" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="20">
+                <comment>&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="sex" type="java.lang.Integer">
+            <column name="sex" />
+        </property>
+        <property name="wechatId" type="string">
+            <column name="wechat_id" length="50">
+                <comment>&#206;&#162;&#208;&#197;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="phone" type="java.lang.Integer">
+            <column name="phone">
+                <comment>&#202;&#214;&#187;&#250;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="100">
+                <comment>&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="models" type="string">
+            <column name="models" length="50">
+                <comment>&#179;&#181;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="datePurchase" type="timestamp">
+            <column name="date_purchase" length="19">
+                <comment>&#185;&#186;&#179;&#181;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="plateNumber" type="string">
+            <column name="plate_number" length="30" />
+        </property>
+        <property name="brand" type="string">
+            <column name="brand" length="100" />
+        </property>
+        <property name="levelId" type="java.lang.Integer">
+            <column name="level_id" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

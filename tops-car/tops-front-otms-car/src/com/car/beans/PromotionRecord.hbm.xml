@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 16:26:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.beans.PromotionRecord" table="promotion_record" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="promotionId" type="java.lang.Integer">
+            <column name="promotion_id">
+                <comment>&#180;&#217;&#207;&#250;ID</comment>
+            </column>
+        </property>
+        <property name="customId" type="java.lang.Integer">
+            <column name="custom_id">
+                <comment>&#191;&#205;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="frequency" type="java.lang.Integer">
+            <column name="frequency">
+                <comment>&#180;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="stopbyTime" type="java.lang.Integer">
+            <column name="stopby_time">
+                <comment>&#228;&#175;&#192;&#192;&#202;&#177;&#179;&#164;</comment>
+            </column>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19">
+                <comment>&#228;&#175;&#192;&#192;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

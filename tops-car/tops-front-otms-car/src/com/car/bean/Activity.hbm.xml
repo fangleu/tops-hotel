@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-30 15:25:28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.car.bean.Activity" table="activity" catalog="car">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="20">
+                <comment>&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="startTime" type="timestamp">
+            <column name="start_time" length="19">
+                <comment>&#191;&#170;&#202;&#188;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="endTime" type="timestamp">
+            <column name="end_time" length="19">
+                <comment>&#189;&#225;&#202;&#248;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="detail" type="string">
+            <column name="detail" length="2000">
+                <comment>&#187;&#238;&#182;&#175;&#207;&#234;&#199;&#233;</comment>
+            </column>
+        </property>
+        <property name="prizeSetting" type="string">
+            <column name="prize_setting" length="1000">
+                <comment>&#189;&#177;&#198;&#183;&#201;&#232;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="probaility" type="java.lang.Float">
+            <column name="probaility" precision="5">
+                <comment>&#187;&#241;&#189;&#177;&#184;&#197;&#194;&#202;</comment>
+            </column>
+        </property>
+        <property name="activityType" type="string">
+            <column name="activity_type" length="20">
+                <comment>&#187;&#238;&#182;&#175;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="failureTime" type="timestamp">
+            <column name="failure_time" length="19">
+                <comment>&#189;&#177;&#198;&#183;&#202;&#167;&#208;&#167;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="createTime" type="timestamp">
+            <column name="create_time" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
