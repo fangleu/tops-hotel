@@ -21,20 +21,44 @@ public class AfterSalesRecord implements Serializable{
 	
 	private Long userId;
 	
+	/**
+	 * 车型
+	 */
 	private String models;
 	
+	/**
+	 * 售后类型（保养，维修）
+	 */
 	private Long type;
 	
+	/**
+	 * 预约时间
+	 */
 	private Date TimeOfAppointment;
 	
+	/**
+	 * 到店时间
+	 */
 	private Date timeToShop;
 	
+	/**
+	 * 备注
+	 */
 	private String remarks;
 	
+	/**
+	 * 销售人员
+	 */
 	private String salesStaff;
 	
+	/**
+	 * 4s 店
+	 */
 	private String shopName;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 
 

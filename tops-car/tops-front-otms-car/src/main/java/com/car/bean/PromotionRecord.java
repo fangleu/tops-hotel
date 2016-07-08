@@ -19,14 +19,29 @@ public class PromotionRecord implements Serializable{
 	
 	private Long id;  
 	
+	/**
+	 * 促销 ID
+	 */
 	private Long promotionId;
 	
+	/**
+	 * 客户 ID
+	 */
 	private Long customId;
 	
+	/**
+	 * 次数
+	 */
 	private Long frequency;
 	
+	/**
+	 * 浏览时长
+	 */
 	private Date stopbyTime;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 
 

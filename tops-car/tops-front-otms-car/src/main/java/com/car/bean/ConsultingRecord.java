@@ -19,20 +19,44 @@ public class ConsultingRecord implements Serializable{
 	
 	private Long id; 
 	
+	/**
+	 * 车型ID
+	 */
 	private Long modelsId;
 	
+	/**
+	 * 客户ID
+	 */
 	private Long customId;
 	
+	/**
+	 * 次数
+	 */
 	private Long frequency;
 	
+	/**
+	 * 车型
+	 */
 	private Long models;
 	
+	/**
+	 * 是否提交
+	 */
 	private Long commit;
 	
+	/**
+	 * 销售人员
+	 */
 	private String salesStaff;
 	
+	/**
+	 * 4s 店
+	 */
 	private String shopName;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 	
 

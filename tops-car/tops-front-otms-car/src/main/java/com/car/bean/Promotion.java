@@ -21,24 +21,59 @@ public class Promotion  implements Serializable{
 	
 	private Long id;
 	
+	/**
+	 * 标题
+	 */
 	private String title;
 	
+	/**
+	 * 促销开始时间
+	 */
 	private Date startTime;
 	
+	/**
+	 * 促销结束时间
+	 */
 	private Date endTime;
 	
+	/**
+	 * 发布时间 （创建时间）
+	 */
 	private Date CreateTime;
 	
+	/**
+	 * 文章类型
+	 * 0. 企业动态
+	 * 1. 车型促销
+	 * 2. 到店优惠
+	 * 3. 车主福利
+	 * 4. 其他活动
+	 */
 	private Long type;
 	
+	/**
+	 * 焦点图
+	 */
 	private String focus;
 	
+	/**
+	 * 文章简述
+	 */
 	private String sketch;
 	
+	/**
+	 * 正文内容
+	 */
 	private String detail;
 	
+	/**
+	 * 图片地址
+	 */
 	private String image;
 	
+	/**
+	 * 车型 ID
+	 */
 	private int modelsId;
 
 	

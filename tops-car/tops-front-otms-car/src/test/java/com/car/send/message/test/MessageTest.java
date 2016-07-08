@@ -26,7 +26,7 @@ public class MessageTest {
 //			     + "&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect", 
 //		"http://cnews.chinadaily.com.cn/img/attachement/png/site1/20160629/d8cb8a14fb9018dd3ddb08.png", "0");
 		
-		weChat.sendWeChatMsg("news", "LouFangLei", "0", "", "", "", "车型推荐", "废物如其人", 
+		weChat.sendWeChatMsg("news", "13503478425", "0", "", "", "", "车型推荐", "废物如其人", 
 				"https://qy.weixin.qq.com/cgi-bin/loginpage?corp_id=wxfdfd1b46c655aacf&redirect_uri="
 				+ "http://fangleu.ngrok.cc/tops-front-otms-car/check/value", 
 		"http://cnews.chinadaily.com.cn/img/attachement/png/site1/20160629/d8cb8a14fb9018dd3ddb08.png", "0");

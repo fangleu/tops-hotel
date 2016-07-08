@@ -19,18 +19,39 @@ public class Models implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 品牌
+	 */
 	private String brand;
 	
+	/**
+	 * 车型
+	 */
 	private String models;
 	
+	/**
+	 * 图片地址
+	 */
 	private String image;
 	
+	/**
+	 * 官方指导价
+	 */
 	private String officialPrice;
 	
+	/**
+	 * 文章
+	 */
 	private String sketch;
 	
+	/**
+	 * 官方 URL
+	 */
 	private String link;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createTime;
 
 	

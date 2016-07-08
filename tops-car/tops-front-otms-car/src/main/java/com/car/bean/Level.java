@@ -18,8 +18,21 @@ public class Level implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 姓名
+	 */
 	private String shopName;
 	
+	/**
+	 * 不同级别
+	 * 0：最新关注（潜客）
+	 * 1：看过车型信息 （潜客）
+	 * 2：看过促销信息
+	 * 3：看过到店地址
+	 * 4：看过预约
+	 * 5：增加，删除，修改 （操作）
+	 * 6：保存并发布 （操作）
+	 */
 	private Long level;
 
 	

@@ -19,14 +19,29 @@ public class InternalActivity implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 客户ID
+	 */
 	private Long customId;
 	
+	/**
+	 * 活动ID
+	 */
 	private Long ActivityId;
 	
+	/**
+	 * 浏览时间
+	 */
 	private Date stopbyTime;
 	
+	/**
+	 * 次数
+	 */
 	private Long frequency;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 
 	

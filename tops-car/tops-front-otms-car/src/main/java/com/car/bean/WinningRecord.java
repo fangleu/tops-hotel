@@ -19,16 +19,34 @@ public class WinningRecord implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 活动 ID
+	 */
 	private Long activityId;
 	
+	/**
+	 * 客户 ID
+	 */
 	private Long customId;
 	
+	/**
+	 * 领奖状态
+	 */
 	private String awardStatus;
 	
+	/**
+	 * 获奖等级
+	 */
 	private String winningGrade;
 	
+	/**
+	 * 是否使用
+	 */
 	private String useStatus;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 
 	

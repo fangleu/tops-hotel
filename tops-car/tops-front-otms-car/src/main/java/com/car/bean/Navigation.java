@@ -18,18 +18,39 @@ public class Navigation implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 店名
+	 */
 	private String name;
 	
+	/**
+	 * 城市
+	 */
 	private String city;
 	
+	/**
+	 * 地址
+	 */
 	private String address;
 	
+	/**
+	 * 售前热钱
+	 */
 	private String preSales;
 	
+	/**
+	 * 售后热线
+	 */
 	private String afterSales;
 	
+	/**
+	 * 经度
+	 */
 	private String longitude;
 	
+	/**
+	 * 维度
+	 */
 	private String latitude;
 
 	

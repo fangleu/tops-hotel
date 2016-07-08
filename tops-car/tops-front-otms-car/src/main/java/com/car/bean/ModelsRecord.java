@@ -19,14 +19,29 @@ public class ModelsRecord implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 车型 ID
+	 */
 	private Long modelsId;
 	
+	/**
+	 * 客户 ID
+	 */
 	private Long customId;
 	
+	/**
+	 * 次数
+	 */
 	private Long frequency;
 	
+	/**
+	 * 浏览时长
+	 */
 	private Date stopbyTime;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 
 	

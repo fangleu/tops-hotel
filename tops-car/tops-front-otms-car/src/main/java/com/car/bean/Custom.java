@@ -16,26 +16,59 @@ public class Custom implements Serializable{
 	
 	private Long id;  
 	
+	/**
+	 * 姓名
+	 */
 	private String name;
 	
+	/**
+	 * 性别
+	 */
 	private Long sex;
 	
+	/**
+	 * 微信号
+	 */
 	private String wechatId;
 	
+	/**
+	 * 手机号
+	 */
 	private String phone;
 	
+	/**
+	 * 地址
+	 */
 	private String address;
 	
+	/**
+	 * 车型
+	 */
 	private String models;
 	
+	/**
+	 * 购车日期
+	 */
 	private String datePurchase;
 	
+	/**
+	 * 车牌号
+	 */
 	private String plateNumber;
 	
+	/**
+	 * 品牌
+	 */
 	private String brand;
 	
+	/**
+	 * 级别ID
+	 */
 	private Long levelId;
 	
+	/**
+	 * 创建日期
+	 */
 	private Date createDate;
 
 

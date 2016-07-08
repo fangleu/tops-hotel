@@ -19,26 +19,59 @@ public class TestRecord implements Serializable{
 	
 	private Long id;  
 
+	/**
+	 * 车型 ID
+	 */
 	private Long modelsId;
 	
+	/**
+	 * 客户 ID
+	 */
 	private Long customId;
 	
+	/**
+	 * 次数
+	 */
 	private Long frequency;
 	
+	/**
+	 * 车型
+	 */
 	private String models;
 	
+	/**
+	 * 是否提交
+	 */
 	private Long isCommit;
 	
+	/**
+	 * 备注
+	 */
 	private String remarks;
 	
+	/**
+	 * 销售人员
+	 */
 	private String salesStaff;
 	
+	/**
+	 * 提交时间
+	 */
 	private Date commitTime;
 	
+	/**
+	 * 到店时间
+	 */
 	private Date timeToShop;
 	
+	/**
+	 * 4s 店
+	 */
 	private String shopName;
 	
+	/**
+	 * 创建时间
+	 */
 	private Date createDate;
 	
 

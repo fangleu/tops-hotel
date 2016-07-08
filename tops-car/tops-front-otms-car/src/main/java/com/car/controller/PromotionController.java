@@ -62,7 +62,7 @@ public class PromotionController {
 		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
 		System.out.println("userID " + result.getUserid());
 		
-		PromotionRecord promotionRecord = new PromotionRecord();
+		//PromotionRecord promotionRecord = new PromotionRecord();
 //		promotionRdService.save(promotionRecord);
 		
 		System.out.println(promotion);
