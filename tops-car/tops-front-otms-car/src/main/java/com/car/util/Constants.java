@@ -23,7 +23,17 @@ public class Constants {
     
     public static final String CREATE_USER_URL = "https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=";
     
+    
+    /**
+     * 本机推送的url
+     */
+    public static final String WEIXIN_SEND_URL =  "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + CORP_ID + 
+	"&redirect_uri=http://fangleu.ngrok.cc/tops-front-otms-car/promotion/getPromotionDetail";
+    
     // 发消息URL
     public final static String CREATE_SESSION_URL = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=";
+    
+    
+    
     
 }  

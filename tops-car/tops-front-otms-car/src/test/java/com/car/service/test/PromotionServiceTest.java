@@ -41,7 +41,7 @@ public class PromotionServiceTest {
 	@Test
 	public void TestList(){
 		
-		PageResults<Promotion> list = promotionService.getPromotionList(1, 10);
+		PageResults<Promotion> list = promotionService.getPromotionList(1, 10,null);
 		
 		System.out.println(list.getTotalCount());
 		

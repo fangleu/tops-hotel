@@ -84,7 +84,7 @@ public class ModelsRecord implements Serializable{
 		this.customId = customId;
 	}
 
-	@Column(name="stopby_id")
+	@Column(name="stopby_time")
 	public Date getStopbyTime() {
 		return stopbyTime;
 	}
@@ -93,7 +93,7 @@ public class ModelsRecord implements Serializable{
 		this.stopbyTime = stopbyTime;
 	}
 
-	@Column(name="create_date")
+	@Column(name="create_time")
 	public Date getCreateDate() {
 		return createDate;
 	}
