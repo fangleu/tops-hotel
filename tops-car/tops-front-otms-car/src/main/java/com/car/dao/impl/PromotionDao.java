@@ -18,7 +18,6 @@ public class PromotionDao extends BaseDaoImpl<Promotion, Serializable> implement
 	public PageResults<Promotion> getPromotionList(int pageNo, int pageSize) {
 		
 		String sql = "select * from promotion p order by p.create_time desc";
-//		String sql = "select * from promotion";
 		Object[] object = null;
 		PageResults<Promotion> results = super.findPageByFetchedHql(sql , Promotion.class,null,pageNo, pageSize, object);
 		

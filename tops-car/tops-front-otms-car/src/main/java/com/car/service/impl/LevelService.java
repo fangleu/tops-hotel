@@ -9,7 +9,6 @@ import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.car.bean.Custom;
 import com.car.bean.Level;
 import com.car.common.dao.BaseServiceImpl;
 import com.car.common.dao.IBaseDao;
@@ -17,7 +16,7 @@ import com.car.dao.ILevelDao;
 import com.car.service.ILevelService;
 
 @Service
-public class LevelServiceImpl extends BaseServiceImpl<Level, Serializable> implements ILevelService{
+public class LevelService extends BaseServiceImpl<Level, Serializable> implements ILevelService{
 	
 	@Autowired
 	private ILevelDao dao;
