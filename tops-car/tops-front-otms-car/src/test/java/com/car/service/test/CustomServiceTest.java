@@ -2,6 +2,8 @@ package com.car.service.test;
 
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.car.bean.Custom;
+import com.car.dao.ICustomDao;
 import com.car.service.ICustomService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -18,6 +21,9 @@ public class CustomServiceTest {
 	
 	@Autowired
 	private ICustomService service;
+	
+	@Autowired
+	private ICustomDao dao;
 	
 	
 	@Test
@@ -47,6 +53,14 @@ public class CustomServiceTest {
 		Custom custom = service.findCustomByPhone("15800795127");
 		
 		System.out.println("ss " + custom.getId());
+		
+		Set<String> customId = new HashSet<>();
+		
+		customId.add("11");
+		customId.add("10");
+		
+		dao.getCustom(customId);
+		
 		
 	}
 	

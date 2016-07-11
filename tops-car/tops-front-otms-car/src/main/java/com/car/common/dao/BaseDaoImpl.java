@@ -9,11 +9,9 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.hibernate.Query;
-import org.hibernate.SQLQuery;
 import org.hibernate.ScrollableResults;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
  
 /**

@@ -8,11 +8,13 @@ import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * 企业号给关注的用户主动发送推送消息
 */
 
+@Service
 public class SendWeChatMessage {
 	
 	Logger log = Logger.getLogger(SendWeChatMessage.class);

@@ -32,6 +32,7 @@ public class Level implements Serializable{
 	 * 4：看过预约
 	 * 5：增加，删除，修改 （操作）
 	 * 6：保存并发布 （操作）
+	 * 7:4s人员
 	 */
 	private Long level;
 

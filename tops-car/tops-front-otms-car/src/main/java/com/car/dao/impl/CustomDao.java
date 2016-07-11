@@ -1,6 +1,9 @@
 package com.car.dao.impl;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -80,6 +83,34 @@ public class CustomDao extends BaseDaoImpl<Custom, Serializable> implements ICus
 		sql.append(" where c.phone = " + "'" + custom.getPhone() + "'");
 		return sql.toString();
 		
+	}
+
+	@Override
+	public List<String> getCustom(Set<String> customId) {
+		List<String> result = new ArrayList<>();
+		StringBuffer parm = new StringBuffer();
+		List<String> listCustom = new ArrayList<String>(customId);
+		for(int i =0; i < listCustom.size(); i++){
+			if(i == 0) parm.append(listCustom.get(i));
+			else parm.append(","+listCustom.get(i));
+		}
+		String sql = "select * from custom where id in (" + parm + ")";
+		Object[] object = null;
+		List<Custom> list = super.getListBySQL(sql, Custom.class, object);
+		System.out.println("CustomDao " + list.size());
+		for(Custom custom : list){
+			result.add(custom.getWechatId());
+		}
+		
+		return result;
+	}
+
+	@Override
+	public List<Custom> getCustom(Long levelId) {
+		String sql = "select * from custom c where c.level_id=?";
+		Object[] object = {levelId};
+		List<Custom> list = super.getListBySQL(sql, Custom.class, object);
+		return list;
 	}
 	
 

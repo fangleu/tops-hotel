@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.car.bean.Promotion;
-import com.car.bean.PromotionRecord;
 import com.car.common.dao.PageResults;
 import com.car.service.IPromotionRdService;
 import com.car.service.IPromotionService;
@@ -27,8 +26,8 @@ public class PromotionController {
 	@Autowired
 	private IPromotionService promotionService;
 	
-//	@Autowired
-//	private IPromotionRdService promotionRdService;
+	@Autowired
+	private IPromotionRdService promotionRdService;
 	
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
@@ -45,8 +44,8 @@ public class PromotionController {
 	
 	@RequestMapping(value = {"/getPromotion"})
 	public String getPromotion(int pageNo, int pageSize) {
-		
-		PageResults<Promotion> list = promotionService.getPromotionList(pageNo, pageSize);
+		Long type = 0L;
+		PageResults<Promotion> list = promotionService.getPromotionList(pageNo, pageSize, type);
 		System.out.println(list.getResults().size());
 		return null;
 		

@@ -26,9 +26,9 @@ public class PromotionService extends BaseServiceImpl<Promotion, Serializable> i
     }
 
 	@Override
-	public PageResults<Promotion> getPromotionList(int pageNo, int pageSize) {
+	public PageResults<Promotion> getPromotionList(int pageNo, int pageSize, Long type) {
 		
-		return promotionDao.getPromotionList(pageNo, pageSize);
+		return promotionDao.getPromotionList(pageNo, pageSize , type);
 	}
 
 }

@@ -38,7 +38,7 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="url">
-            <value><![CDATA[jdbc:mysql://192.168.1.61:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
         </property>
         <property name="username" value="root" />
         <property name="password" value="" />
@@ -78,6 +78,7 @@
 	<task:annotation-driven executor="executor" scheduler="scheduler" />
 	<bean id="schedulerTask" class="com.car.util.SchedulerTask"/>
 	<bean id="refreshAccessToken" class="com.car.util.RefreshAccessToken"/>
+	<bean id="sendWeChatMessage" class="com.car.util.SendWeChatMessage"/>
 	
 	
 	

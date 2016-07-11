@@ -47,12 +47,13 @@ public class CustomController {
 		member.setMobile(phone);
 		member.setName(name);
 		member.setUserid(phone);
-		member.setDepartment("21");
+		member.setDepartment("25");
 		Custom custom = new Custom();
 		custom.setPhone(phone);
 		custom.setName(name);
 		custom.setWechatId(phone);
 		custom.setCreateDate(new Date());
+		custom.setLevelId(0L);
 		customService.addCustom(custom);
 		CreateMember.create(member, accessToken);
 		log.info("新潜客加入 姓名,手机号:" + name + " , " + phone);

@@ -1,22 +1,24 @@
-package com.car.util;
-
-
+package com.car.send.message.test;
 
 import java.util.List;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.car.bean.Promotion;
 import com.car.common.dao.PageResults;
 import com.car.service.IModelsRdService;
 import com.car.service.IPromotionService;
+import com.car.util.Constants;
+import com.car.util.SendWeChatMessage;
 
-
-
-@Component
-public class SchedulerTask {
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations={"classpath:spring/spring-servlet.xml"})
+public class SchedulerTest {
 	
 	@Autowired
 	private IModelsRdService modelsRdService;
@@ -27,8 +29,7 @@ public class SchedulerTask {
 	@Autowired
 	private IPromotionService promotionService;
 	
-	
-	@Scheduled(cron = "0 0 12 * * ?")
+	@Test
 	public void sendMessageTask(){
 		
 		List<String> userIdList = modelsRdService.getModelsRecordUserId();
@@ -48,5 +49,5 @@ public class SchedulerTask {
 		}
 		
 	}
-	
+
 }
