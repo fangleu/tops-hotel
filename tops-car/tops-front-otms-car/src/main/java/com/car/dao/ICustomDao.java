@@ -16,5 +16,7 @@ public interface ICustomDao extends IBaseDao<Custom, Serializable>{
 	
 	List<Custom> getCustom(Long levelId);
 	
+	List<Custom> getCustomList(Set<String> customId);
+	
 
 }

@@ -94,15 +94,34 @@ public class CustomDao extends BaseDaoImpl<Custom, Serializable> implements ICus
 			if(i == 0) parm.append(listCustom.get(i));
 			else parm.append(","+listCustom.get(i));
 		}
-		String sql = "select * from custom where id in (" + parm + ")";
-		Object[] object = null;
-		List<Custom> list = super.getListBySQL(sql, Custom.class, object);
-		System.out.println("CustomDao " + list.size());
-		for(Custom custom : list){
-			result.add(custom.getWechatId());
+		if(parm != null && parm.length() > 0) {
+			String sql = "select * from custom where id in (" + parm + ")";
+			Object[] object = null;
+			List<Custom> list = super.getListBySQL(sql, Custom.class, object);
+			System.out.println("CustomDao " + list.size());
+			for(Custom custom : list){
+				result.add(custom.getWechatId());
+			}
 		}
-		
 		return result;
+	}
+	
+	@Override
+	public List<Custom> getCustomList(Set<String> customId) {
+		StringBuffer parm = new StringBuffer();
+		List<String> listCustom = new ArrayList<String>(customId);
+		List<Custom> list = null;
+		for(int i =0; i < listCustom.size(); i++){
+			if(i == 0) parm.append(listCustom.get(i));
+			else parm.append(","+listCustom.get(i));
+		}
+		if(parm != null && parm.length() > 0) {
+			String sql = "select * from custom where id in (" + parm + ")";
+			Object[] object = null;
+			list = super.getListBySQL(sql, Custom.class, object);
+			System.out.println("CustomDao " + list.size());
+		}
+		return list;
 	}
 
 	@Override

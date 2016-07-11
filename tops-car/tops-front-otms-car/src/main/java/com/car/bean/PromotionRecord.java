@@ -29,6 +29,17 @@ public class PromotionRecord implements Serializable{
 	 */
 	private Long customId;
 	
+	
+	/**
+	 * 促销类型
+	 * 0. 企业动态
+	 * 1. 车型促销
+	 * 2. 到店优惠
+	 * 3. 车主福利
+	 * 4. 其他活动
+	 */
+	private Long type;
+	
 	/**
 	 * 次数
 	 */
@@ -100,6 +111,15 @@ public class PromotionRecord implements Serializable{
 
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
+	}
+
+	@Column(name="type")
+	public Long getType() {
+		return type;
+	}
+
+	public void setType(Long type) {
+		this.type = type;
 	}
 
 }
