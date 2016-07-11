@@ -43,12 +43,6 @@
         </dependency>
 
         <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.9</version>
-        </dependency>
-
-        <dependency>
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>3.0.1</version>
@@ -77,14 +71,6 @@
             <scope>compile</scope>  
         </dependency>
 
-		<dependency>
-            <groupId>org.springframework</groupId>  
-            <artifactId>spring-aop</artifactId>  
-            <version>${springversion}</version>  
-            <type>jar</type>  
-            <scope>compile</scope>  
-        </dependency>  
-          
         <dependency>  
             <groupId>org.springframework</groupId>  
             <artifactId>spring-aspects</artifactId>  
@@ -208,11 +194,6 @@
             <groupId>commons-discovery</groupId>  
             <artifactId>commons-discovery</artifactId>  
             <version>0.2</version>  
-        </dependency>
-        <dependency>  
-            <groupId>commons-logging</groupId>  
-            <artifactId>commons-logging</artifactId>  
-            <version>1.1</version>  
         </dependency>
 		
 		<!-- mysql连接 -->
