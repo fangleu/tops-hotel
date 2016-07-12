@@ -1,0 +1,942 @@
+body{margin:0 auto;padding:0;font-size:0.75rem;font-family:Arial, Helvetica, sans-serif;overflow-x:hidden;background:#fff;}
+html{font-size:20px;}
+@media screen  and (max-width:374px){
+html{font-size:18.5px;}
+.dhList a{
+	width: 4rem !important;
+}
+}
+@media only screen and (min-device-width: 375px) and (max-width:640px) {
+
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+  margin: 0;
+  padding: 0;
+}
+input[type=text],input[type=submit],input[type=date],input[type=tel],textarea,button,select{appearance:none;-webkit-appearance:none;margin: 0;padding: 0;font-size:0.75rem;color:#666666;outline: none;}
+ul,li{margin:0;padding:0;list-style: none;}
+a{text-decoration: none;color:#666666;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-user-select: none;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.flexBox{display:-webkit-box;display: -webkit-flex;display: flex;width: 100%;-webkit-box-pack: justify;-webkit-justify-content: space-between;justify-content: space-between;}
+.flexChild{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;}
+.searchHead a,.flexBox label{display:block;}
+.search a,.search input{display:block;}
+.oneLine{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+/* 强制不换行 */
+.nowrap {
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* 连续字符换行 */
+.wrap {
+  white-space: normal;
+  word-wrap: break-word;
+}
+textarea {
+  resize: none;
+}
+
+button {
+  border: none;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* IE input X 去掉文本框的叉叉和密码输入框的眼睛图标 */
+::-ms-clear, ::-ms-reveal {
+  display: none;
+}
+
+.l {
+  float: left;
+  display: inline;
+}
+
+.r,.fr {
+  float: right;
+  display: inline;
+}
+
+.ps_ovhidden {
+  overflow: hidden;
+}
+
+/*清理浮动*/
+.cf:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/**
+* 文字溢出显示省略号
+* 1. Opera 9-10.6
+* 2. Chrome 21+ bug https://bugs.webkit.org/show_bug.cgi?id=121902
+*/
+.ellipsis {
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  /* 1 */
+  text-overflow: ellipsis;
+}
+
+/* 修改placeholder color */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #BABABA;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #BABABA;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #BABABA;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #BABABA;
+}
+@charset "utf-8";
+/* CSS Document */
+.ThirdLine{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.bg-cover{background-size: cover;background-repeat: no-repeat;background-position: center;}
+ 
+/**************进场***************/
+.head{
+	position: fixed;
+	top:0;
+	left:0;
+	right: 0;
+	height: 2rem;
+	background:#ededed url(../images/logo.png) no-repeat center left/auto 100%;
+	text-align: center;
+	color: #333333;
+	font-size: 0.85rem;
+	line-height: 2rem;
+	font-weight: bold;
+	z-index: 999;
+	box-shadow: 3px 0 3px #cecece;
+}
+.color-bg-grey{
+	background: #f0f0f0;
+}
+.headImg{
+	display: block;
+	width:90%;
+	margin:0 auto;
+	margin-top: 3rem;
+}
+.formList{
+	position:relative;
+	display: block;
+	width: 14rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	padding: 0 0.3rem;
+	margin:0.5rem auto;
+	border:1px solid #d2d2d2;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.formList input[type=date]{
+	border:none;
+	background:#fff url(../images/date.png) no-repeat 97% center/1.3rem;
+	position: absolute;
+	top:0;left:0;
+	width: 100%;
+	height: 100%;
+	max-width: 100% !important;
+	padding-left: 0.2rem;
+}
+.radioGroup{
+	width: 14rem;
+	margin:0.5rem auto 0.8rem auto;
+	padding-left: 0.3rem;
+}
+.radioGroup label{
+	display: inline-block;
+	margin-right: 1rem;
+	overflow: hidden;
+}
+.radioGroup input{
+	float: left;
+	margin-right: 0.3rem;
+	margin-top: 0.1rem;
+	margin-left: 0.05rem;
+}
+.formList span{
+	color:#666;
+	width: 2.5rem;
+}
+.formList input{
+	border:none;
+	max-width: 50%;
+}
+.formList select{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	border:none;
+	padding-left: 0.3rem;
+	color:#333;
+	background:url(../images/down.png) no-repeat 96% center/1rem;
+}
+.submitBtn{
+	width: 14.5rem;
+	display: block;
+	margin:1rem auto !important;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+	color:#fff !important;
+	background: #831e2b;
+	border:none;
+	border-radius: 0;
+	font-size: 0.95rem;
+}
+.submitBtn:hover{
+	opacity: 0.9;
+}
+.marginTopMore{
+	margin-top: 3.5rem;
+}
+.carList{
+	background-color: #fff;
+	margin-top: 2rem;
+}
+.carList li{
+	border-bottom: 1px solid #cecece;
+}
+.carList li a{
+	display: block;
+	padding: 1rem 2rem 1rem 1.5rem;
+	overflow: hidden;
+	background: url(../images/you.png) no-repeat 95% center/1.2rem;
+}
+.carList li:hover{
+	opacity: 0.9;
+}
+.carList li a .bg-cover{
+	float:left;
+	width:6.5rem;
+	height:3.3rem;
+}
+.carContent{
+	float:left;
+	margin-left: 0.5rem;
+}
+.carTitle{
+	line-height: 1.2rem;
+	font-size: 0.8rem;
+	color:#333;
+	font-weight: bold;
+}
+.font-small{
+	font-size: 0.55rem;
+}
+.carList .font-small{
+	margin-top: 0.2rem;
+}
+.carPrice{
+	font-size: 0.8rem;
+	color:#333;
+	line-height: 0.8rem;
+}
+.carPrice span{
+	display: inline-block;
+	margin-left: 0.2rem;
+	font-size: 0.55rem;
+}
+.goodsImg{
+	display: block;
+	width:93%;
+	margin:0 auto;
+	margin-top:1.5rem;
+	box-shadow: 0 0 3px #cecece;
+}
+.goodsImgInfo{
+	display: block;
+	width:93%;
+	margin:0 auto;
+	line-height: 1.8rem;
+	overflow: hidden;
+	font-weight: bold;
+}
+.goodsImgInfo .r{
+	font-weight: normal;
+}
+.more{
+	display: block;
+	width:93%;
+	margin:1rem auto;
+	line-height: 1.4rem;
+	font-size: 0.8rem;
+	text-align: center;
+	color:rgba(255,255,255,0.95);
+	background-color: #4b4b4b;
+	font-weight: bold;
+}
+.kfList{
+	margin:2rem auto;
+	width: 93%;
+}
+.kfList li{
+	padding:0.6rem 1rem;
+	overflow: hidden;
+	border-bottom: 1px solid #cecece;
+}
+.kfList .bg-cover{
+	float:left;
+	width:3rem;
+	height:3.5rem;
+}
+.kfInfo{
+	float: left;
+	margin-left: 0.5rem;
+	line-height: 1.1rem;
+	padding-top:0.1rem;
+	font-size: 0.7rem;
+}
+.kfName{
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+.kfList .r{
+	width:3.7rem;
+}
+.kfList a{
+	display:block;
+	font-size: 0.7rem;
+	color:#fff;
+	text-align: center;
+	background-color: #8a162c;
+	margin:0.5rem 0;
+	padding: 0.1rem 0;
+}
+.checkBox{
+	display: block;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+.checkBox a
+{
+	color: #7c98b0;
+	text-decoration: underline;
+}
+.checkBox input{
+	margin-right: 0.1rem;
+	transform: translateY(0.1rem);
+}
+.activities{
+	margin-top:2rem;
+}
+.activities li{
+	padding:0.7rem 0 0.5rem 0;
+	width: 96%;
+	margin:0 auto;
+	border-bottom: 1px solid #cecece;
+}
+.activities li:last-child{
+	border:none;
+}
+.activities img{
+	width:100%;
+	box-shadow: 0 0 3px #cecece;
+}
+.time{
+	color:#999;
+	line-height: 0.6rem;
+}
+.activities .goodsImgInfo{
+	width:100%;
+}
+.ajaxMore{
+  text-align: center;
+  color:#bbbbbb;
+  padding:0.6rem 0;
+  font-size:0.65rem;
+}
+.sorts{
+	position: absolute;
+	right: 0.5rem;
+	top:0;
+	color:#666;
+	font-size: 0.7rem;
+	text-align: right;
+}
+.sorts i{
+	display: inline-block;
+	font-size: 0.6rem;
+	margin-right: 0.2rem;
+	transform:translateY(-0.05rem)
+}
+.sorts div{
+	display: none;
+	background: #ededed;
+	padding: 0.2rem 0;
+	border-top: 1px solid #FAFAFA;
+}
+.sorts div a{
+	display: block;
+	padding: 0 1rem;
+	border-bottom: 1px solid #cecece;
+}
+.sorts div a:last-child{
+	border:none;
+}
+.sorts div a:hover{
+	background: #cecece;
+}
+.personalCenter,.record{
+	margin:0 auto;
+	width:95%;
+	margin-top:2rem;
+}
+.personalInfo .cf{
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+.personalInfo .bg-cover{
+	float:left;
+	height:3.8rem;
+	width:3.8rem;
+}
+.personalInfo .cf .l{
+	line-height: 1.2rem;
+	margin-top:1.5rem;
+	margin-left: 0.8rem;
+	color:#666;
+}
+.personalInfo .cf .l strong{
+	color:#333;
+	display: inline-block;
+	width:2.5rem;
+}
+.personalTitle{
+	height: 1rem;
+	line-height: 1rem;
+	background: #cecece;
+	padding-left: 1rem;
+	margin-top: 0.5rem;
+}
+.personalContent{
+	display: block;
+	padding:0.3rem 1rem;
+	line-height: 1.4rem;
+	background: url(../images/you.png) no-repeat 97% center/1.2rem;
+	border-bottom: 1px solid #cecece;
+}
+.personalContent:hover{
+	background-color: rgba(0,0,0,0.02);
+}
+.btnSwitch a{
+	display: block;
+	width: 3rem;
+	margin-top: 2rem;
+	padding: 0.1rem 0;
+	text-align: center;
+	color: #fff;
+	font-size: 0.55rem;
+	background: #7f1d29;
+}
+.carCx{
+	padding-bottom: 2rem;
+}
+.carCx li{
+	padding: 1rem 0;
+	border-bottom: 1px solid #cecece;
+}
+.carCx .bg-cover{
+	height: 3.5rem;
+	width:7rem;
+}
+.carCx .flexChild{
+	font-size: 0.6rem;
+	line-height: 1rem;
+	padding-top: 0.3rem;
+}
+.carCx .flexChild div:first-child{
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.carCx .flexChild div:last-child{
+	font-weight: bold;
+}
+.recordNav{
+	padding: 0.5rem 0;
+}
+.recordNav a{
+	float: left;
+	width: 33.33333333%;
+	text-align: center;
+	background-color: #ededed;
+	border-right: 3px solid #fff;
+	padding: 0.3rem 0;
+}
+.recordNav a:last-child{
+	border: none;
+}
+.recordNav a.active{
+	background-color: #cecece;
+}
+.recordRadio{
+	overflow: hidden;
+}
+.recordRadio div{
+	float: left;
+	width:33.333333%;
+	text-align:center;
+	background-color: #ededed;
+	color:#666;
+	padding: 0.4rem 0;
+}
+.recordRadio input{
+	display: inline-block;
+	margin-right: 0.1rem;
+	transform: translateY(0.1rem);
+}
+.recordCondation{
+	float: left;
+	font-size: 0.75rem;
+	color: #fff;
+	background-color:#00a2f5 ;
+	padding:0.05rem 0.1rem;
+	margin-right: 0.5rem;
+}
+.recordList {
+	padding-bottom: 2rem;
+}
+.recordList li{
+	border:1px solid #cecece;
+	margin-bottom: 0.5rem;
+}
+.recordList .cf{
+	padding: 0.3rem;
+}
+.recordList .l{
+	line-height: 1.2rem;
+	color:#666;
+}
+.recordList .l div:first-child{
+	color:#333;
+	font-weight: bold;
+}
+.recordList a.r{
+	width: 3rem;
+	margin-top: 2.5rem;
+	padding: 0.1rem 0;
+	text-align: center;
+	color: #fff;
+	font-size: 0.55rem;
+	background: #7f1d29;
+	margin-right: 0.3rem;
+}
+.recordList a.color-bg-grey{
+	background-color:#d7d7d8 ;
+}
+.color-bg-red{
+	background-color: #e90000;
+}
+.color-bg-yellow{
+	background-color: #e99900;
+}
+.color-bg-green{
+	background-color: #afd000;
+}
+.color-bg-pink{
+	background-color: #c970a9;
+}
+.icon-you{
+	display: block;
+	padding:0.3rem 1rem;
+	line-height: 1.2rem;
+	background: url(../images/you.png) no-repeat 97% center/1.2rem;
+	border-bottom: 1px solid #cecece;
+}
+.lqList div:first-child{
+	font-weight: bold;
+	color: #333;
+}
+.lqList div:last-child{
+	font-size: 0.55rem;
+}
+.lqList a:hover{
+	background-color: rgba(0,0,0,0.02);
+}
+.activeDetail{
+	padding: 1rem 0.5rem;
+}
+.detailContent{
+	line-height: 1.1rem;
+	margin-top: 1rem;
+}
+.detailContent img{
+	max-width: 100%;
+	display: block;
+	margin:0.3rem auto;
+}
+.color-green{
+	color:#01b5f1;
+}
+.color-red{
+	color:#ea4256;
+	font-weight: bold;
+}
+.aGroup{
+	overflow: hidden;
+	margin:1rem 0;
+}
+.aGroup a{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.aGroup img{
+	width:95%;
+}
+.detailTime{
+	line-height: 2rem;
+	color:#a6b5c3;
+}
+.detailTime span{
+	display: inline-block;
+	color:#666;
+	margin-right: 0.3rem;
+}
+.aGroup div{
+	width:80%;
+	margin:0 auto;
+	height: 1.5rem;
+	background: #CECECE;
+	color:#fff;
+	line-height:1.5rem;
+}
+.marginTopMore2{
+	margin-top:2rem;
+}
+.nomarginTop{
+	margin-top:0;
+}
+.nomarginTop span{
+	width:0.8rem;
+	height:0.8rem;
+	border-radius: 0;
+	border:1.5px solid #fff;
+	background: transparent;
+	margin:0 0.3rem !important;
+}
+.marginTopMore2 .swiper-slide{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 12.3rem;
+}
+.tgTitle{
+	width: 94%;
+	margin:0.5rem auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 0.3rem;
+	box-shadow: 0 0 3px #cecece;
+}
+.tgTitle div{
+	font-size: 0.55rem;
+	line-height: 0.8rem;
+	color:#666;
+	padding-top:0.3rem;
+}
+.tgNum{
+	text-align: center;
+	width: 49%;
+	background: #fff;
+}
+.btnGroup{
+	width:94%;
+	margin:0 auto;
+	line-height: 1.4rem;
+	
+}
+.tgNum div:first-child{
+	line-height: 2.2rem;
+	color:#fff;
+	background:#ef383d url(../images/sanjiao.png) repeat-x bottom/0.5rem;
+	font-size: 1rem;
+}
+.tgNum div:last-child{
+	background: #272636;
+	color:#fff;
+}
+.tgNum span{
+	font-size: 0.75rem;
+}
+.tgNum .color-bg-yellow{
+	background-color:#e49148 !important;
+}
+.switch{
+	display: block;
+	width: 94%;
+	margin:0.5rem auto;
+	padding-right:1.2rem;
+	line-height: 1.8rem;
+	padding-left: 0.5rem ;
+	background:#fff url(../images/you.png) no-repeat 97% center/0.5rem;
+}
+.switch .r{
+	font-size: 0.6rem;
+}
+.personGroup{
+	background-color: #fff;
+	width:94%;
+	margin:0 auto;
+	padding: 0.5rem;
+	color:#666;
+	line-height:1rem;
+	margin-bottom:0.5rem;
+}
+.personGroupTitle span{
+	font-size: 0.85rem;
+}
+.personGroupTitle div{
+	font-size:0.65rem;
+}
+.headList li{
+	position:relative;
+	float:left;
+	width:23%;
+	margin:0.3rem 1%;
+}
+.headList li:after{
+	margin-top:100%;
+	content: '';
+	display: block;
+}
+.headList li a{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.headList li:first-child:before{
+	content: '团';
+	position: absolute;
+	top:0;
+	right: 0;
+	height:1.1rem;
+	width: 1rem;
+	border-radius: 50%;
+	color:#fff;
+	background:#ff2b31;
+	text-align: center;
+	font-size: 0.7rem;
+}
+.detailAcvity{
+	background-color: #fff;
+	width:94%;
+	margin:0 auto;
+	padding: 0.5rem;
+	color:#666;
+	line-height:1rem;
+	margin-bottom:0.5rem;
+	font-size: 0.65rem;
+}
+.detailAcvity div{
+	font-size: 0.85rem;
+	margin-bottom: 0.2rem;
+}
+.detailAcvity img{
+	display: block;
+	width: 100%;
+	margin:0.3rem 0;
+}
+.yyTitle{
+	line-height: 2.7rem;
+	color:#fff;
+	padding:0 1rem;
+	background:#626262 ;
+	font-size: 1.1rem;
+}
+.yyForm{
+	padding: 1.5rem;
+	line-height: 1.7rem;
+}
+.yyForm .flexBox{
+	margin:0.3rem 0;
+}
+.yyForm span{
+	width: 1.7rem;
+	height: 1.7rem;
+	overflow: hidden;
+	line-height: 1.7rem;
+	text-align: center;
+	float:left;
+	font-size: 1.2rem;
+	color:#666;
+	background: #f0f3f5;
+}
+.yyForm input{
+	border:none;
+	height: 1.6rem;
+	overflow: hidden;
+	margin:0;
+	padding: 0;
+	text-indent: 0.3rem;
+	font-size: 0.6rem;
+}
+.border{
+	border-radius: 3px;
+	border:1px solid #cecece;
+	background: #fff;
+	height: 1.7rem;
+	overflow: hidden;
+}
+.yyForm .icon-iconbianji{
+	font-size: 1.5rem;
+}
+.sexList label{
+	width:2.5rem;
+	font-size: 0.65rem;
+	display: inline-block;
+	text-align: right;
+	color:#666;
+}
+.inputWidth input{
+	width:50%;
+}
+.sexList input{
+	height: auto;
+	margin-right: 2px;
+}
+.yzm{
+	width:3.5rem;
+	text-align: right;
+}
+.yzm img{
+	height:1.3rem;
+	margin-top: 0.2rem;
+	width:3rem;
+}
+.yyForm input[type=submit]{
+	width: 100%;
+	text-align: center;
+	height:1.8rem;
+	color:#333;
+	font-size: 0.75rem;
+	border:1px solid #cecece;
+	border-radius: 2px;
+	background:#fece00 ;
+	margin-top: 0.5rem;
+}
+.yyForm input[type=submit]:hover{
+	opacity: 0.9;
+}
+.dhTitle{
+	margin-top: 2rem;
+	padding:0.5rem 1rem;
+}
+.dhList{
+	padding:0.4rem 0;
+	margin:auto 1rem;
+	color:#666;
+	border-bottom: 1px solid #cecece;
+}
+.dhList i{
+	display: inline-block;
+	margin-right: 0.5rem;
+	color:#999;
+	font-size: 1rem;
+}
+.dhList a{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	width:4.6rem;
+	background: #cecece;
+	text-align: center;
+	color: #fff;
+	font-size: 0.65rem;
+}
+.noBorder{
+	border:none;
+}
+.map{
+	margin:1rem 0.5rem;
+}
+.map img{
+	width: 100%;
+}
+.noMarginBottom{
+	padding-bottom: 0;
+}
+.noMarginBottom div{
+	font-weight: normal !important;
+}
+.personalCenter .kfList{
+	width:100%;
+}
+.popWindow{
+	position:fixed;
+	background: rgba(0,0,0,0.8);
+	top:0;
+	right:0;
+	left:0;
+	bottom: 0;
+	display: inline-block;
+	text-align: center;
+}
+.middleSpan{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.middleContent{
+	display: inline-block;
+	vertical-align: middle;
+	color:#fff;
+}
+.guanzhu{
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	padding-top: 2.5rem;
+}
+.ewm{
+	width:45%;
+	margin:1rem 0 0.5rem 0;
+}
+.guanzhu2{
+	font-size: 0.7rem;
+	line-height: 1.4rem;
+}
+.share{
+	padding-top:3rem;
+	padding-bottom: 2rem;
+	font-size: 0.9rem;
+}

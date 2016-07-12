@@ -64,7 +64,7 @@ public class SchedulerTask {
 		if(userIdList.size() > 0 && pageResults != null &&  pageResults.getResults() != null && pageResults.getResults().size() > 0){
 			StringBuffer userId = new StringBuffer();
 			Promotion promotion = pageResults.getResults().get(0);
-			for(int i = 0; i < userIdList.size(); i++){
+			for (int i = 0; i < userIdList.size(); i++) {
 				if(i == 0) userId.append(userIdList.get(i));
 				else userId.append("|" + userIdList.get(i));
 			}

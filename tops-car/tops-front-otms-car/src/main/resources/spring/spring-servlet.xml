@@ -77,8 +77,7 @@
 	     <property name="maxUploadSize" value="10485760000" />
 	     <property name="maxInMemorySize" value="40960" />
  	</bean>
-	
-	
+ 	
 	<task:executor id="executor" pool-size="5" />
 	<task:scheduler id="scheduler" pool-size="10" />
 	<task:annotation-driven executor="executor" scheduler="scheduler" />
@@ -101,6 +100,11 @@
             <bean class="com.car.interceptor.OAuth2Interceptor"/>  
         </mvc:interceptor>  
     </mvc:interceptors>  
+    
+    <!-- 对静态资源文件的访问 -->      
+	<mvc:resources mapping="/view/images/**" location="/view/images/"/>   
+	<mvc:resources mapping="/view/js/**" location="/view/js/"/>  
+	<mvc:resources mapping="/view/css/**" location="/view/css/"/>  
     
 	
 </beans>

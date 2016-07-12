@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>凯迪拉克经销商</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/swiper-3.0.8.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper.min-3.1.0.js"></script>
+</head>    
+<body class="color-bg-grey">
+<div class="swiper-container marginTopMore2 nomarginTop">
+  <div class="swiper-wrapper">
+    <div style="background-image:url(images/swiper1.jpg);" class="swiper-slide"></div>
+    <div style="background-image:url(images/swiper1.jpg);" class="swiper-slide"></div>
+    <div style="background-image:url(images/swiper1.jpg);" class="swiper-slide"></div>
+    <div style="background-image:url(images/swiper1.jpg);" class="swiper-slide"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<div class="yyTitle">别克冬季汽车保养套组</div>
+<script> 
+	var mySwiper = new Swiper('.swiper-container', {
+		autoplay: 2000,//可选选项，自动滑动
+		autoplayDisableOnInteraction : false,
+		pagination : '.swiper-pagination',
+	})
+</script>
+<form class="yyForm"> 
+	<div class="flexBox">
+		<label class="flexChild border inputWidth">
+			<span class="iconfont icon-ren"></span>
+			<input class="flexChild" type="text" placeholder="请输入您的姓名"/>
+		</label>
+		<div class="sexList">
+			<label>
+				<input type="radio" checked name="sex" />先生
+			</label>
+			<label>
+				<input type="radio" name="sex" />女士
+			</label>
+		</div>
+	</div>
+	<label class="flexBox border">
+		<span class="iconfont icon-buchongiconsvg09"></span>
+		<input class="flexChild" type="tel" placeholder="请输入您的手机号码"/>
+	</label>
+	<label class="flexBox border">
+		<span class="iconfont icon-order"></span>
+		<input class="flexChild" type="text" placeholder="请输入您的车牌号"/>
+	</label>
+	<div class="flexBox">
+		<label class="flexChild border inputWidth">
+			<span class="iconfont icon-iconbianji"></span>
+			<input class="flexChild" type="text" placeholder="请输入验证码"/>
+		</label>
+		<div class="yzm">
+			<img src="images/yzm.jpg"/>
+		</div>
+	</div>
+	<input type="submit" value="确认提交"/>
+</form>
+
+</body>
+</html>

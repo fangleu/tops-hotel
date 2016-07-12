@@ -26,8 +26,14 @@ public class ImageToolController {
 	@RequestMapping(value="/test" , method = RequestMethod.GET)
 	public String Test(HttpServletRequest request, HttpServletResponse response){
 		
+		String path = request.getContextPath();
+		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 		
-		return "/view/imageTest.jsp";
+		System.out.println("path " + path + "\n" + "basePath " + basePath);
+		
+		return "/view/custom.html";
+		
+//		return "/view/imageTest.jsp";
 	}
 	
 	
