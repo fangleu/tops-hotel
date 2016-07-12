@@ -71,6 +71,12 @@
 	    <aop:pointcut id="allServiceMethod" expression="execution(* com.car.service.*.*(..))"/>
 	    <aop:advisor pointcut-ref="allServiceMethod" advice-ref="txAdvice"/>
     </aop:config> 
+    
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	     <property name="defaultEncoding" value="utf-8" />
+	     <property name="maxUploadSize" value="10485760000" />
+	     <property name="maxInMemorySize" value="40960" />
+ 	</bean>
 	
 	
 	<task:executor id="executor" pool-size="5" />

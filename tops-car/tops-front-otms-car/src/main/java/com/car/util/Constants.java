@@ -34,6 +34,12 @@ public class Constants {
     public final static String CREATE_SESSION_URL = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=";
     
     
+    /**
+     * nginx
+     */
+    public final static String DOMAIN_NAME = "http://fangleu.ngrok.cc/";
     
+    
+    public final static String IMAGE_ADREESS = "F:/image/";
     
 }  
