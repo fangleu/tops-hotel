@@ -38,6 +38,7 @@ public class ValidateController {
 		AccessToken accessToken =  refreshAccessToken.getAccessToken(); ;
 		System.out.println("accessToken  " + accessToken.getAccess_token());
 		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
+	
 		System.out.println("userID " + result.getUserid());
 		LinkUtil.userIdConverOpenId(accessToken.getAccess_token(), request.getParameter("code"), result.getUserid());
 		
