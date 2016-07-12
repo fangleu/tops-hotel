@@ -31,12 +31,6 @@ public class MessageTest {
 		"&redirect_uri=http://luo1luo.ngrok.cc/tops-front-otms-car/user/value"  
 			     + "&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect", 
 		"http://cnews.chinadaily.com.cn/img/attachement/png/site1/20160629/d8cb8a14fb9018dd3ddb08.png", "0");
-		
-//		sendWeChatMessage.sendWeChatMsg("news", "LouFangLei", "0", "", "", "", "车型推荐", "废物如其人", 
-//				"https://qy.weixin.qq.com/cgi-bin/loginpage?corp_id=wxfdfd1b46c655aacf&redirect_uri="
-//				+ "http://fangleu.ngrok.cc/tops-front-otms-car/check/value", 
-//		"http://cnews.chinadaily.com.cn/img/attachement/png/site1/20160629/d8cb8a14fb9018dd3ddb08.png", "0");
-		
 		 
 	}
 	

@@ -1,5 +1,6 @@
+<%@page import="com.car.controller.CustomController"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +13,7 @@
      </style>
 </head>
 <body>
- aaaaa    {}
+
     <div id="allmap"></div>
     
 </body>

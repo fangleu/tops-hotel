@@ -30,8 +30,9 @@ public class ImageToolController {
 		String path = request.getContextPath();
 		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 		
+		String a = "aaa";
 		System.out.println("path " + path + "\n" + "basePath " + basePath);
-		model.addAttribute("path", path);
+		model.addAttribute("path", a);
 //		return "/view/centreOwners.html";
 		
 		return "/view/imageTest.jsp";

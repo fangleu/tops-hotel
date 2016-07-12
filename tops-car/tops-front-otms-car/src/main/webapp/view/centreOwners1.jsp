@@ -1,6 +1,13 @@
-<!DOCTYPE html>
+<%@page import="com.car.controller.CustomController"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%@ include file="common.jsp" %>    
+    
+    
 <html>
 <head>
+<base href="<%=basePath%>"></base>
     <meta http-equiv="pragram" content="no-cache">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>凯迪拉克经销商</title>
@@ -22,7 +29,7 @@
 				<div style="background-image: url(images/personalHead.jpg);" class="bg-cover"></div>
 				<div class="l">
 					<div class="personalName">
-						<strong>姓&nbsp;&nbsp;&nbsp;名</strong> 代用名
+						<strong>姓&nbsp;&nbsp;&nbsp;名</strong> ${path }
 					</div>
 					<div class="personalPhone">
 						<strong>手机号</strong>  138 8888 8888
