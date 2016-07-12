@@ -1,7 +1,6 @@
 ﻿package com.car.weixin.api;
 
 
-@SuppressWarnings("serial")
 public class AesException extends Exception {
 
 	public final static int OK = 0;

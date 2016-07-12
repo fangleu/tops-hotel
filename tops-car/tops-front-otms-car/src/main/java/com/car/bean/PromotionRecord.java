@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Promotion_record （阅读记录）
+ */
+
 @Entity(name="promotion_record")
 public class PromotionRecord implements Serializable{
 	

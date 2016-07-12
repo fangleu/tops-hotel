@@ -1,6 +1,7 @@
 package com.car.bean;
 
 import java.io.Serializable;
+import java.sql.Time;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -8,6 +9,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+/**
+ * after_sales_record （售后记录）
+ */
 
 @Entity(name="after_sales_record")
 public class AfterSalesRecord implements Serializable{
@@ -59,7 +64,7 @@ public class AfterSalesRecord implements Serializable{
 	/**
 	 * 创建日期
 	 */
-	private Date createDate;
+	private Date createTime;
 
 
 	
@@ -146,13 +151,13 @@ public class AfterSalesRecord implements Serializable{
 		this.shopName = shopName;
 	}
 
-	@Column(name="create_date")
-	public Date getCreateDate() {
-		return createDate;
+	@Column(name="create_time")
+	public Date getCreateTime() {
+		return createTime;
 	}
 
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 
 }

@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Consulting_records （咨询记录）
+ */
+
 @Entity(name="consulting_records")
 public class ConsultingRecord implements Serializable{
 	

@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Test_record （试驾记录）
+ */
+
 @Entity(name="test_record")
 public class TestRecord implements Serializable{
 	

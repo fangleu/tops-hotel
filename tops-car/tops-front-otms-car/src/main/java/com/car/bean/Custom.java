@@ -9,6 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Custom (客户表）
+ */
 @Entity(name="custom") 
 public class Custom implements Serializable{
 	
@@ -68,9 +71,9 @@ public class Custom implements Serializable{
 	 * 2：看过促销信息
 	 * 3：看过到店地址
 	 * 4：看过预约
-	 * 5：增加，删除，修改 （操作）
-	 * 6：保存并发布 （操作）
-	 * 7:4s人员
+	 * 5：车主
+	 * 6:4s人员
+	 * 
 	 */
 	private Long levelId;
 	

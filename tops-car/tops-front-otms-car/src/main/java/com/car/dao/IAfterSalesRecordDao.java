@@ -1,5 +1,10 @@
 package com.car.dao;
 
-public class IAfterSalesRecordDao {
+import java.io.Serializable;
+
+import com.car.bean.AfterSalesRecord;
+import com.car.common.dao.IBaseDao;
+
+public interface IAfterSalesRecordDao extends IBaseDao<AfterSalesRecord, Serializable>{
 
 }

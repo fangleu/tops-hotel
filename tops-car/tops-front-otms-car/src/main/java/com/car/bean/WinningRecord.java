@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * winning_record （中奖纪录）
+ */
+
 @Entity(name="winning_record")
 public class WinningRecord implements Serializable{
 	

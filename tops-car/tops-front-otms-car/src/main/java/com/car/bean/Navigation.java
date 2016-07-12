@@ -8,6 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Navigation （导航表）
+ */
+
 @Entity(name="navigation") 
 public class Navigation implements Serializable{
 	

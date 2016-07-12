@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Internal activity （内部H5活动记录）
+ */
+
 @Entity(name="internal_activity")
 public class InternalActivity implements Serializable{
 	

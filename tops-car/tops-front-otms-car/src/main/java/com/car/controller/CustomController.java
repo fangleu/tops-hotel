@@ -4,16 +4,26 @@ import java.io.UnsupportedEncodingException;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.car.bean.AfterSalesRecord;
 import com.car.bean.Custom;
+import com.car.dao.IAfterSalesRecordDao;
+import com.car.dao.ICustomDao;
+import com.car.dao.impl.AfterSalesRecordDao;
+import com.car.dao.impl.CustomDao;
+import com.car.send.message.test.MessageTest;
+import com.car.service.IAfterSalesRecordService;
 import com.car.service.ICustomService;
+import com.car.service.impl.AfterSalesRecordService;
 import com.car.util.Constants;
 import com.car.util.CreateMember;
 import com.car.util.LinkUtil;
@@ -32,6 +42,10 @@ public class CustomController {
 	@Autowired
 	private ICustomService customService;
 	
+	@Autowired
+	private IAfterSalesRecordDao afterSalesDao;
+	
+
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
 	
@@ -154,5 +168,59 @@ public class CustomController {
         
                 return result.getUserid();  
     }  
+    
+    
+    @RequestMapping(value="/value" , method = RequestMethod.GET)
+    public void getUserDetail(HttpServletRequest request, HttpServletResponse response){
+        AccessToken accessToken = refreshAccessToken.getAccessToken();  
+        String userId = null;
+        if (accessToken != null && accessToken.getAccess_token() != null) {  
+    		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
+    		
+    		userId = result.getUserid();
+    		System.out.println("userID " + userId);
+        }  
+    	
+        // userId has the user's ID
+        
+        // find the customer by wechatId
+        Custom cust = customService.findCustomByWechatId(userId);
+        
+        Long id = cust.getId();
+        System.out.println("id: " + id);
+        
+        System.out.println("Name: " + cust.getName());
+        
+        // get the customer's level
+        int level = Integer.parseInt(Long.toString(cust.getLevelId()));
+        
+        
+        System.out.println("level: " + level);
+        
+        switch(level){
+        	case 5: {
+        		System.out.println("车主");
+        		
+        		System.out.println(id);
+        		
+        		
+        		AfterSalesRecord record = afterSalesDao.getBySQL("select * from after_sales_record c where c.id = ?", AfterSalesRecord.class, id.toString());
+        		String models = record.getModels();
+        		System.out.println("models: " + models);
+        		
+        		long type = record.getType();
+        		System.out.println("type: " + type);
+        		
+        		String staff = record.getSalesStaff();
+        		System.out.println("staff " + staff);
+        		
+        	
+        		break;
+        	}
+        	default: System.out.println("other");
+        
+        }
+    	
+    }
 
 }

@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Models_record （车型记录）
+ */
+
 @Entity(name="models_record")
 public class ModelsRecord implements Serializable{
 	

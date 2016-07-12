@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * External activity （外部活动记录）
+ */
+
 @Entity(name="external_activity")
 public class ExternalEvent implements Serializable{
 	
