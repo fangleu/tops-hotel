@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,16 +25,16 @@ public class ImageToolController {
 	
 	
 	@RequestMapping(value="/test" , method = RequestMethod.GET)
-	public String Test(HttpServletRequest request, HttpServletResponse response){
+	public String Test(HttpServletRequest request, HttpServletResponse response, Model model){
 		
 		String path = request.getContextPath();
 		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 		
 		System.out.println("path " + path + "\n" + "basePath " + basePath);
+		model.addAttribute("path", path);
+//		return "/view/centreOwners.html";
 		
-		return "/view/custom.html";
-		
-//		return "/view/imageTest.jsp";
+		return "/view/imageTest.jsp";
 	}
 	
 	

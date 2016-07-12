@@ -19,7 +19,7 @@
 		http://www.springframework.org/schema/context 
 		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 	<context:annotation-config />
-	
+	<mvc:annotation-driven /> 
 	<bean id="sessionFactory"
         class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
@@ -101,10 +101,13 @@
         </mvc:interceptor>  
     </mvc:interceptors>  
     
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    </bean>
+    
     <!-- 对静态资源文件的访问 -->      
 	<mvc:resources mapping="/view/images/**" location="/view/images/"/>   
 	<mvc:resources mapping="/view/js/**" location="/view/js/"/>  
-	<mvc:resources mapping="/view/css/**" location="/view/css/"/>  
+	<mvc:resources mapping="/view/css/**" location="/view/css/"/>
     
 	
 </beans>

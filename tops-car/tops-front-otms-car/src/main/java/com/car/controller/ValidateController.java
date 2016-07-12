@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -31,14 +32,14 @@ public class ValidateController {
 	private RefreshAccessToken refreshAccessToken;
 	
 	@RequestMapping(value="/value" , method = RequestMethod.GET)
-	public String test(HttpServletRequest request, HttpServletResponse response){
+	public String test(HttpServletRequest request, HttpServletResponse response, Model model){
 		
 		System.out.println("authCode " + request.getParameter("auth_code"));
 		System.out.println("Spring MVC code  " + request.getParameter("code"));
 		AccessToken accessToken =  refreshAccessToken.getAccessToken(); ;
 		System.out.println("accessToken  " + accessToken.getAccess_token());
 		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
-	
+		model.addAttribute("userId", result.getUserid());
 		System.out.println("userID " + result.getUserid());
 		LinkUtil.userIdConverOpenId(accessToken.getAccess_token(), request.getParameter("code"), result.getUserid());
 		

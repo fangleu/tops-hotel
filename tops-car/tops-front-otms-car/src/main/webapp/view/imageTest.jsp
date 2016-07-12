@@ -9,7 +9,7 @@
 <body>
 
  <form action="http://127.0.0.1:8233/component/common/uploadImg" method="post" enctype="multipart/form-data">
-     头像：<input type="file" name="img" /><br/>
+     头像：<input type="file" name="img" /><br/>  test ${path}
      <input type="image" src="./images/img_submit.gif" />
  <input type="submit" value="提交">
  </form>

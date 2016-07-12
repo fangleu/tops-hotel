@@ -12,7 +12,7 @@
      </style>
 </head>
 <body>
- aaaaa
+ aaaaa    {}
     <div id="allmap"></div>
     
 </body>
