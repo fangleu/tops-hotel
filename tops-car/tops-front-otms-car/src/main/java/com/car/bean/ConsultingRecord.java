@@ -41,7 +41,7 @@ public class ConsultingRecord implements Serializable{
 	/**
 	 * 车型
 	 */
-	private Long models;
+	private String models;
 	
 	/**
 	 * 是否提交
@@ -54,14 +54,14 @@ public class ConsultingRecord implements Serializable{
 	private String salesStaff;
 	
 	/**
-	 * 4s 店
+	 * 电话
 	 */
-	private String shopName;
+	private String phone;
 	
 	/**
 	 * 创建日期
 	 */
-	private Date createDate;
+	private Date createTime;
 	
 
 	
@@ -86,11 +86,11 @@ public class ConsultingRecord implements Serializable{
 	}
 
 	@Column(name="models")
-	public Long getModels() {
+	public String getModels() {
 		return models;
 	}
 
-	public void setModels(Long models) {
+	public void setModels(String models) {
 		this.models = models;
 	}
 
@@ -130,22 +130,22 @@ public class ConsultingRecord implements Serializable{
 		this.salesStaff = salesStaff;
 	}
 
-	@Column(name="shop_name")
-	public String getShopName() {
-		return shopName;
+	@Column(name="phone")
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setShopName(String shopName) {
-		this.shopName = shopName;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	@Column(name="create_date")
-	public Date getCreateDate() {
-		return createDate;
+	@Column(name="create_time")
+	public Date getCreateTime() {
+		return createTime;
 	}
 
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 
 }

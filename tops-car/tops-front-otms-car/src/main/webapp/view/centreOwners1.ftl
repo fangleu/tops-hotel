@@ -45,8 +45,8 @@
 				</li>
 			</ul>
 			<div class="personalTitle">我的服务记录</div>
-			<a class="personalContent" href="javascript:;">预约试驾记录</a>
-			<a class="personalContent" href="javascript:;">在线询价记录</a>
+			<a class="personalContent" href="appointment">预约试驾记录</a>
+			<a class="personalContent" href="query">在线询价记录</a>
 			<div class="personalTitle">
 				我的礼券
 			</div>

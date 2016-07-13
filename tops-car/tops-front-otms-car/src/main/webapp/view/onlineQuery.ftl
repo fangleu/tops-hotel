@@ -16,7 +16,7 @@
     <script src="${con.bathPath}js/swiper.min-3.1.0.js"></script>
 </head>    
 <body>
-<div class="head">预约试驾记录</div>
+<div class="head">在线询价记录</div>
 <div class="record">
 
 	<ul class="recordList">
@@ -24,7 +24,7 @@
 				<#list conRecord as record>
 		<li>
 			<div class="cf">
-				<div class="recordCondation">试驾</div>
+				<div class="recordCondation">询价</div>
 				<div class="l">
 					<div>2016-6-23 16:21</div>
 					<div>${record.salesStaff}</div>

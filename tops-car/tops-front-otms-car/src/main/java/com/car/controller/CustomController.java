@@ -60,7 +60,7 @@ public class CustomController {
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
 	
-	
+	private Custom currentCustom;
 	/**
 	 * @param phone
 	 * @return
@@ -220,6 +220,7 @@ public class CustomController {
         
         // find the customer by wechatId
         Custom cust = customService.findCustomByWechatId(userId);
+        currentCustom = cust;
         
         Long id = cust.getId();
         System.out.println("id: " + id);
@@ -279,26 +280,26 @@ public class CustomController {
     @RequestMapping(value="/appointment" , method = RequestMethod.GET)
     public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){
 	
-	    	
-	        AccessToken accessToken = refreshAccessToken.getAccessToken();  
-	        String userId = null;
-	        if (accessToken != null && accessToken.getAccess_token() != null) {  
-	        	Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
-		
-	        	userId = result.getUserid();
-	        	System.out.println("userID " + userId);
-	        }  
+
 	
-	        // userId has the user's ID
-	
-	        // find the customer by wechatId
-	        Custom cust = customService.findCustomByWechatId(userId);
-	
-	        Long id = cust.getId();
-    	
-    	
-	        List<ConsultingRecord> conRecord = consultDao.getListBySQL("select * from consulting_records c where c.custom_id =" + id.toString(), ConsultingRecord.class);
+	        Long id = currentCustom.getId();
+	        System.out.println(id);
+	        Object[] q = {id};
+	        List<ConsultingRecord> conRecord = consultDao.getListBySQL("select * from consulting_records c where c.custom_id =?", ConsultingRecord.class, q);
 	        model.addAttribute("conRecord", conRecord);
 	        return "/view/reservationRecord";
+    }
+    
+    @RequestMapping(value="/query" , method = RequestMethod.GET)
+    public String getOnlineQuery(HttpServletRequest request, HttpServletResponse response, Model model){
+	
+
+	
+	        Long id = currentCustom.getId();
+	        System.out.println(id);
+	        Object[] q = {id};
+	        List<ConsultingRecord> conRecord = consultDao.getListBySQL("select * from consulting_records c where c.custom_id =?", ConsultingRecord.class, q);
+	        model.addAttribute("conRecord", conRecord);
+	        return "/view/onlineQuery";
     }
 }
