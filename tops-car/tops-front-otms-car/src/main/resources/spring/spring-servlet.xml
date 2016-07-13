@@ -108,6 +108,7 @@
         <property name="viewClass">
             <value>org.springframework.web.servlet.view.freemarker.FreeMarkerView</value>
         </property>
+        <property name="requestContextAttribute" value="request" />
     </bean>
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath">
@@ -128,6 +129,9 @@
             </props>
         </property>
     </bean>
+    
+    
+    
     
     <!-- 对静态资源文件的访问 -->      
 	<mvc:resources mapping="/view/images/**" location="/view/images/"/>   

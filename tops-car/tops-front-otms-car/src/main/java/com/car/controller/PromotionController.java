@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.car.bean.Promotion;
@@ -43,11 +44,14 @@ public class PromotionController {
 	}
 	
 	@RequestMapping(value = {"/getPromotion"})
-	public String getPromotion(int pageNo, int pageSize) {
+	public String getPromotion(int pageNo, int pageSize, Model model) {
 		Long type = 0L;
-		PageResults<Promotion> list = promotionService.getPromotionList(pageNo, pageSize, type);
-		System.out.println(list.getResults().size());
-		return null;
+		pageNo = 1;
+		pageSize =5;
+//		PageResults<Promotion> list = promotionService.getPromotionList(pageNo, pageSize, type);
+//		System.out.println(list.getResults().size());
+		
+		return "view/promotions";
 		
 	}
 	
