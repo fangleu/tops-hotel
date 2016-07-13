@@ -9,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.web.servlet.config.VelocityConfigurerBeanDefinitionParser;
+
 /**
  * Custom (客户表）
  */
@@ -58,6 +60,11 @@ public class Custom implements Serializable{
 	 * 车牌号
 	 */
 	private String plateNumber;
+	
+	/**
+	 * 车架号
+	 */
+	private String carIdNumber;
 	
 	/**
 	 * 品牌
@@ -165,6 +172,15 @@ public class Custom implements Serializable{
 
 	public void setPlateNumber(String plateNumber) {
 		this.plateNumber = plateNumber;
+	}
+	
+	@Column(name="car_id_number")
+	public String getCarIdNumber(){
+		return carIdNumber;
+	}
+	
+	public void setCarIdNumber(String carIdNumber) {
+		this.carIdNumber = carIdNumber;
 	}
 
 	@Column(name="brand") 

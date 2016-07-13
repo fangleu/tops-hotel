@@ -17,8 +17,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.car.bean.AfterSalesRecord;
+import com.car.bean.ConsultingRecord;
 import com.car.bean.Custom;
 import com.car.dao.IAfterSalesRecordDao;
+import com.car.dao.IConsultingRecordDao;
 import com.car.dao.ICustomDao;
 import com.car.dao.impl.AfterSalesRecordDao;
 import com.car.dao.impl.CustomDao;
@@ -34,6 +36,8 @@ import com.car.weixin.bean.AccessToken;
 import com.car.weixin.bean.Member;
 import com.car.weixin.bean.Result;
 
+import java.util.*;
+
 
 @Controller
 @RequestMapping("/user")
@@ -47,7 +51,12 @@ public class CustomController {
 	@Autowired
 	private IAfterSalesRecordDao afterSalesDao;
 	
-
+	@Autowired
+	private IConsultingRecordDao consultDao;
+	
+	@Autowired
+	private ICustomDao preSalesDao;
+	
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
 	
@@ -174,58 +183,122 @@ public class CustomController {
     
     @RequestMapping(value="/value" , method = RequestMethod.GET)
     public String getUserDetail(HttpServletRequest request, HttpServletResponse response, Model model){
-//        AccessToken accessToken = refreshAccessToken.getAccessToken();  
-//        String userId = null;
-//        if (accessToken != null && accessToken.getAccess_token() != null) {  
-//    		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
-//    		
-//    		userId = result.getUserid();
-//    		System.out.println("userID " + userId);
-//        }  
-//    	
-//        // userId has the user's ID
-//        
-//        // find the customer by wechatId
-//        Custom cust = customService.findCustomByWechatId(userId);
-//        
-//        Long id = cust.getId();
-//        System.out.println("id: " + id);
-//        
-//        String name = cust.getName();
-//        System.out.println("Name: " + cust.getName());
-//        model.addAttribute(name);
-//        
-//        
-//        // get the customer's level
-//        int level = Integer.parseInt(Long.toString(cust.getLevelId()));
-//        
-//        
-//        System.out.println("level: " + level);
-//        
-//        switch(level){
-//        	case 5: {
-//        		System.out.println("车主");
-//        		
-//        		System.out.println(id);
-//        		
-//        		
-//        		AfterSalesRecord record = afterSalesDao.getBySQL("select * from after_sales_record c where c.id = ?", AfterSalesRecord.class, id.toString());
-//        		String models = record.getModels();
-//        		System.out.println("models: " + models);
-//        		
-//        		long type = record.getType();
-//        		System.out.println("type: " + type);
-//        		
-//        		String staff = record.getSalesStaff();
-//        		System.out.println("staff " + staff);
-//        		
-//        	
-//        		break;
-//        	}
-//        	default: System.out.println("other");
-//        
-//        }
-    	return "/view/centreOwners1.jsp";
-    }
 
+//		String path = request.getContextPath();
+//		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+//		
+//		String a = "aaa";
+//		System.out.println("path " + path + "\n" + "basePath " + basePath);
+//		model.addAttribute("path", a);
+
+//		Custom cust = new Custom();
+//		
+//		cust.setName("sfafa");
+//		model.addAttribute("name", cust.getName());
+//		
+//		return "/view/centreOwners1";
+//    	
+//    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	        AccessToken accessToken = refreshAccessToken.getAccessToken();  
+        String userId = null;
+        if (accessToken != null && accessToken.getAccess_token() != null) {  
+    		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
+    		
+    		userId = result.getUserid();
+    		System.out.println("userID " + userId);
+        }  
+    	
+        // userId has the user's ID
+        
+        // find the customer by wechatId
+        Custom cust = customService.findCustomByWechatId(userId);
+        
+        Long id = cust.getId();
+        System.out.println("id: " + id);
+        
+        String name = cust.getName();
+        System.out.println("Name: " + cust.getName());
+        model.addAttribute("name", name);
+        
+        String phone = cust.getPhone();
+        model.addAttribute("phone", phone);
+        
+        
+        
+        // get the customer's level
+        int level = Integer.parseInt(Long.toString(cust.getLevelId()));
+        
+        
+        System.out.println("level: " + level);
+        
+        switch(level){
+        	case 5: {
+        		System.out.println("车主");
+        		
+        		System.out.println(id);
+        		
+        		String brand = cust.getBrand();
+        		model.addAttribute("brand", brand);
+        		String plate = cust.getPlateNumber();
+        		model.addAttribute("plate", plate);
+        		String carId = cust.getCarIdNumber();
+        		model.addAttribute("carId", carId);
+        		
+        		
+        		AfterSalesRecord record = afterSalesDao.getBySQL("select * from after_sales_record c where c.id = ?", AfterSalesRecord.class, id.toString());
+        		String models = record.getModels();
+        		System.out.println("models: " + models);
+        		model.addAttribute("models", models);
+        		
+        		long type = record.getType();
+        		System.out.println("type: " + type);
+        		
+        		
+        		
+        		
+        		
+        		List<Custom> preSales = preSalesDao.getListBySQL("select * from custom c where c.level_id = 6", Custom.class);
+        		model.addAttribute("preSales", preSales);
+        	
+        		break;
+        	}
+        	default: System.out.println("other");
+        
+        }
+    	return "/view/centreOwners1";
+    }
+    
+    @RequestMapping(value="/appointment" , method = RequestMethod.GET)
+    public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){
+	
+	    	
+	        AccessToken accessToken = refreshAccessToken.getAccessToken();  
+	        String userId = null;
+	        if (accessToken != null && accessToken.getAccess_token() != null) {  
+	        	Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
+		
+	        	userId = result.getUserid();
+	        	System.out.println("userID " + userId);
+	        }  
+	
+	        // userId has the user's ID
+	
+	        // find the customer by wechatId
+	        Custom cust = customService.findCustomByWechatId(userId);
+	
+	        Long id = cust.getId();
+    	
+    	
+	        List<ConsultingRecord> conRecord = consultDao.getListBySQL("select * from consulting_records c where c.custom_id =" + id.toString(), ConsultingRecord.class);
+	        model.addAttribute("conRecord", conRecord);
+	        return "/view/reservationRecord";
+    }
 }

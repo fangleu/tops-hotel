@@ -1,1 +1,1 @@
-<#assign bathPath="http://127.0.0.1:8080/tops-front-otms-car/view/"/>
+<#assign bathPath="http://luo1luo.ngrok.cc/tops-front-otms-car/view/"/>
