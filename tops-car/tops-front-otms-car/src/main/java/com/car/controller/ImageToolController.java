@@ -1,7 +1,6 @@
 package com.car.controller;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.car.bean.Custom;
 import com.car.util.Constants;
 
 import net.sf.json.JSONObject;
@@ -25,7 +26,7 @@ public class ImageToolController {
 	
 	
 	@RequestMapping(value="/test" , method = RequestMethod.GET)
-	public String Test(HttpServletRequest request, HttpServletResponse response, Model model){
+	public String  Test(HttpServletRequest request, HttpServletResponse response, Model model){
 		
 		String path = request.getContextPath();
 		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -34,8 +35,12 @@ public class ImageToolController {
 		System.out.println("path " + path + "\n" + "basePath " + basePath);
 		model.addAttribute("path", a);
 //		return "/view/centreOwners.html";
+		Custom cust = new Custom();
 		
-		return "/view/imageTest.jsp";
+		cust.setName("sfafa");
+		model.addAttribute("cust", cust);
+		
+		return "/view/fremarkerTest";
 	}
 	
 	
@@ -43,6 +48,7 @@ public class ImageToolController {
 	  @ResponseBody
 	  public String uploadImg(@RequestParam(value="img")MultipartFile img, HttpServletResponse response, HttpServletRequest request){
 	      JSONObject result = new JSONObject();
+	      System.out.println("test");
 	      boolean flag = true;
 	      try {
 	          flag = upload(img, result , request);
