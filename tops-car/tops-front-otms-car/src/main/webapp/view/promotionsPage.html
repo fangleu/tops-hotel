@@ -1,0 +1,15 @@
+<#import "common.ftl" as con />
+<#if promotions??>
+	<#list promotions.results as list>
+		<li>
+			<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdfd1b46c655aacf&redirect_uri=${con.bathPath}/promotion/getPromotionDetail?id=${list.id}&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect">
+			<img src="${list.focus}"/>
+			</a>
+			<a class="goodsImgInfo" href="javascript:;">
+				${list.sketch}
+				<span class="r">详情>>></span>
+			</a>
+			<div class="time">发布时间：${(list.createTime?string("yyyy-MM-dd"))!}</div>
+		</li>
+	</#list>
+</#if>

@@ -183,32 +183,9 @@ public class CustomController {
     
     @RequestMapping(value="/value" , method = RequestMethod.GET)
     public String getUserDetail(HttpServletRequest request, HttpServletResponse response, Model model){
-
-//		String path = request.getContextPath();
-//		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-//		
-//		String a = "aaa";
-//		System.out.println("path " + path + "\n" + "basePath " + basePath);
-//		model.addAttribute("path", a);
-
-//		Custom cust = new Custom();
-//		
-//		cust.setName("sfafa");
-//		model.addAttribute("name", cust.getName());
-//		
-//		return "/view/centreOwners1";
-//    	
-//    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
     	        AccessToken accessToken = refreshAccessToken.getAccessToken();  
         String userId = null;
+        System.out.println("ｃｏｄｅ　" +request.getParameter("code"));
         if (accessToken != null && accessToken.getAccess_token() != null) {  
     		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
     		
@@ -216,8 +193,6 @@ public class CustomController {
     		System.out.println("userID " + userId);
         }  
     	
-        // userId has the user's ID
-        
         // find the customer by wechatId
         Custom cust = customService.findCustomByWechatId(userId);
         currentCustom = cust;

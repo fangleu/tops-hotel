@@ -48,8 +48,8 @@ public class CustomService extends BaseServiceImpl<Custom , Serializable> implem
 	@Override
 	public Custom findCustomByWechatId(String wechatId) {
 		
-		
-		return customDao.getBySQL("select * from custom c where c.wechat_id = ?", Custom.class, wechatId);
+		Object[] objects = {wechatId};
+		return customDao.getBySQL("select * from custom c where c.wechat_id = ?", Custom.class, objects);
 	}
 	
 	

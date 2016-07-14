@@ -38,7 +38,7 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="url">
-            <value><![CDATA[jdbc:mysql://192.168.1.61:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
+            <value><![CDATA[jdbc:mysql://localhost:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
         </property>
         <property name="username" value="root" />
         <property name="password" value="" />
@@ -103,7 +103,7 @@
     
      <bean id="freemarkerResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
         <property name="order" value="1" />
-        <property name="suffix" value=".ftl" />
+        <property name="suffix" value=".html" />
         <property name="contentType" value="text/html;charset=utf-8" />
         <property name="viewClass">
             <value>org.springframework.web.servlet.view.freemarker.FreeMarkerView</value>
@@ -134,9 +134,9 @@
     
     
     <!-- 对静态资源文件的访问 -->      
-	<mvc:resources mapping="/view/images/**" location="/view/images/"/>   
-	<mvc:resources mapping="/view/js/**" location="/view/js/"/>  
-	<mvc:resources mapping="/view/css/**" location="/view/css/"/>
+	<mvc:resources mapping="/view/images/**" location="/images/"/>   
+	<mvc:resources mapping="/js/**" location="/js/"/>  
+	<mvc:resources mapping="/css/**" location="/css/"/>
 	<mvc:resources mapping="/ueditor/**" location="/ueditor/"/>
     
 	

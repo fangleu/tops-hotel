@@ -39,7 +39,7 @@ public class Promotion  implements Serializable{
 	/**
 	 * 发布时间 （创建时间）
 	 */
-	private Date CreateTime;
+	private Date createTime;
 	
 	/**
 	 * 文章类型
@@ -162,11 +162,11 @@ public class Promotion  implements Serializable{
 
 	@Column(name="create_time")
 	public Date getCreateTime() {
-		return CreateTime;
+		return createTime;
 	}
 
 	public void setCreateTime(Date createTime) {
-		CreateTime = createTime;
+		this.createTime = createTime;
 	}
 
 	@Column(name="models_id")

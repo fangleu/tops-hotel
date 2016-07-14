@@ -13,7 +13,7 @@ public interface ICustomService extends IBaseService<Custom , Serializable>{
 	
 	void updateCustom(Custom custom);
 	
-	Custom findCustomByWechatId(String phone);
+	Custom findCustomByWechatId(String wechatId);
 
 	
 }

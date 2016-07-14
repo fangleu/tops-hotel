@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<#import "common.ftl" as con />
+<head>
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>凯迪拉克经销商</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="${con.bathPath}css/swiper-3.0.8.css" rel="stylesheet" type="text/css">
+    <link href="${con.bathPath}css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="${con.bathPath}css/style.css" rel="stylesheet" type="text/css">
+    <script src="${con.bathPath}js/jquery-1.11.1.min.js"></script>
+    <script src="${con.bathPath}js/swiper.min-3.1.0.js"></script>
+</head>    
+<body>
+<div class="head">
+	促销信息 
+	<div class="sorts">
+		<span onclick="$(this).siblings().toggle();"><i class="iconfont icon-fenlei"></i>车型选择</span>
+		<div>
+			<a href="javascript:;">车辆型号1</a>
+			<a href="javascript:;">车辆型号2</a>
+			<a href="javascript:;">车辆型号4</a>
+			<a href="javascript:;">车辆型号5</a>
+			<a href="javascript:;">车辆型号6</a>
+		</div>
+	</div>
+</div>
+<div id="ajaxMore"  class="ajaxMore">
+<ul id="activities" class="activities">
+	<#if promotions??>
+		<#list promotions.results as list>
+			<li>
+				<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdfd1b46c655aacf&redirect_uri=${con.bathPath}/promotion/getPromotionDetail?id=${list.id}&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect">
+					<img src="${list.focus}"/>
+				</a>
+				<a class="goodsImgInfo" href="javascript:;">
+					${list.sketch}
+					<span class="r">详情>>></span>
+				</a>
+				<div class="time">发布时间：${(list.createTime?string("yyyy-MM-dd"))!}</div>
+			</li>
+		</#list>
+	</#if>
+</ul>
+	<span id="more">加载更多</span>
+</div>
+<script>
+	$(".activities").hover(function(){
+		$(".sorts div").hide();
+	});
+	$(window).scroll(function(){
+		$(".sorts div").hide();
+	})
+	var pageNo = 1;
+	
+	function getScrollTop() { 
+		var scrollTop = 0; 
+		if (document.documentElement && document.documentElement.scrollTop) { 
+		scrollTop = document.documentElement.scrollTop; 
+		} 
+		else if (document.body) { 
+		scrollTop = document.body.scrollTop; 
+		} 
+		return scrollTop; 
+		} 
+
+		//获取当前可是范围的高度 
+	function getClientHeight() { 
+		var clientHeight = 0; 
+		if (document.body.clientHeight && document.documentElement.clientHeight) { 
+		clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
+		} 
+		else { 
+		clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
+		} 
+		return clientHeight; 
+		} 
+
+		//获取文档完整的高度 
+	function getScrollHeight() { 
+		return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
+		} 
+	
+	window.onscroll = function () { 
+		if (getScrollTop() + getClientHeight() == getScrollHeight()) { 
+		//	alert("到达底部"); 
+		pageNo++;
+		if(pageNo > ${(promotions.pageCount)}) return;
+			$.ajax({
+	            type: "get",
+	            contentType: "application/json",
+	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=1&pageNo="+pageNo,
+	            data: "",
+	            datatype: "json",
+	            success: function (result) {
+	          		if(result != null && result != "")
+	                	$("#activities").append(result);
+	          		else{
+	          			$("#more").html("没有更多了");
+	          		}
+	            }
+	        });		
+		} 
+		} 
+	
+	
+</script>
+</body>
+</html>

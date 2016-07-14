@@ -108,7 +108,7 @@ public class PromotionRecord implements Serializable{
 		this.stopbyTime = stopbyTime;
 	}
 
-	@Column(name="create_date")
+	@Column(name="create_time")
 	public Date getCreateDate() {
 		return createDate;
 	}
