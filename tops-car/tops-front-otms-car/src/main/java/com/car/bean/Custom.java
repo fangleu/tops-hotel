@@ -36,11 +36,6 @@ public class Custom implements Serializable{
 	
 	
 	/**
-	 * 微信头像url
-	 */
-	private String avatar;
-	
-	/**
 	 * 手机号
 	 */
 	private String phone;
@@ -93,6 +88,10 @@ public class Custom implements Serializable{
 	 */
 	private Date createDate;
 
+	/**
+	 * 头像链接
+	 */
+	private String avatar;
 
 	
 	@Id  
@@ -213,6 +212,7 @@ public class Custom implements Serializable{
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
+
 
 	@Column(name="avatar") 
 	public String getAvatar() {

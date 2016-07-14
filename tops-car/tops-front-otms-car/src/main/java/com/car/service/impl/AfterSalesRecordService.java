@@ -9,11 +9,13 @@ import org.springframework.stereotype.Service;
 
 import com.car.bean.AfterSalesRecord;
 import com.car.bean.Custom;
+import com.car.bean.Promotion;
 import com.car.common.dao.BaseServiceImpl;
 import com.car.common.dao.IBaseDao;
 import com.car.common.dao.PageResults;
 import com.car.dao.IAfterSalesRecordDao;
 import com.car.dao.ICustomDao;
+import com.car.dao.IPromotionDao;
 import com.car.service.IAfterSalesRecordService;
 
 @Service
@@ -28,11 +30,12 @@ public class AfterSalesRecordService extends BaseServiceImpl<AfterSalesRecord , 
     }
 
 	@Override
-	public PageResults<AfterSalesRecord> getAfterSalesRecordList(int pageNo, int pageSize) {
-		// TODO Auto-generated method stub
-		return null;
+	public PageResults<AfterSalesRecord> getAfterSalesRecordList(int pageNo, int pageSize, Long type) {
+		return afterSalesRdDao.getAfterSalesRecordList(pageNo, pageSize , type);
 	}
 	
 	
+	
+
 
 }

@@ -1,8 +1,5 @@
-    
-    
-
 <html>
-<#import "js/common.ftl" as con />
+<#import "common.html" as con />
 <head>
 <base href="<%=basePath%>"></base>
     <meta http-equiv="pragram" content="no-cache">
@@ -59,7 +56,7 @@
 				<#if preSales??>
 				<#list preSales as salesPerson>
 				<li>
-					<div style="background-image: url(${con.bathPath}images/ren1.jpg);" class="bg-cover"></div>
+					<div style="background-image: url(${salesPerson.avatar});" class="bg-cover"></div>
 					<div class="kfInfo">
 						<div class="kfName">${salesPerson.name}</div>
 						<div>售前经理</div>

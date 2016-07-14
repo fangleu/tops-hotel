@@ -19,10 +19,25 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.car.bean.AfterSalesRecord;
 import com.car.bean.ConsultingRecord;
 import com.car.bean.Custom;
+import com.car.bean.Promotion;
+import com.car.common.dao.PageResults;
 import com.car.dao.IAfterSalesRecordDao;
 import com.car.dao.IConsultingRecordDao;
 import com.car.dao.ICustomDao;
+
 import com.car.service.ICustomService;
+
+import com.car.dao.impl.AfterSalesRecordDao;
+import com.car.dao.impl.CustomDao;
+import com.car.send.message.test.MessageTest;
+import com.car.service.IAfterSalesRecordService;
+import com.car.service.IConsultingRecordService;
+import com.car.service.ICustomService;
+import com.car.service.impl.AfterSalesRecordService;
+import com.car.service.impl.ConsultingRecordService;
+import com.car.service.impl.CustomService;
+import com.car.util.Constants;
+
 import com.car.util.CreateMember;
 import com.car.util.LinkUtil;
 import com.car.util.RefreshAccessToken;
@@ -47,6 +62,9 @@ public class CustomController {
 	
 	@Autowired
 	private IAfterSalesRecordDao afterSalesDao;
+	
+	@Autowired
+	private IConsultingRecordService consultingRdService;
 	
 	@Autowired
 	private IConsultingRecordDao consultDao;
@@ -126,7 +144,9 @@ public class CustomController {
         	String code = request.getParameter("code");
     		Result result = LinkUtil.oAuth2GetUserByCode(token, code);  
     		userId = result.getUserid();
-            String headImg = LinkUtil.getHeadImg(token, code, userId);
+	    		
+            String headImg = LinkUtil.getUserInfo(token,userId).getAvatar();
+
         	model.addAttribute("headImg", headImg);   		
         }  
         // find the customer by wechatId
@@ -166,22 +186,50 @@ public class CustomController {
     }
     
     @RequestMapping(value="/appointment" , method = RequestMethod.GET)
-    public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){	
-	        Long id = currentCustom.getId();
-	        System.out.println(id);
-	        Object[] q = {id};
-	        List<ConsultingRecord> conRecord = consultDao.getListBySQL("select * from consulting_records c where c.custom_id =?", ConsultingRecord.class, q);
-	        model.addAttribute("conRecord", conRecord);
-	        return "/view/reservationRecord";
+    public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){			
+		int pageNo = 1;
+		int pageSize =5;
+		Long id = currentCustom.getId();
+		//System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
+		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());
+		model.addAttribute("conRecord", list);
+		return "view/reservationRecord";
+    }
+    
+    @RequestMapping(value="/appointmentPage" , method = RequestMethod.GET)
+    public String getAppointmentPage(HttpServletRequest request, HttpServletResponse response, Model model){			
+		int pageNo = 1;
+		int pageSize =5;
+		Long id = currentCustom.getId();
+		//System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
+		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());
+		model.addAttribute("conRecord", list);
+		return "view/reservationRecordPage";
     }
     
     @RequestMapping(value="/query" , method = RequestMethod.GET)
     public String getOnlineQuery(HttpServletRequest request, HttpServletResponse response, Model model){	
-	        Long id = currentCustom.getId();
-	        System.out.println(id);
-	        Object[] q = {id};
-	        List<ConsultingRecord> conRecord = consultDao.getListBySQL("select * from consulting_records c where c.custom_id =?", ConsultingRecord.class, q);
-	        model.addAttribute("conRecord", conRecord);
-	        return "/view/onlineQuery";
+//		int pageNo = 1;
+//		int pageSize =5;
+//		System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
+//		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());
+//		System.out.println(list.getResults().size());
+//		model.addAttribute("queries", list);
+//		
+//		
+//		ArrayList<Object> names = new ArrayList<Object>();
+//		for(ConsultingRecord a : list.getResults()){
+//			names.add(a.getSalesStaff());
+//		}
+//		
+//		Object[] obj = names.toArray();
+//		StringBuilder 
+//		
+//		
+//		
+//		String sql = "select "
+//		PageResults<Custom> headResults = customService.getListBySQL("select * from custom c where c.name = ?", Custom.class, ); 
+//		
+		return "view/onlineQuery";
     }
 }
