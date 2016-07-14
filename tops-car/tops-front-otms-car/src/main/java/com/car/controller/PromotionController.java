@@ -53,26 +53,28 @@ public class PromotionController {
 	}
 	
 	@RequestMapping(value = {"/getPromotion"})
-	public String getPromotion(int pageNo, int pageSize, Model model) {
-		Long type = 0L;
-//		pageNo = 1;
-//		pageSize =5;
+	public String getPromotion(int pageNo, int pageSize, Long type, Model model) {
 		System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
 		PageResults<Promotion> list = promotionService.getPromotionList(pageNo, pageSize, type);
-		System.out.println(list.getResults().size());
+		System.out.println("cont " + list.getResults().size() + "\ncountPage " + list.getPageCount());
+		System.out.println("TotalCount " + list.getTotalCount());
 		model.addAttribute("promotions", list);
-		return "view/promotions";
 		
+		for(Promotion promotion : list.getResults()) {
+			
+			System.out.println("title " + promotion.getTitle());
+			
+		}
+		
+		return "view/promotions";
 	}
 	
 	@RequestMapping(value = {"/getPromotionPage"})
-	public String getPromotionPage(int pageNo, int pageSize, Model model) {
-		Long type = 0L;
-//		pageNo = 1;
-//		pageSize =5;
+	public String getPromotionPage(int pageNo, int pageSize, Long type, Model model) {
 		System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
 		PageResults<Promotion> list = promotionService.getPromotionList(pageNo, pageSize, type);
-		System.out.println(list.getResults().size());
+		System.out.println("cont " + list.getResults().size() + "\ncountPage " + list.getPageCount());
+		System.out.println("TotalCount " + list.getTotalCount());
 		model.addAttribute("promotions", list);
 		return "view/promotionsPage";
 		

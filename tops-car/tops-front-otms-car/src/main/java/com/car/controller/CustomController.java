@@ -80,29 +80,29 @@ public class CustomController {
 	 * @param phone
 	 * @return
 	 */
-	@RequestMapping(value = { "/addUser" })
 	@ResponseBody
-    public JSONObject addCustom(@RequestParam String phone, @RequestParam String name){
-		String accessToken = refreshAccessToken.getAccessToken().getAccess_token();
-		Member member = new Member();
-		member.setMobile(phone);
-		member.setName(name);
-		member.setUserid(phone);
-		member.setDepartment("25");
-		Custom custom = new Custom();
-		custom.setPhone(phone);
-		custom.setName(name);
-		custom.setWechatId(phone);
-		custom.setCreateDate(new Date());
-		custom.setLevelId(0L);
-		if(customService.findCustomByWechatId(phone) == null) {
-			customService.addCustom(custom);
-			CreateMember.create(member, accessToken);
-		}	
-		log.info("新潜客加入 姓名,手机号:" + name + " , " + phone);
+	@RequestMapping(value = { "/addUser" }, produces="application/json;charset=UTF-8")
+    public String addCustom(@RequestParam String phone, @RequestParam String name){
+//		String accessToken = refreshAccessToken.getAccessToken().getAccess_token();
+//		Member member = new Member();
+//		member.setMobile(phone);
+//		member.setName(name);
+//		member.setUserid(phone);
+//		member.setDepartment("25");
+//		Custom custom = new Custom();
+//		custom.setPhone(phone);
+//		custom.setName(name);
+//		custom.setWechatId(phone);
+//		custom.setCreateDate(new Date());
+//		custom.setLevelId(0L);
+//		if(customService.findCustomByWechatId(phone) == null) {
+//			customService.addCustom(custom);
+//			CreateMember.create(member, accessToken);
+//		}	
+//		log.info("新潜客加入 姓名,手机号:" + name + " , " + phone);
 		JSONObject json = new JSONObject();
 		json.accumulate("status", "success");
-    	return json;
+    	return json.toString();
     	
     }
 	

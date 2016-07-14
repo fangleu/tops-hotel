@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <#import "common.ftl" as con />
 <head>
@@ -89,19 +88,17 @@
 		if (getScrollTop() + getClientHeight() == getScrollHeight()) { 
 		//	alert("到达底部"); 
 		pageNo++;
-		if(pageNo > ${(promotions.pageCount)}) return;
+		if(pageNo > ${(promotions.pageCount)}) { $("#more").html(""); return; }
 			$.ajax({
 	            type: "get",
 	            contentType: "application/json",
-	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=1&pageNo="+pageNo,
+	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=5&pageNo="+pageNo,
 	            data: "",
 	            datatype: "json",
 	            success: function (result) {
 	          		if(result != null && result != "")
 	                	$("#activities").append(result);
-	          		else{
-	          			$("#more").html("没有更多了");
-	          		}
+	          			
 	            }
 	        });		
 		} 

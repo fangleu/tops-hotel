@@ -1,6 +1,7 @@
 package com.car.service.test;
 
 import java.util.Date;
+import java.util.Random;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,19 +22,19 @@ public class PromotionServiceTest {
 	
 	@Test
 	public void Test(){
-		
-		Promotion promotion = new Promotion();
-		
-		promotion.setTitle("测试标题");
-		promotion.setStartTime(new Date());
-		promotion.setEndTime(new Date());
-		promotion.setCreateTime(new Date());
-		promotion.setType(0L);
-		promotion.setFocus("http://n.sinaimg.cn/translate/20160705/9TTK-fxtspsa6651757.jpg");
-		promotion.setSketch("可以自定义数据库与POJO属性的对应关系");
-		promotion.setImage("http://n.sinaimg.cn/mobileh5/20160705/JFWW-fxtsatm1375638.jpg");
-		promotion.setDetail("可以自定义数据库与POJO属性的对应关系");
-		promotionService.save(promotion);
+		for(int i = 0; i < 15; i++) {
+			Promotion promotion = new Promotion();
+			promotion.setTitle("测试标题" + new Random().nextInt(100));
+			promotion.setStartTime(new Date());
+			promotion.setEndTime(new Date());
+			promotion.setCreateTime(new Date());
+			promotion.setType(2L);
+			promotion.setFocus("http://n.sinaimg.cn/translate/20160705/9TTK-fxtspsa6651757.jpg");
+			promotion.setSketch("可以自定义数据库与POJO属性的对应关系");
+			promotion.setImage("http://n.sinaimg.cn/mobileh5/20160705/JFWW-fxtsatm1375638.jpg");
+			promotion.setDetail("可以自定义数据库与POJO属性的对应关系");
+			promotionService.save(promotion);
+		}
 		
 	}
 	
