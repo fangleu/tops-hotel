@@ -1,6 +1,8 @@
 package com.car.controller;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -182,26 +184,39 @@ public class CustomController {
     
     
     @RequestMapping(value="/value" , method = RequestMethod.GET)
-    public String getUserDetail(HttpServletRequest request, HttpServletResponse response, Model model){
+
+    public String getUserDetail(HttpServletRequest request, HttpServletResponse response, Model model) throws MalformedURLException, IOException{
     	        AccessToken accessToken = refreshAccessToken.getAccessToken();  
+
         String userId = null;
         System.out.println("ｃｏｄｅ　" +request.getParameter("code"));
         if (accessToken != null && accessToken.getAccess_token() != null) {  
-    		Result result = LinkUtil.oAuth2GetUserByCode(accessToken.getAccess_token(), request.getParameter("code"));  
+        	String token = accessToken.getAccess_token();
+        	String code = request.getParameter("code");
+        	
+        	
+        	
+    		Result result = LinkUtil.oAuth2GetUserByCode(token, code);  
     		
     		userId = result.getUserid();
-    		System.out.println("userID " + userId);
+    		    		
+            String headImg = LinkUtil.getHeadImg(token, code, userId);
+        	model.addAttribute("headImg", headImg);   		
         }  
-    	
+
+        
+
+        
+        // userId has the user's ID
+        
+
         // find the customer by wechatId
         Custom cust = customService.findCustomByWechatId(userId);
         currentCustom = cust;
         
         Long id = cust.getId();
-        System.out.println("id: " + id);
         
         String name = cust.getName();
-        System.out.println("Name: " + cust.getName());
         model.addAttribute("name", name);
         
         String phone = cust.getPhone();
@@ -212,15 +227,8 @@ public class CustomController {
         // get the customer's level
         int level = Integer.parseInt(Long.toString(cust.getLevelId()));
         
-        
-        System.out.println("level: " + level);
-        
         switch(level){
-        	case 5: {
-        		System.out.println("车主");
-        		
-        		System.out.println(id);
-        		
+        	case 5: {        		
         		String brand = cust.getBrand();
         		model.addAttribute("brand", brand);
         		String plate = cust.getPlateNumber();
@@ -231,15 +239,9 @@ public class CustomController {
         		
         		AfterSalesRecord record = afterSalesDao.getBySQL("select * from after_sales_record c where c.id = ?", AfterSalesRecord.class, id.toString());
         		String models = record.getModels();
-        		System.out.println("models: " + models);
         		model.addAttribute("models", models);
         		
         		long type = record.getType();
-        		System.out.println("type: " + type);
-        		
-        		
-        		
-        		
         		
         		List<Custom> preSales = preSalesDao.getListBySQL("select * from custom c where c.level_id = 6", Custom.class);
         		model.addAttribute("preSales", preSales);
@@ -253,10 +255,7 @@ public class CustomController {
     }
     
     @RequestMapping(value="/appointment" , method = RequestMethod.GET)
-    public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){
-	
-
-	
+    public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){	
 	        Long id = currentCustom.getId();
 	        System.out.println(id);
 	        Object[] q = {id};
@@ -266,10 +265,7 @@ public class CustomController {
     }
     
     @RequestMapping(value="/query" , method = RequestMethod.GET)
-    public String getOnlineQuery(HttpServletRequest request, HttpServletResponse response, Model model){
-	
-
-	
+    public String getOnlineQuery(HttpServletRequest request, HttpServletResponse response, Model model){	
 	        Long id = currentCustom.getId();
 	        System.out.println(id);
 	        Object[] q = {id};

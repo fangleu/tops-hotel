@@ -23,7 +23,7 @@
 	<div class="personalCenter">
 		<div class="personalInfo">
 			<div class="cf">
-				<div style="background-image: url(${con.bathPath}images/personalHead.jpg);" class="bg-cover"></div>
+				<div style="background-image: url(${headImg});" class="bg-cover"></div>
 				<div class="l">
 					<div class="personalName">
 						<strong>姓&nbsp;&nbsp;&nbsp;名</strong> ${name}

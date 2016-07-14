@@ -12,6 +12,7 @@ import javax.net.ssl.HttpsURLConnection;
 
 import com.car.weixin.bean.AccessToken;
 import com.car.weixin.bean.Result;
+import com.car.weixin.bean.UserInfo;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -52,8 +53,8 @@ public class LinkUtil {
 	} 
 	
 	
-public static Result userIdConverOpenId(String token, String code , String userId){
-		
+public static String userIdConverOpenId(String token, String code , String userId){
+	StringBuilder json = new StringBuilder();
 		HttpsURLConnection urlCon = null; 
 		Result result = null;
 		String url = "https://qyapi.weixin.qq.com/cgi-bin/user/convert_to_openid?access_token="+token;
@@ -76,14 +77,16 @@ public static Result userIdConverOpenId(String token, String code , String userI
            urlCon.getOutputStream().close();  
            BufferedReader in = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));  
            String line;  
-           StringBuilder json = new StringBuilder();
+           
            while ((line = in.readLine()) != null) {
                json.append(line);
            }  
            System.out.println("userIdConverOpenId : " + json);
            JSONObject jsonObject = LinkUtil.transObject(JSONObject.fromObject(json.toString()));
-//           result = (Result)JSONObject.toBean(jsonObject , Result.class); 
-	        } catch (MalformedURLException e) {  
+           result = (Result)JSONObject.toBean(jsonObject , Result.class);
+		
+		
+			} catch (MalformedURLException e) {  
 	            e.printStackTrace();  
 	        } catch (IOException e) {  
 	            e.printStackTrace();  
@@ -91,7 +94,8 @@ public static Result userIdConverOpenId(String token, String code , String userI
 	            e.printStackTrace();  
 	        }
 			
-		return null;
+		
+		return result.getOpenid();
 		
 	}
 	
@@ -125,5 +129,84 @@ public static Result userIdConverOpenId(String token, String code , String userI
         }
         return o2;
     }
+	
+	public static String getHeadImg(String token, String code, String userId) throws MalformedURLException, IOException{
+		HttpsURLConnection urlCon = null; 
+		UserInfo result = null;
+		String url = "https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN&userid=USER_ID";
+		url = url.replace("ACCESS_TOKEN", token);
+
+		//String openId = userIdConverOpenId(token, code, userId);
+	
+//		url = url.replace("OPENID", openId);
+
+		url = url.replace("USER_ID", userId);
+		
+		System.out.println(url);
+		//now url has the proper url
+		
+		//open connection, use GET method
+        urlCon = (HttpsURLConnection) (new URL(url)).openConnection();  
+        urlCon.setDoInput(true);  
+        urlCon.setDoOutput(true);  
+        urlCon.setRequestMethod("GET");
+        urlCon.setUseCaches(false);  
+        urlCon.getOutputStream().flush();  
+        urlCon.getOutputStream().close();
+        
+        //read in result
+        BufferedReader in = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));  
+        String line;  
+        StringBuilder json = new StringBuilder();
+        while ((line = in.readLine()) != null) {
+            json.append(line);
+        }  
+        
+        System.out.println(json);
+        JSONObject jsonObject = JSONObject.fromObject(json.toString());
+        result = (UserInfo)JSONObject.toBean(jsonObject , UserInfo.class);
+	
+        
+        
+        return result.getAvatar();
+	}
+	
+	public static UserInfo getUserInfo(String token, String userId) throws MalformedURLException, IOException{
+		HttpsURLConnection urlCon = null; 
+		UserInfo result = null;
+		String url = "https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN&userid=USER_ID";
+		url = url.replace("ACCESS_TOKEN", token);
+
+		url = url.replace("USER_ID", userId);
+		
+		System.out.println(url);
+		//now url has the proper url
+		
+		//open connection, use GET method
+        urlCon = (HttpsURLConnection) (new URL(url)).openConnection();  
+        urlCon.setDoInput(true);  
+        urlCon.setDoOutput(true);  
+        urlCon.setRequestMethod("GET");
+        urlCon.setUseCaches(false);  
+        urlCon.getOutputStream().flush();  
+        urlCon.getOutputStream().close();
+        
+        //read in result
+        BufferedReader in = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));  
+        String line;  
+        StringBuilder json = new StringBuilder();
+        while ((line = in.readLine()) != null) {
+            json.append(line);
+        }  
+        
+        System.out.println(json);
+        JSONObject jsonObject = JSONObject.fromObject(json.toString());
+        result = (UserInfo)JSONObject.toBean(jsonObject , UserInfo.class);
+	
+        
+        
+        return result;
+	}
+	
 
 }
