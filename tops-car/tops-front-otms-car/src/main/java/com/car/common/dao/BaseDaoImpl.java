@@ -2,6 +2,7 @@ package com.car.common.dao;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -333,9 +334,12 @@ public class BaseDaoImpl<T, ID extends Serializable> implements IBaseDao<T, ID> 
         retValue.setPageSize(pageSize);
         if (countHql == null)
         {
-            ScrollableResults results = query.scroll();
-            results.last();
-            retValue.setTotalCount(results.getRowNumber() + 1);// 设置总记录数
+//            ScrollableResults results = query.scroll();
+//            results.last();
+//            retValue.setTotalCount(results.getRowNumber() + 1);// 设置总记录数
+            
+            List<T> list = query.list();
+            retValue.setTotalCount(list.size());
         }
         else
         {

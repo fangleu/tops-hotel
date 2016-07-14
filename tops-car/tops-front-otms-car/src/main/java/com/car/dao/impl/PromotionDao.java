@@ -16,17 +16,8 @@ public class PromotionDao extends BaseDaoImpl<Promotion, Serializable> implement
 
 	@Override
 	public PageResults<Promotion> getPromotionList(int pageNo, int pageSize, Long type) {
-		String sql;
-		PageResults<Promotion> results;
-		if(type == null) {
-			Object[] objects = null;
-			sql = "select * from promotion p order by p.create_time desc";
-			results = super.findPageByFetchedHql(sql , Promotion.class, null, pageNo, pageSize, objects);
-		} else {
-			Object[] objects = {type};
-			sql = "select * from promotion p where p.type=? order by p.create_time desc";
-			results = super.findPageByFetchedHql(sql , Promotion.class, null, pageNo, pageSize, objects);
-		}
+			String sql = "select * from promotion p where p.type=? order by p.create_time desc";
+			PageResults<Promotion> results = super.findPageByFetchedHql(sql , Promotion.class, null, pageNo, pageSize, type);
 		
 		return results;
 	}

@@ -1,5 +1,5 @@
 <html>
-<#import "common.ftl" as con />
+<#import "common.html" as con />
 <head>
     <meta http-equiv="pragram" content="no-cache">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -92,7 +92,7 @@
 			$.ajax({
 	            type: "get",
 	            contentType: "application/json",
-	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=5&pageNo="+pageNo,
+	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=5&type=${promotions.results[0].type}&pageNo="+pageNo,
 	            data: "",
 	            datatype: "json",
 	            success: function (result) {
