@@ -8,10 +8,12 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 
+import com.car.bean.Custom;
 import com.car.bean.Level;
 import com.car.bean.Promotion;
 import com.car.common.dao.PageResults;
 import com.car.dao.ILevelDao;
+import com.car.service.ICustomService;
 import com.car.service.ILevelService;
 import com.car.service.IPromotionService;
 
@@ -30,6 +32,9 @@ public class LevelDaoTest {
 	@Autowired
 	private IPromotionService promotionService;
 	
+	@Autowired
+	private ICustomService customService;
+	
 	@Test
 	public void test(){
 		
@@ -45,12 +50,15 @@ public class LevelDaoTest {
 //		Level list = service.getBySQL("select * from level where id=1", Level.class ,  object);
 //		Level level = dao.get(1L);
 		
-		Long type = 0L;
-		int pageNo = 1;
-		int pageSize =5;
-		PageResults<Promotion> list1 = promotionService.getPromotionList(pageNo, pageSize, null);
-		System.out.println("list1 " + list1.getResults().size());
+//		Long type = 0L;
+//		int pageNo = 1;
+//		int pageSize =5;
+//		PageResults<Promotion> list1 = promotionService.getPromotionList(pageNo, pageSize, null);
+//		System.out.println("list1 " + list1.getResults().size());
 		
+		
+		Custom cust = customService.findCustomByWechatId("134654654465");
+		System.out.println("cust " + cust);
 //		System.out.println(list.getShopName()+ " , " + level.getShopName());
 		
 		

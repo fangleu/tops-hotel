@@ -9,8 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.springframework.web.servlet.config.VelocityConfigurerBeanDefinitionParser;
-
 /**
  * Custom (客户表）
  */
@@ -35,6 +33,12 @@ public class Custom implements Serializable{
 	 * 微信号
 	 */
 	private String wechatId;
+	
+	
+	/**
+	 * 微信头像url
+	 */
+	private String avatar;
 	
 	/**
 	 * 手机号
@@ -208,6 +212,15 @@ public class Custom implements Serializable{
 
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
+	}
+
+	@Column(name="avatar") 
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
 	}
 	
 	

@@ -9,8 +9,6 @@ import java.net.URL;
 import java.util.Iterator;
 
 import javax.net.ssl.HttpsURLConnection;
-
-import com.car.weixin.bean.AccessToken;
 import com.car.weixin.bean.Result;
 import com.car.weixin.bean.UserInfo;
 
@@ -84,8 +82,6 @@ public static String userIdConverOpenId(String token, String code , String userI
            System.out.println("userIdConverOpenId : " + json);
            JSONObject jsonObject = LinkUtil.transObject(JSONObject.fromObject(json.toString()));
            result = (Result)JSONObject.toBean(jsonObject , Result.class);
-		
-		
 			} catch (MalformedURLException e) {  
 	            e.printStackTrace();  
 	        } catch (IOException e) {  
@@ -93,8 +89,6 @@ public static String userIdConverOpenId(String token, String code , String userI
 	        } catch (Exception e) {  
 	            e.printStackTrace();  
 	        }
-			
-		
 		return result.getOpenid();
 		
 	}
@@ -136,15 +130,9 @@ public static String userIdConverOpenId(String token, String code , String userI
 		String url = "https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN&userid=USER_ID";
 		url = url.replace("ACCESS_TOKEN", token);
 
-		//String openId = userIdConverOpenId(token, code, userId);
-	
-//		url = url.replace("OPENID", openId);
-
 		url = url.replace("USER_ID", userId);
-		
 		System.out.println(url);
 		//now url has the proper url
-		
 		//open connection, use GET method
         urlCon = (HttpsURLConnection) (new URL(url)).openConnection();  
         urlCon.setDoInput(true);  
@@ -153,7 +141,6 @@ public static String userIdConverOpenId(String token, String code , String userI
         urlCon.setUseCaches(false);  
         urlCon.getOutputStream().flush();  
         urlCon.getOutputStream().close();
-        
         //read in result
         BufferedReader in = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));  
         String line;  
@@ -161,13 +148,9 @@ public static String userIdConverOpenId(String token, String code , String userI
         while ((line = in.readLine()) != null) {
             json.append(line);
         }  
-        
         System.out.println(json);
         JSONObject jsonObject = JSONObject.fromObject(json.toString());
         result = (UserInfo)JSONObject.toBean(jsonObject , UserInfo.class);
-	
-        
-        
         return result.getAvatar();
 	}
 	
@@ -176,11 +159,34 @@ public static String userIdConverOpenId(String token, String code , String userI
 		UserInfo result = null;
 		String url = "https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=ACCESS_TOKEN&userid=USER_ID";
 		url = url.replace("ACCESS_TOKEN", token);
-
 		url = url.replace("USER_ID", userId);
-		
-		System.out.println(url);
-		//now url has the proper url
+		//open connection, use GET method
+        urlCon = (HttpsURLConnection) (new URL(url)).openConnection();  
+        urlCon.setDoInput(true);  
+        urlCon.setDoOutput(true);  
+        urlCon.setRequestMethod("GET");
+        urlCon.setUseCaches(false);  
+        urlCon.getOutputStream().flush();  
+        urlCon.getOutputStream().close();
+        //read in result
+        BufferedReader in = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));  
+        String line;  
+        StringBuilder json = new StringBuilder();
+        while ((line = in.readLine()) != null) {
+            json.append(line);
+        }  
+        System.out.println(json);
+        JSONObject jsonObject = JSONObject.fromObject(json.toString());
+        result = (UserInfo)JSONObject.toBean(jsonObject , UserInfo.class);
+        return result;
+	}
+	
+	
+	public static void getAuthsucc(String token, String userId) throws MalformedURLException, IOException{
+		HttpsURLConnection urlCon = null; 
+		String url = "https://qyapi.weixin.qq.com/cgi-bin/user/authsucc?access_token=ACCESS_TOKEN&userid=USERID";
+		url = url.replace("ACCESS_TOKEN", token);
+		url = url.replace("USERID", userId);
 		
 		//open connection, use GET method
         urlCon = (HttpsURLConnection) (new URL(url)).openConnection();  
@@ -200,12 +206,7 @@ public static String userIdConverOpenId(String token, String code , String userI
         }  
         
         System.out.println(json);
-        JSONObject jsonObject = JSONObject.fromObject(json.toString());
-        result = (UserInfo)JSONObject.toBean(jsonObject , UserInfo.class);
-	
         
-        
-        return result;
 	}
 	
 
