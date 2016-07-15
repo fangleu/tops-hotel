@@ -1,0 +1,50 @@
+<html>
+<#import "common.html" as con />
+<head>
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>凯迪拉克经销商</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="${con.bathPath}css/swiper-3.0.8.css" rel="stylesheet" type="text/css">
+    <link href="${con.bathPath}css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="${con.bathPath}css/style.css" rel="stylesheet" type="text/css">
+    <script src="${con.bathPath}js/jquery-1.11.1.min.js"></script>
+    <script src="${con.bathPath}js/swiper.min-3.1.0.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=sjrDIrsK8cGgYctn5lUXUnqQtUBlUSrT"></script>
+</head>    
+<body class="color-bg-grey">
+	<div class="head">到店导航</div>
+	<h3 class="dhTitle">${(navigation.name)!}</h3>
+	<div class="dhList">
+		<i class="iconfont icon-dingwei"></i>
+		地址：${(navigation.address)!}
+	</div>
+	<div class="dhList cf">
+		<i class="iconfont icon-dianhua"></i>
+		销售热线：${(navigation.preSales)!}
+		<a class="r" href="tel:${(navigation.preSales)!}">拨打热线</a>
+	</div>
+	<div class="dhList cf noBorder">
+		<i class="iconfont icon-dianhua"></i>
+		售后热线：${(navigation.afterSales)!}
+		<a class="r" href="tel:${(navigation.afterSales)!}">拨打热线</a>
+	</div>
+	<style type="text/css">
+      body, #map {position: fixed; bottom: 0%; width: 100%;height: 100%;overflow: hidden; align: center; }
+     </style>
+	<div id="map" class="map">
+	</div>
+</body>
+<script type="text/javascript">
+ 
+    var map = new BMap.Map("map");          
+    var point = new BMap.Point(${(navigation.longitude)!}, ${(navigation.latitude)!}); 
+    var marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+    map.centerAndZoom(point,15);                 
+    map.enableScrollWheelZoom();               
+</script>
+</html>

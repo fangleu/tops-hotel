@@ -44,6 +44,7 @@ import com.car.util.Constants;
 import com.car.util.CreateMember;
 import com.car.util.LinkUtil;
 import com.car.util.RefreshAccessToken;
+import com.car.util.SendWeChatMessage;
 import com.car.weixin.bean.AccessToken;
 import com.car.weixin.bean.Member;
 import com.car.weixin.bean.Result;
@@ -87,7 +88,11 @@ public class CustomController {
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
 	
+	@Autowired
+	private SendWeChatMessage sendWeChatMessage;
+	
 	private Custom currentCustom;
+	
 	/**
 	 * @param phone
 	 * @return
@@ -95,23 +100,23 @@ public class CustomController {
 	@ResponseBody
 	@RequestMapping(value = { "/addUser" }, produces="application/json;charset=UTF-8")
     public String addCustom(@RequestParam String phone, @RequestParam String name){
-//		String accessToken = refreshAccessToken.getAccessToken().getAccess_token();
-//		Member member = new Member();
-//		member.setMobile(phone);
-//		member.setName(name);
-//		member.setUserid(phone);
-//		member.setDepartment("25");
-//		Custom custom = new Custom();
-//		custom.setPhone(phone);
-//		custom.setName(name);
-//		custom.setWechatId(phone);
-//		custom.setCreateDate(new Date());
-//		custom.setLevelId(0L);
-//		if(customService.findCustomByWechatId(phone) == null) {
-//			customService.addCustom(custom);
-//			CreateMember.create(member, accessToken);
-//		}	
-//		log.info("新潜客加入 姓名,手机号:" + name + " , " + phone);
+		String accessToken = refreshAccessToken.getAccessToken().getAccess_token();
+		Member member = new Member();
+		member.setMobile(phone);
+		member.setName(name);
+		member.setUserid(phone);
+		member.setDepartment("25");
+		Custom custom = new Custom();
+		custom.setPhone(phone);
+		custom.setName(name);
+		custom.setWechatId(phone);
+		custom.setCreateDate(new Date());
+		custom.setLevelId(0L);
+		if(customService.findCustomByWechatId(phone) == null) {
+			customService.addCustom(custom);
+			CreateMember.create(member, accessToken);
+		}	
+		log.info("新潜客加入 姓名,手机号:" + name + " , " + phone);
 		JSONObject json = new JSONObject();
 		json.accumulate("status", "success");
     	return json.toString();
@@ -126,7 +131,7 @@ public class CustomController {
      * @return 
      */  
     @RequestMapping(value = { "/oauth2" })  
-    public void Oauth2API(HttpServletRequest request) { 
+    public void Oauth2API(HttpServletRequest request, HttpServletResponse response) { 
     	String userId = null;
     	String token = refreshAccessToken.getAccessToken().getAccess_token();
     	userId = LinkUtil.oAuth2GetUserByCode(token, request.getParameter("code")).getUserid(); 
@@ -143,6 +148,10 @@ public class CustomController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+    	System.out.println("URL " + request.getRequestURL());
+    	 request.setAttribute("jsonObject", "你已成功关注企业号");
+    	 sendWeChatMessage.sendWeChatMsg("text", userId, "0", "", "测试senMsg", "", "", "", "", "", "0");
+    	
     }  
   
     @RequestMapping(value="/detail" , method = RequestMethod.GET)

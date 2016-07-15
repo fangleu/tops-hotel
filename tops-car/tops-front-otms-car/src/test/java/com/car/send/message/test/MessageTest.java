@@ -21,7 +21,7 @@ public class MessageTest {
 		SendWeChatMessage weChat = new SendWeChatMessage();
 //		weChat.sendWeChatMsgText("LouFangLei", 0, "", "测试消息", "0");
 		
-//		weChat.sendWeChatMsg("text", "LouFangLei", "2", "", "测试senMsg", "", "", "", "", "", "0");
+		weChat.sendWeChatMsg("text", "LouFangLei", "0", "", "测试senMsg", "", "", "", "", "", "0");
 		
 //		weChat.sendWeChatMsg("news", "LouFangLei", "0", "", "测试senMsg", 
 //				"http://cnews.chinadaily.com.cn/img/attachement/png/site1/20160629/d8cb8a14fb9018dd3ddb08.png", "", "", "", "", "0");

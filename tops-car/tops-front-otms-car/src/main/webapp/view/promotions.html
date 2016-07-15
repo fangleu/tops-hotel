@@ -32,7 +32,7 @@
 <ul id="activities" class="activities">
 	<#if promotions??>
 		<#list promotions.results as list>
-			<li>
+			<li> ${list.title}
 				<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfdfd1b46c655aacf&redirect_uri=${con.bathPath}/promotion/getPromotionDetail?id=${list.id}&response_type=code&scope=snsapi_base&state=sunlight#wechat_redirect">
 					<img src="${list.focus}"/>
 				</a>
@@ -92,7 +92,7 @@
 			$.ajax({
 	            type: "get",
 	            contentType: "application/json",
-	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=5&type=${promotions.results[0].type}&pageNo="+pageNo,
+	            url: "${con.bathPath}promotion/getPromotionPage?pageSize=5&type=${(promotions.results[0].type)!}&pageNo="+pageNo,
 	            data: "",
 	            datatype: "json",
 	            success: function (result) {
