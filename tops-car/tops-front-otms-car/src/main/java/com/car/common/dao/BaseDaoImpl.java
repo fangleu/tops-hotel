@@ -334,17 +334,20 @@ public class BaseDaoImpl<T, ID extends Serializable> implements IBaseDao<T, ID> 
         retValue.setPageSize(pageSize);
         if (countHql == null)
         {
-//            ScrollableResults results = query.scroll();
-//            results.last();
-//            retValue.setTotalCount(results.getRowNumber() + 1);// 设置总记录数
-            
-            List<T> list = query.list();
-            retValue.setTotalCount(list.size());
+            ScrollableResults results = query.scroll();
+            results.last();
+            retValue.setTotalCount(results.getRowNumber() + 1);// 设置总记录数
         }
         else
         {
-            Long count = countByHql(countHql, values);
-            retValue.setTotalCount(count.intValue());
+        	 Query countQuery =  this.getSession().createSQLQuery(countHql);
+        	 if(values != null){
+                 for(int i = 0; i < values.length; i++) {
+                	 countQuery.setParameter(i, values[i]);
+                 }
+             }
+        	List list = countQuery.list();
+            retValue.setTotalCount(Integer.valueOf(list.get(0).toString()));
         }
         retValue.resetPageNo();
         List<T> itemList = query.setFirstResult((currentPage - 1) * pageSize).setMaxResults(pageSize).list();

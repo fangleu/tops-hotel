@@ -19,11 +19,10 @@ public class ConsultingRecordDao extends BaseDaoImpl<ConsultingRecord, Serializa
 
 	@Override
 	public PageResults<ConsultingRecord> getConsultingRecordList(int pageNo, int pageSize, String customId) {
-		String sql;
-		sql = "select * from consulting_records p where p.custom_id=?";
-		String countSql = "select count(*) from consulting_records p where p.custom_id=?";
+		String sql = "select * from consulting_records p where p.custom_id=?";
+		String countSql = "select count(1) from consulting_records p where p.custom_id=?";
 		Object[] obj = {customId};
-		PageResults<ConsultingRecord> results = super.findPageByFetchedHql(sql , ConsultingRecord.class, null, pageNo, pageSize, obj);
+		PageResults<ConsultingRecord> results = super.findPageByFetchedHql(sql , ConsultingRecord.class, countSql, pageNo, pageSize, obj);
 		
 		return results;
 	}
