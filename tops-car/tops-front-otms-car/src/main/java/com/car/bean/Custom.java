@@ -78,7 +78,8 @@ public class Custom implements Serializable{
 	 * 3：看过到店地址
 	 * 4：看过预约
 	 * 5：车主
-	 * 6:4s人员
+	 * 6：售前人员
+	 * 7： 售后人员
 	 * 
 	 */
 	private Long levelId;

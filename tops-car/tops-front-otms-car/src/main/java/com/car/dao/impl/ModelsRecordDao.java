@@ -10,8 +10,10 @@ import org.joda.time.DateTime;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.car.bean.AfterSalesRecord;
 import com.car.bean.ModelsRecord;
 import com.car.common.dao.BaseDaoImpl;
+import com.car.common.dao.PageResults;
 import com.car.dao.IModelsRecordDao;
 
 @Component(value = "mdelsRecordDao")
@@ -32,6 +34,20 @@ public class ModelsRecordDao extends BaseDaoImpl<ModelsRecord, Serializable> imp
 		}
 		
 		return customId;
+	}
+
+	@Override
+	public PageResults<ModelsRecord> getModelsRecordList(int pageNo, int pageSize, Long id) {
+		String sql;
+		String countSql;
+
+		sql = "select * from models_record p where custom_id=?";
+		countSql = "select count(1) from models_record";
+
+		Object[] object = {id};
+		PageResults<ModelsRecord> results = super.findPageByFetchedHql(sql , ModelsRecord.class, countSql, pageNo, pageSize, object);
+		
+		return results;
 	}
 	
 	

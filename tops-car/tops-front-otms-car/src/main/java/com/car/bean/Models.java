@@ -58,7 +58,10 @@ public class Models implements Serializable{
 	 */
 	private Date createTime;
 
-	
+	/**
+	 * 本店优惠价
+	 */
+	private String storePrice;
 	
 	@Id  
     @GeneratedValue(strategy=GenerationType.AUTO)  
@@ -132,6 +135,15 @@ public class Models implements Serializable{
 
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
+	}
+
+	@Column(name="store_price")
+	public String getStorePrice() {
+		return storePrice;
+	}
+
+	public void setStorePrice(String storePrice) {
+		this.storePrice = storePrice;
 	}
 
 }

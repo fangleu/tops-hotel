@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.car.bean.ModelsRecord;
 import com.car.common.dao.BaseServiceImpl;
 import com.car.common.dao.IBaseDao;
+import com.car.common.dao.PageResults;
 import com.car.dao.ICustomDao;
 import com.car.dao.IModelsRecordDao;
 import com.car.service.IModelsRdService;
@@ -37,6 +38,11 @@ public class ModelsRdService extends BaseServiceImpl<ModelsRecord, Serializable>
 		List<String> userId = customDao.getCustom(customId);
 		
 		return userId;
+	}
+
+	@Override
+	public PageResults<ModelsRecord> getModelsRecordList(int pageNo, int pageSize, Long id) {
+		return mdelsRecordDao.getModelsRecordList(pageNo, pageSize, id);
 	}
 	
 }

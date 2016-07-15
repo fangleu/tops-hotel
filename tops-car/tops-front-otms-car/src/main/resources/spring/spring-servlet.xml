@@ -38,7 +38,7 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="url">
-            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
+            <value><![CDATA[jdbc:mysql://192.168.23.4:3306/car?useUnicode=true&characterEncoding=utf8]]></value>
         </property>
         <property name="username" value="root" />
         <property name="password" value="" />

@@ -40,7 +40,7 @@
 				</#list>
 				</#if>
 	</ul>
-	<span id="more">加载更多</span>
+	
 </div>
 <script>
 	$(".recordList").hover(function(){
@@ -87,15 +87,12 @@
 			$.ajax({
 	            type: "get",
 	            contentType: "application/json",
-	            url: "${con.bathPath}user/appointmentPage?pageSize=1&pageNo="+pageNo,
+	            url: "${con.bathPath}user/appointmentPage?pageSize=5&pageNo="+pageNo,
 	            data: "",
 	            datatype: "json",
 	            success: function (result) {
 	          		if(result != null && result != "")
 	                	$("#recordList").append(result);
-	          		else{
-	          			$("#more").html("没有更多了");
-	          		}
 	            }
 	        });		
 		} 

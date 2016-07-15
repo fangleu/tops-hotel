@@ -1,6 +1,7 @@
-<!DOCTYPE html>
 <html>
+<#import "common.html" as con />
 <head>
+<base href="<%=basePath%>"></base>
     <meta http-equiv="pragram" content="no-cache">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>凯迪拉克经销商</title>
@@ -8,24 +9,24 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/swiper-3.0.8.css" rel="stylesheet" type="text/css">
-    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/swiper.min-3.1.0.js"></script>
+    <link href="${con.bathPath}css/swiper-3.0.8.css" rel="stylesheet" type="text/css">
+    <link href="${con.bathPath}css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="${con.bathPath}css/style.css" rel="stylesheet" type="text/css">
+    <script src="${con.bathPath}js/jquery-1.11.1.min.js"></script>
+    <script src="${con.bathPath}js/swiper.min-3.1.0.js"></script>
 </head>    
 <body>
 	<div class="head">个人中心</div>
 	<div class="personalCenter">
 		<div class="personalInfo">
 			<div class="cf">
-				<div style="background-image: url(images/personalHead.jpg);" class="bg-cover"></div>
+				<div style="background-image: url(${headImg});" class="bg-cover"></div>
 				<div class="l">
 					<div class="personalName">
-						<strong>姓&nbsp;&nbsp;&nbsp;名</strong> 代用名
+						<strong>姓&nbsp;&nbsp;&nbsp;名</strong> ${name}
 					</div>
 					<div class="personalPhone">
-						<strong>手机号</strong>  138 8888 8888
+						<strong>手机号</strong>  ${phone}
 					</div>
 				</div>
 			</div>
@@ -37,32 +38,25 @@
 				<div>未使用？？？</div>
 			</a>
 			<div class="personalTitle">我的服务记录</div>
-			<a class="personalContent" href="javascript:;">预约试驾记录</a>
-			<a class="personalContent" href="javascript:;">在线询价记录</a>
+			<a class="personalContent" href="appointment?pageSize=5&pageNo=1">预约试驾记录</a>
+			<a class="personalContent" href="query?pageSize=5&pageNo=1">在线询价记录</a>
 			<div class="personalTitle">关注车型</div>
 			<ul class="carCx">
-				<li class="flexBox">
-					<a href="javascript:;" style="background-image: url(images/car1.jpg);" class="bg-cover"></a>
-					<div class="flexChild">
-						<div>ATS-L</div>
-						<div>官方指导价：￥29.88万</div>
-						<div>本店优惠价：￥22.88万</div>
-					</div>
-					<div class="btnSwitch">
-						<a href="javascript:;">促销详情</a>
-					</div>
-				</li>
-				<li class="flexBox">
-					<a href="javascript:;" style="background-image: url(images/car2.jpg);" class="bg-cover"></a>
-					<div class="flexChild">
-						<div>ATS-L</div>
-						<div>官方指导价：￥29.88万</div>
-						<div>本店优惠价：￥22.88万</div>
-					</div>
-					<div class="btnSwitch">
-						<a href="javascript:;">促销详情</a>
-					</div>
-				</li>
+				<#if modelsList??>
+					<#list modelsList as car>
+						<li class="flexBox">
+							<a href="javascript:;" style="background-image: url(images/car1.jpg);" class="bg-cover"></a>
+							<div class="flexChild">
+								<div>${car.models}</div>
+								<div>官方指导价：￥${car.officialPrice}万</div>
+								<div>本店优惠价：￥${car.storePrice}万</div>
+							</div>
+							<div class="btnSwitch">
+								<a href="javascript:;">促销详情</a>
+							</div>
+						</li>
+					</#list>
+				</#if>
 			</ul>
 		</div>
 	</div>

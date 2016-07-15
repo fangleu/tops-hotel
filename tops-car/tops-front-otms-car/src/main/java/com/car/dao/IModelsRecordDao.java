@@ -6,6 +6,7 @@ import java.util.Set;
 
 import com.car.bean.ModelsRecord;
 import com.car.common.dao.IBaseDao;
+import com.car.common.dao.PageResults;
 
 public interface IModelsRecordDao extends IBaseDao<ModelsRecord, Serializable> {
 
@@ -14,5 +15,7 @@ public interface IModelsRecordDao extends IBaseDao<ModelsRecord, Serializable> {
 	 * @return
 	 */
 	Set<String> getModelsRecordDao();
+
+	PageResults<ModelsRecord> getModelsRecordList(int pageNo, int pageSize, Long id);
 	
 }

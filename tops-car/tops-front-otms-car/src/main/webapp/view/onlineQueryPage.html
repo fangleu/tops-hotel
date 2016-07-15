@@ -1,0 +1,21 @@
+<#import "common.html" as con />
+
+<#if conRecord??>
+	<#list conRecord.results as record>
+		<li>
+			<div class="cf">
+				<div class="recordCondation">询价</div>
+				<div class="l">
+					<div>2016-6-23 16:21</div>
+					<div>${record.salesStaff}</div>
+					<div>电话：${record.phone} </div>
+					<div>车型：${record.models}</div>
+				</div>
+				<#assign telephone = "tel:" + record.phone>
+						
+				<a href=${(telephone)!} >拨打电话</a> 	
+			</div>
+
+		</li>
+	</#list>
+</#if>

@@ -19,14 +19,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.car.bean.AfterSalesRecord;
 import com.car.bean.ConsultingRecord;
 import com.car.bean.Custom;
+import com.car.bean.Models;
+import com.car.bean.ModelsRecord;
 import com.car.bean.Promotion;
 import com.car.common.dao.PageResults;
 import com.car.dao.IAfterSalesRecordDao;
 import com.car.dao.IConsultingRecordDao;
 import com.car.dao.ICustomDao;
-
+import com.car.dao.IModelsDao;
+import com.car.dao.IModelsRecordDao;
 import com.car.service.ICustomService;
-
+import com.car.service.IModelsRdService;
 import com.car.dao.impl.AfterSalesRecordDao;
 import com.car.dao.impl.CustomDao;
 import com.car.send.message.test.MessageTest;
@@ -67,10 +70,19 @@ public class CustomController {
 	private IConsultingRecordService consultingRdService;
 	
 	@Autowired
+	private IModelsRdService modelsRdService;
+	
+	@Autowired
 	private IConsultingRecordDao consultDao;
 	
 	@Autowired
 	private ICustomDao preSalesDao;
+	
+	@Autowired
+	private IModelsDao modelsDao;
+	
+	@Autowired
+	private IModelsRecordDao mdelsRecordDao;
 	
 	@Autowired
 	private RefreshAccessToken refreshAccessToken;
@@ -133,7 +145,7 @@ public class CustomController {
 		}
     }  
   
-    @RequestMapping(value="/value" , method = RequestMethod.GET)
+    @RequestMapping(value="/detail" , method = RequestMethod.GET)
     public String getUserDetail(HttpServletRequest request, HttpServletResponse response, Model model) throws MalformedURLException, IOException{
     	        AccessToken accessToken = refreshAccessToken.getAccessToken();  
 
@@ -160,76 +172,76 @@ public class CustomController {
         model.addAttribute("phone", phone);
         // get the customer's level
         int level = Integer.parseInt(Long.toString(cust.getLevelId()));
-        switch(level){
-        	case 5: {        		
-        		String brand = cust.getBrand();
-        		model.addAttribute("brand", brand);
-        		String plate = cust.getPlateNumber();
-        		model.addAttribute("plate", plate);
-        		String carId = cust.getCarIdNumber();
-        		model.addAttribute("carId", carId);
-        		AfterSalesRecord record = afterSalesDao.getBySQL("select * from after_sales_record c where c.id = ?", AfterSalesRecord.class, id.toString());
-        		String models = record.getModels();
-        		model.addAttribute("models", models);
-        		
-        		long type = record.getType();
-        		
-        		List<Custom> preSales = preSalesDao.getListBySQL("select * from custom c where c.level_id = 6", Custom.class);
-        		model.addAttribute("preSales", preSales);
-        	
-        		break;
-        	}
-        	default: System.out.println("other");
         
+        if(level == 5){
+        	//车主, 级别5
+        	
+    		String brand = cust.getBrand();
+    		model.addAttribute("brand", brand);
+    		String plate = cust.getPlateNumber();
+    		model.addAttribute("plate", plate);
+    		String carId = cust.getCarIdNumber();
+    		model.addAttribute("carId", carId);
+    		AfterSalesRecord record = afterSalesDao.getBySQL("select * from after_sales_record c where c.id = ?", AfterSalesRecord.class, id.toString());
+    		String models = record.getModels();
+    		model.addAttribute("models", models);
+    		  		
+    		List<Custom> preSales = preSalesDao.getListBySQL("select * from custom c where c.level_id = 6", Custom.class);
+    		model.addAttribute("preSales", preSales);        	
         }
+        else if (level < 5) {
+        	//客户，售前，级别 0 ~ 4
+        	String sql = "select * from models_record c where c.custom_id = ?";
+        	sql = sql.replace("?", currentCustom.getId().toString());
+        	List<ModelsRecord> modelRecord = mdelsRecordDao.getListBySQL(sql, ModelsRecord.class);
+        	
+        	//获取已关注车型的models_id
+        	StringBuilder modelId = new StringBuilder();
+        	modelId.append("(");        	
+        	for(ModelsRecord a : modelRecord){
+        		modelId.append(a.getModelsId().toString() + ",");
+        	}
+        	modelId.deleteCharAt(modelId.length() - 1);
+        	modelId.append(")");
+        	System.out.println(modelId);
+        	
+        	//用modelId获取车的列表        	
+        	sql = "select * from models c where c.id in " + modelId.toString();
+        	List<Models> modelsList = modelsDao.getListBySQL(sql, Models.class);
+        	model.addAttribute("modelsList", modelsList);
+        	
+        	return "/view/personalCenter";
+		}
+        
+        
     	return "/view/centreOwners1";
     }
     
     @RequestMapping(value="/appointment" , method = RequestMethod.GET)
-    public String getAppointment(HttpServletRequest request, HttpServletResponse response, Model model){			
-		int pageNo = 1;
-		int pageSize =5;
-		Long id = currentCustom.getId();
-		//System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
-		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());
+    public String getAppointment(HttpServletRequest request, HttpServletResponse response, int pageNo, int pageSize, Model model){			
+		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());	
 		model.addAttribute("conRecord", list);
 		return "view/reservationRecord";
     }
     
     @RequestMapping(value="/appointmentPage" , method = RequestMethod.GET)
-    public String getAppointmentPage(HttpServletRequest request, HttpServletResponse response, Model model){			
-		int pageNo = 1;
-		int pageSize =5;
-		Long id = currentCustom.getId();
-		//System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
+    public String getAppointmentPage(HttpServletRequest request, HttpServletResponse response, int pageNo, int pageSize, Model model){			
 		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());
 		model.addAttribute("conRecord", list);
 		return "view/reservationRecordPage";
     }
     
     @RequestMapping(value="/query" , method = RequestMethod.GET)
-    public String getOnlineQuery(HttpServletRequest request, HttpServletResponse response, Model model){	
-//		int pageNo = 1;
-//		int pageSize =5;
-//		System.out.println("pageNo " + pageNo +"\npageSize "+ pageSize);
-//		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());
-//		System.out.println(list.getResults().size());
-//		model.addAttribute("queries", list);
-//		
-//		
-//		ArrayList<Object> names = new ArrayList<Object>();
-//		for(ConsultingRecord a : list.getResults()){
-//			names.add(a.getSalesStaff());
-//		}
-//		
-//		Object[] obj = names.toArray();
-//		StringBuilder 
-//		
-//		
-//		
-//		String sql = "select "
-//		PageResults<Custom> headResults = customService.getListBySQL("select * from custom c where c.name = ?", Custom.class, ); 
-//		
+    public String getOnlineQuery(HttpServletRequest request, HttpServletResponse response, int pageNo, int pageSize, Model model){	
+		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());	
+		model.addAttribute("conRecord", list);
 		return "view/onlineQuery";
+    }
+    
+    @RequestMapping(value="/queryPage" , method = RequestMethod.GET)
+    public String getOnlineQueryPage(HttpServletRequest request, HttpServletResponse response, int pageNo, int pageSize, Model model){	
+		PageResults<ConsultingRecord> list = consultingRdService.getConsultingRecordList(pageNo, pageSize, currentCustom.getId().toString());	
+		model.addAttribute("conRecord", list);
+		return "view/onlineQueryPage";
     }
 }
